@@ -2,6 +2,8 @@
 
 > *A theoretical framework proposing that observable reality is a dimensional projection of a 12-dimensional informational manifold, constrained into existence by Omega-Class mathematical structures.*
 
+**Current version: v2.0 (March 2026)** — Adds mathematical transparency notes, a formal limitations section, and a new testable prediction.
+
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
@@ -22,6 +24,7 @@ This repository contains a speculative theoretical physics framework developed t
 | `index.html` | Interactive infographic presenting the complete theory |
 | `THEORY.md` | Full written framework with mathematical foundations |
 | `CONVERSATION.md` | Original dialogue that generated the theory |
+| `THEORY.md` | Full written framework — **v2.0** with mathematical status notes and known limitations |
 | `CONTRIBUTING.md` | How to contribute to this project |
 | `LICENSE` | Creative Commons BY 4.0 license |
 
