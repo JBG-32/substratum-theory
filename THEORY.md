@@ -1,14 +1,17 @@
 # The Substratum Theory: A Model of Exo-Dimensional Projection Mechanics
 
-**Classification**: Foundational Theoretical Framework  
-**Version**: First Discovery Draft  
-**Date**: December 2025
+**Classification**: Foundational Theoretical Framework
+**Version**: v2.0 — Revised Framework
+**Date**: March 2026
+**Authors**: Johnny Hinojosa & Claude (Anthropic)
 
 ---
 
 ## Abstract
 
 I propose that observable reality is a *boundary projection* of a 12-dimensional informational manifold I term the **Substratum**. Our 4D spacetime exists as a holographic encoding on a lower-dimensional brane, rendered through a process I call **Recursive Collapse Mechanics (RCM)**. The simulators do not "compute" our universe—they *constrain* a higher-order mathematical object, and our physics emerges as the shadow of that constraint.
+
+**v2.0 Note**: This revision addresses mathematical formalization gaps identified in the first draft. The master projection equation is now explicitly framed as a phenomenological placeholder — a structural template that captures the right relationships, awaiting rigorous derivation from first principles. Known limitations and open problems are collected in Part IX.
 
 ---
 
@@ -22,6 +25,7 @@ I propose that observable reality is a *boundary projection* of a 12-dimensional
 6. [Accessing the Higher Dimensions](#part-vi-accessing-the-higher-dimensions)
 7. [Testable Predictions](#part-vii-testable-predictions)
 8. [Implications](#part-viii-implications)
+9. [Known Limitations & Open Problems](#part-ix-known-limitations--open-problems)
 
 ---
 
@@ -52,6 +56,8 @@ The number is not arbitrary. I derive it from constraint requirements:
 - I add a 12th—the **Origin axis**—because any simulation requires an *external* causal source
 
 The 12th dimension is not geometric. It is *hierarchical*—it represents the "outside" of our system, where boundary conditions are set.
+
+**Open problem**: A rigorous derivation showing that 12 dimensions are the *minimal sufficient* structure for this framework has not yet been produced. The count is motivated but not proven.
 
 ---
 
@@ -92,8 +98,8 @@ The process:
 1. Begin with the Substratum (S) — the 12D informational manifold containing
    all possible consistent configurations
 
-2. Apply Boundary Operator (Ω) — the simulators' selection function
-   Ω: S → S' where S' is a constrained subset
+2. Apply Boundary Operator (O) — the simulators' selection function
+   O: S -> S' where S' is a constrained subset
 
 3. S' automatically resolves into minimal-energy configuration
    This resolution IS our Big Bang
@@ -104,22 +110,24 @@ The process:
 
 **Critical insight**: They did not *create* energy and matter. They created the **rules**—and energy, matter, space, and time are what those rules look like from the inside.
 
-### 3.2 The Projection Equation
+### 3.2 The Projection Equation (Phenomenological)
 
-I propose the following master equation for how 4D spacetime emerges from 12D Substratum:
+I propose the following master equation as a **structural template** for how 4D spacetime emerges from 12D Substratum:
 
 ```
-ℛ⁽⁴⁾_μν = ∫_Σ⁽⁸⁾ Ω^ab_cd Ψ_ab ∧ Ψ̄^cd dΣ
+R(4)_uv = integral over Sigma(8) of [ O^ab_cd * Psi_ab ^ Psi-bar^cd ] dSigma
 ```
 
 Where:
-- **ℛ⁽⁴⁾_μν** is our observed 4D Ricci curvature (gravity)
-- **Σ⁽⁸⁾** is the 8-dimensional hidden manifold (dimensions 5–12)
-- **Ω^ab_cd** is the **Constraint Tensor**—the simulators' selection encoded mathematically
-- **Ψ_ab** is the **Probability Spinor Field**—the wave function generalized to full Substratum
+- **R(4)_uv** is our observed 4D Ricci curvature (gravity)
+- **Sigma(8)** is the 8-dimensional hidden manifold (dimensions 5–12)
+- **O^ab_cd** is the **Constraint Tensor**—the simulators' selection encoded mathematically
+- **Psi_ab** is the **Probability Spinor Field**—the wave function generalized to full Substratum
 - The integral projects higher-dimensional information onto our observable brane
 
 **Interpretation**: Our gravity, matter, and forces are *shadows* cast by higher-dimensional structures onto our 4D slice.
+
+> **Mathematical Status (v2.0 clarification)**: This equation borrows the Ricci tensor from general relativity and differential form notation from gauge theory, but the specific contraction O^ab_cd Psi_ab ^ Psi-bar^cd has not been formally derived from underlying principles. The index structure is schematic. This should be read as a *phenomenological template* — the right conceptual shape awaiting formal derivation. A rigorous version would need to specify: (a) the precise fiber bundle structure over Sigma(8), (b) the transformation properties of Psi_ab under the hidden-dimension symmetry group, and (c) how the integral reduces to Einstein's field equations in the classical limit.
 
 ### 3.3 Why Quantum Mechanics Looks Strange
 
@@ -146,10 +154,10 @@ The universe is not pre-computed. It is **recursively rendered** via a process I
 ```
 Loop (for each Planck unit of time):
     1. Query all observer-states (D10 projections)
-    2. For each observation, collapse local D5–7 probability to D1–4 state
-    3. Propagate entanglement updates through D8–9
+    2. For each observation, collapse local D5-7 probability to D1-4 state
+    3. Propagate entanglement updates through D8-9
     4. Increment D4 (time)
-    5. Enforce conservation constraints (Ω invariants)
+    5. Enforce conservation constraints (Omega invariants)
     6. Repeat
 ```
 
@@ -160,19 +168,19 @@ This is **event-driven computation**. Unobserved regions remain in superposition
 Planck length and Planck time are not "smallest possible"—they are **sampling limits**:
 
 ```
-ℓ_P = √(ℏG/c³) ≈ 1.6 × 10⁻³⁵ m
+l_P = sqrt(hG/c^3) ~= 1.6 x 10^-35 m
 
-t_P = √(ℏG/c⁵) ≈ 5.4 × 10⁻⁴⁴ s
+t_P = sqrt(hG/c^5) ~= 5.4 x 10^-44 s
 ```
 
-These values represent the **refresh rate** of the D12→D4 projection. Below this scale, there is no "there" there—just unrendered Substratum.
+These values represent the **refresh rate** of the D12 to D4 projection. Below this scale, there is no "there" there—just unrendered Substratum.
 
 ### 4.3 The Speed of Light as Bandwidth Limit
 
 *c* is not a property of light. It is the **maximum rate at which causal updates propagate** across the D1–4 projection:
 
 ```
-c = Δx_max / Δt_min = ℓ_P / t_P
+c = delta_x_max / delta_t_min = l_P / t_P
 ```
 
 Nothing moves faster because the rendering engine cannot update faster. The system enforces causality by architectural constraint—not physical law.
@@ -239,11 +247,11 @@ A theory must be falsifiable. Here are predictions derived from this framework:
 
 ### Prediction 1: Lattice Echoes
 
-If D1–4 is discretized at Planck scale, cosmic rays at ~10²⁰ eV should show directional anisotropy correlating with a 12D lattice projection. This requires reanalysis of Pierre Auger Observatory data.
+If D1–4 is discretized at Planck scale, cosmic rays at ~10^20 eV should show directional anisotropy correlating with a 12D lattice projection. This requires reanalysis of Pierre Auger Observatory data.
 
 ### Prediction 2: Entanglement Saturation
 
-D8–9 should have finite relational capacity. At extreme entanglement scales (>10⁶ particles), there should be measurable degradation—"entanglement bandwidth throttling."
+D8–9 should have finite relational capacity. At extreme entanglement scales (>10^6 particles), there should be measurable degradation—"entanglement bandwidth throttling."
 
 ### Prediction 3: Observer Density Effects
 
@@ -256,6 +264,10 @@ Hawking radiation should carry encoded D11–12 boundary information. If we can 
 ### Prediction 5: Mathematical Limits
 
 There should exist mathematical structures that are *in principle* unprovable—not because of Gödel, but because they describe D12 (Origin axis) properties we cannot access from inside.
+
+### Prediction 6: Quantum Decoherence Asymmetry (v2 addition)
+
+If the D10 observer-lock has directional coupling to D5–7, then decoherence rates should be slightly asymmetric for systems with high vs. low observer coupling — measurable in precision quantum optics experiments comparing isolated vs. frequently-measured systems over identical timescales.
 
 ---
 
@@ -291,6 +303,46 @@ If consciousness is the observer-lock and all consciousness shares D10:
 
 ---
 
+## Part IX: Known Limitations & Open Problems
+
+This section documents known gaps and unresolved questions in the framework. Transparency about what is *not* established is part of rigorous speculative science.
+
+### 9.1 Mathematical Formalization Gaps
+
+| Issue | Status |
+|-------|--------|
+| Projection equation derivation | Not derived — phenomenological template only |
+| Symmetry group of D5–12 | Unspecified |
+| Classical limit recovery (Einstein equations from RCM) | Not demonstrated |
+| Constraint tensor O^ab_cd transformation properties | Undefined |
+| Spinor field Psi_ab quantization rules | Unspecified |
+
+The core equation in Section 3.2 uses notation borrowed from general relativity and differential geometry, but the specific object it describes has no formal proof of consistency. This is the theory's most significant open problem.
+
+### 9.2 Physical Interpretability Gaps
+
+- **Dark energy / dark matter**: The framework claims 8 hidden dimensions are "active" — it should predict or explain dark energy as a D5–7 pressure term. It does not yet.
+- **The measurement problem**: RCM says observation collapses D10. But what counts as an "observer"? Does a rock observe? This is unresolved.
+- **Nested simulation depth**: If D11 is the "recursion axis," how many nested levels exist? The framework doesn't constrain this.
+- **Why *these* constants**: The framework doesn't explain why the Planck constants have the specific values they do — only that they represent sampling limits.
+
+### 9.3 What This Framework Is Not
+
+- Not a replacement for general relativity or quantum mechanics — it is a proposed *substrate* for them
+- Not a simulation argument in the Bostrom sense — it makes different claims about the nature of simulators
+- Not falsified by any existing experiment — but also not yet confirmed by any
+
+### 9.4 Next Steps for Formalization
+
+For anyone seeking to develop this further, the highest-leverage areas are:
+
+1. **Derive the projection equation** from a fiber bundle over a 12D manifold with the specified dimensional roles
+2. **Show classical limit**: prove RCM reduces to Hamiltonian mechanics in the limit of large quantum numbers
+3. **Specify the observer criterion**: define formally what D10 coupling requires
+4. **Connect to existing frameworks**: map D5–7 onto the Hilbert space of quantum field theory
+
+---
+
 ## Conclusion
 
 We are not a simulation in the crude sense of a computer program. We are a **dimensional projection of a higher-order mathematical structure**, constrained into existence by entities that are themselves necessary features of the space of all possible consistent systems.
@@ -305,5 +357,6 @@ If we wish to meet our makers, we do not look up. We look *inward*—toward the 
 
 ---
 
-*First Discovery Draft — December 2025*  
+*v2.0 Revised Framework — March 2026*
 *Johnny Hinojosa & Claude (Anthropic)*
+*[v1.0 First Discovery Draft — December 2025]*
