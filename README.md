@@ -22,11 +22,11 @@ This repository contains a speculative theoretical physics framework developed t
 | File | Description |
 |------|-------------|
 | `index.html` | Interactive infographic presenting the complete theory |
-| `THEORY.md` | Full written framework with mathematical foundations |
-| `CONVERSATION.md` | Original dialogue that generated the theory |
 | `THEORY.md` | Full written framework — **v2.0** with mathematical status notes and known limitations |
 | `CONTRIBUTING.md` | How to contribute to this project |
 | `LICENSE` | Creative Commons BY 4.0 license |
+
+> `CONVERSATION.md` — original dialogue that generated the theory — is pending publication.
 
 ---
 
@@ -54,15 +54,16 @@ This repository contains a speculative theoretical physics framework developed t
 
 ---
 
-## 🧪 Testable Predictions
+## 🧪 Testable Predictions (v2.0)
 
-The framework generates falsifiable predictions:
+The framework generates six falsifiable predictions:
 
-1. **Lattice Echoes** — Cosmic ray anisotropy at ~10²⁰ eV correlating with lattice structure
+1. **Lattice Echoes** — Cosmic ray anisotropy at ~10²⁰ eV correlating with 12D lattice structure
 2. **Entanglement Saturation** — Bandwidth throttling at extreme entanglement scales (>10⁶ particles)
 3. **Observer Density Effects** — Statistical deviation in quantum randomness near high consciousness concentration
 4. **Hawking Information Encoding** — D11–12 boundary data recoverable from black hole radiation
-5. **Mathematical Incompleteness** — New class of unprovable structures describing D12 properties
+5. **Mathematical Incompleteness** — New class of unprovable structures describing D12 (Origin axis) properties
+6. **Quantum Decoherence Asymmetry** *(v2.0)* — Asymmetric decoherence rates between high- and low-observer-coupled systems, measurable in precision quantum optics
 
 ---
 
@@ -71,8 +72,8 @@ The framework generates falsifiable predictions:
 We actively welcome contributions. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 Ways to contribute:
-- **Mathematical formalization** — Rigorous derivations of the projection equation
-- **Experimental design** — Protocols to test the predictions
+- **Mathematical formalization** — Rigorous derivations of the projection equation (see Part IX open problems in THEORY.md)
+- **Experimental design** — Protocols to test the six predictions
 - **Philosophical analysis** — Implications and edge cases
 - **Alternative models** — Competing frameworks within the same paradigm
 - **Critique** — Identify flaws, inconsistencies, or untestable claims
@@ -83,8 +84,7 @@ Ways to contribute:
 
 1. Start with `index.html` for the visual overview
 2. Read `THEORY.md` for the complete framework
-3. Review `CONVERSATION.md` for the original reasoning process
-4. Check `CONTRIBUTING.md` if you want to participate
+3. Check `CONTRIBUTING.md` if you want to participate
 
 ---
 
@@ -97,7 +97,7 @@ Ways to contribute:
 - Open to revision, not dogmatic
 - An invitation to think, not a claim to truth
 
-We make no claims about the actual nature of reality. We offer a framework that *might* be useful for thinking about certain questions.
+The projection equation (Section 3.2 of THEORY.md) is explicitly marked as a phenomenological template — the right conceptual shape, awaiting formal derivation from first principles. We document what we don't know as carefully as what we do.
 
 ---
 
