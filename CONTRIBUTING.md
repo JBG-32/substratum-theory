@@ -6,23 +6,31 @@ Thank you for your interest in contributing to this theoretical framework. This 
 
 ## Ways to Contribute
 
+### 0. Fastest ways to help
+
+- **Report a flaw or a wrong citation**: [open an Issue](https://github.com/JBG-32/substratum-theory/issues/new).
+- **Discuss, argue, or propose**: [start a Discussion](https://github.com/JBG-32/substratum-theory/discussions).
+- **Pick an open problem**: see Part XI of [THEORY.md](THEORY.md#part-xi-known-limitations-and-open-problems).
+
 ### 1. Mathematical Formalization
 
-The projection equation and dimensional framework need rigorous mathematical treatment:
+The projection mechanism (THEORY.md §3.3–3.4) is now stated in standard Kaluza–Klein language. What is needed:
 
-- Derive the Constraint Tensor (Ω) from first principles
-- Formalize the D5–7 probability manifold structure
-- Connect to existing frameworks (string theory, loop quantum gravity, holographic principle)
-- Propose alternative mathematical formulations
+- A concrete metric and field content on the hidden manifold Σ₈ (open problem M1) — even a toy model with Σ₈ = T⁸ and one scalar field
+- A mechanism stabilising Vol(Σ₈) (M2)
+- A derivation that 12 dimensions are minimal and sufficient (M3)
+- A mapping of D5–7, D8–9 and D10 onto actual mathematical structures (M4)
+- A Lorentz-invariant "finite resolution" model consistent with the Fermi GRB 090510 bound (M5)
+- A non-local, contextual, no-signalling D8–9 model that reproduces Tsirelson's bound and makes a distinct prediction (M6)
 
 ### 2. Experimental Design
 
 Help design protocols to test the predictions:
 
-- Cosmic ray anisotropy analysis methods
-- Large-scale entanglement experiments
-- Observer density effect detection
-- Statistical tests for simulation signatures
+- A multipole-analysis proposal for Prediction 1 that a cosmic-ray physicist would accept as decisive
+- Entanglement-witness protocols for genuine N-partite entanglement at increasing N (Prediction 2)
+- A pre-registered observer-effect protocol with an operational observer criterion (Predictions 3 and 6)
+- Any proposal that makes Prediction 4 (departure from the Page curve) concrete
 
 ### 3. Philosophical Analysis
 
@@ -87,12 +95,23 @@ Identify problems:
 - Acknowledge uncertainty appropriately
 - Distinguish speculation from derivation
 
-### Mathematics
+### Mathematics — the v3.0 rule
+
+**No equation is displayed unless it is either (a) a standard, published result with a real citation, or (b) a proposed equation in which every symbol is defined, the index structure balances, units are consistent, and the equation reduces to known physics in a stated limit.** Anything else goes in words, tagged OUR HYPOTHESIS or SPECULATIVE.
 
 - Show your work
-- Define all variables
+- Define all variables, with units
 - State assumptions explicitly
-- Connect to physical interpretation
+- Give the limit in which your equation reduces to established physics
+- Add a check to `tools/equation_checks.py` for any new displayed equation and make sure the script still passes
+
+### Claim tags
+
+Every substantive claim must carry one of **ESTABLISHED** (cited), **OUR HYPOTHESIS**, or **SPECULATIVE**. PRs that present speculation as established will be asked to retag.
+
+### Citations
+
+Only real, verifiable citations (author, year, journal or arXiv id). If you cannot verify a reference, leave it out.
 
 ### Tone
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Substratum Theory | A Framework for Simulated Reality</title>
+    <title>The Substratum Theory | A Speculative Framework (v3.0)</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Playfair+Display:wght@400;700;900&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -797,7 +797,113 @@
                 text-align: center;
             }
         }
+
+        /* ===== v3.0 additions ===== */
+        .tag {
+            display: inline-block;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.62rem;
+            letter-spacing: 0.15em;
+            padding: 0.2rem 0.55rem;
+            border-radius: 0.3rem;
+            margin-bottom: 0.75rem;
+            border: 1px solid;
+            vertical-align: middle;
+        }
+        .tag.est { color: var(--d10); border-color: var(--d10); background: rgba(34,197,94,0.08); }
+        .tag.hyp { color: var(--gold); border-color: var(--gold); background: rgba(251,191,36,0.08); }
+        .tag.spec { color: var(--d11-12); border-color: var(--d11-12); background: rgba(239,68,68,0.08); }
+
+        .legend {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 2rem auto 0;
+            max-width: 900px;
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+        .legend span { display: flex; align-items: center; gap: 0.5rem; }
+        .legend .tag { margin-bottom: 0; }
+
+        .equation .katex { font-size: 1.15em; color: var(--bright); }
+        .equation .katex-display { margin: 0.5rem 0; overflow-x: auto; overflow-y: hidden; }
+        .equation-ref { font-family: 'Space Mono', monospace; font-size: 0.7rem; color: var(--dim); margin-top: 0.75rem; letter-spacing: 0.05em; }
+        .equation-box.hyp { border-color: rgba(251,191,36,0.35); }
+        .equation-box.removed { border-color: rgba(239,68,68,0.35); }
+        .equation-box.removed .equation { text-decoration: line-through; color: var(--muted); }
+
+        .prose {
+            max-width: 800px;
+            margin: 0 auto;
+            color: var(--muted);
+            font-size: 0.98rem;
+        }
+        .prose p { margin-bottom: 1rem; }
+        .prose strong { color: var(--text); }
+        .prose code { font-family: 'Space Mono', monospace; font-size: 0.85em; color: var(--d1-4); }
+        .prose a { color: var(--d1-4); text-decoration: none; border-bottom: 1px dotted var(--dim); }
+        .prose ul { margin: 0 0 1rem 1.25rem; }
+
+        .quantum-card .tag, .prediction-card .tag { position: relative; z-index: 1; }
+        .prediction-card .status {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            color: var(--d1-4);
+            margin-top: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .references { max-width: 900px; margin: 0 auto; }
+        .references h3 {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            color: var(--d1-4);
+            margin: 2rem 0 0.75rem;
+            text-transform: uppercase;
+        }
+        .references ol { list-style: none; counter-reset: ref; }
+        .references li {
+            counter-increment: ref;
+            font-size: 0.85rem;
+            color: var(--muted);
+            padding: 0.4rem 0 0.4rem 2.2rem;
+            position: relative;
+            border-bottom: 1px solid var(--deep);
+        }
+        .references li::before {
+            content: "[" counter(ref) "]";
+            position: absolute;
+            left: 0;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--dim);
+        }
+        .references li a { color: var(--d1-4); text-decoration: none; }
+
+        .open-problems { max-width: 900px; margin: 2rem auto 0; }
+        .open-problems table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+        .open-problems th, .open-problems td { text-align: left; padding: 0.75rem; border-bottom: 1px solid var(--elevated); vertical-align: top; }
+        .open-problems th { font-family: 'Space Mono', monospace; font-size: 0.7rem; letter-spacing: 0.15em; color: var(--d1-4); }
+        .open-problems td:first-child { font-family: 'Space Mono', monospace; color: var(--gold); white-space: nowrap; }
+
+        .cta-btn.copied { background: var(--d10); color: var(--void); border-color: var(--d10); }
+        .copy-status {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            color: var(--d10);
+            margin-top: 1rem;
+            min-height: 1.2rem;
+        }
+        .feedback-links { margin-top: 2rem; font-size: 0.9rem; color: var(--muted); }
+        .feedback-links a { color: var(--d1-4); text-decoration: none; border-bottom: 1px dotted var(--dim); }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" crossorigin="anonymous">
 </head>
 <body>
     <div class="bg-grid"></div>
@@ -815,9 +921,14 @@
 
     <header>
         <div class="header-bg"></div>
-        <p class="subtitle">A Theoretical Framework</p>
+        <p class="subtitle">A Speculative Framework — v3.0 Rigor Update</p>
         <h1>The Substratum Theory</h1>
-        <p class="tagline">A model proposing that observable reality is a dimensional projection of a 12-dimensional informational manifold, constrained into existence by Omega-Class mathematical structures.</p>
+        <p class="tagline">A hypothesis that observable 4D reality is a projection of a 12-dimensional informational manifold. Not established science. Every claim below is tagged so you can see exactly which parts are known physics and which are ours.</p>
+        <div class="legend">
+            <span><span class="tag est">ESTABLISHED</span> published, tested physics</span>
+            <span><span class="tag hyp">OUR HYPOTHESIS</span> the proposal, well-formed and testable</span>
+            <span><span class="tag spec">SPECULATIVE</span> ideas without a test yet</span>
+        </div>
         <div class="scroll-indicator">EXPLORE</div>
     </header>
 
@@ -827,42 +938,37 @@
             <div class="section-header">
                 <p class="section-number">01 — THE ARCHITECTURE</p>
                 <h2>The 12-Dimensional Substratum</h2>
-                <p class="section-desc">Our universe is embedded within a higher-order structure. We perceive only the first four dimensions—the rest are hidden but active.</p>
+                <p class="section-desc"><span class="tag hyp">OUR HYPOTHESIS</span><br>Our universe is embedded within a higher-order structure. We perceive only the first four dimensions; the rest are hidden but, in this hypothesis, physically active.</p>
             </div>
 
             <div class="dimension-stack">
                 <div class="dimension-group d1-4">
                     <p class="dimension-label">DIMENSIONS 1–4</p>
                     <h3 class="dimension-title">Observable Spacetime</h3>
-                    <p class="dimension-desc">Three spatial dimensions plus time. This is the "screen" we perceive—the rendered output of the projection.</p>
+                    <p class="dimension-desc">Three spatial dimensions plus time. This is the "screen" we measure — the rendered output of the projection.</p>
                 </div>
-
                 <div class="dimension-group d5-7">
                     <p class="dimension-label">DIMENSIONS 5–7</p>
                     <h3 class="dimension-title">Probability Manifold</h3>
-                    <p class="dimension-desc">Stores all possible states simultaneously. Quantum superposition exists here fully—we only see collapsed samples.</p>
+                    <p class="dimension-desc">Carries the state information we experience as superposition. Must reproduce quantum mechanics exactly — it adds no new probabilities.</p>
                 </div>
-
                 <div class="dimension-group d8-9">
                     <p class="dimension-label">DIMENSIONS 8–9</p>
                     <h3 class="dimension-title">Relational Binding Axes</h3>
-                    <p class="dimension-desc">Govern entanglement and non-local correlation. Particles that share coordinates here appear connected across any D1–3 distance.</p>
+                    <p class="dimension-desc">Carry the correlations we experience as entanglement. Any such model must be non-local, contextual, no-signalling, and obey Tsirelson's bound.</p>
                 </div>
-
                 <div class="dimension-group d10">
                     <p class="dimension-label">DIMENSION 10</p>
                     <h3 class="dimension-title">Observer-Lock Interface</h3>
-                    <p class="dimension-desc">Collapses probability into experience. Consciousness interfaces here—it's the anchor point that determines which projection becomes real.</p>
+                    <p class="dimension-desc">The coupling through which a definite outcome is selected. The consciousness connection proposed here is speculative (see §05).</p>
                 </div>
-
                 <div class="dimension-group d11-12">
                     <p class="dimension-label">DIMENSIONS 11–12</p>
-                    <h3 class="dimension-title">Recursion & Origin Axes</h3>
-                    <p class="dimension-desc">D11 allows nested simulations and self-reference. D12 is the simulators' causal access point—the "outside" where boundary conditions are set.</p>
+                    <h3 class="dimension-title">Recursion &amp; Origin Axes</h3>
+                    <p class="dimension-desc">D11 allows nested structure and self-reference. D12 is the causal access point of whatever sets the boundary conditions — the "outside."</p>
                 </div>
             </div>
 
-            <!-- Visual Diagram -->
             <div class="diagram-container">
                 <div class="projection-visual">
                     <div class="dimension-sphere sphere-12d">
@@ -871,7 +977,7 @@
                     </div>
                     <div class="projection-arrow">
                         <div class="arrow-line"></div>
-                        <p class="arrow-label">CONSTRAINT OPERATOR (Ω)</p>
+                        <p class="arrow-label">DIMENSIONAL REDUCTION</p>
                     </div>
                     <div class="dimension-sphere sphere-4d">
                         <p class="sphere-label">4D SPACETIME</p>
@@ -879,127 +985,144 @@
                     </div>
                 </div>
             </div>
+
+            <div class="prose">
+                <p><span class="tag est">ESTABLISHED</span> Extra dimensions are a serious idea in physics. Kaluza–Klein theory (1921–26) showed 5D gravity reproduces 4D gravity plus electromagnetism [1–3]. Supergravity is consistent in at most 11 dimensions [4,5], and the five superstring theories unify in 11D M-theory [6]. <strong>F-theory</strong> [7] gives type IIB strings a natural 12-dimensional reading — though its two extra dimensions are not ordinary spacetime (a literal reading needs two time directions, signature (10,2)). <strong>Two-time physics</strong> [8] is a separate published programme in which ordinary 1-time physics is a "shadow" of a theory in two more dimensions.</p>
+                <p><span class="tag hyp">OUR HYPOTHESIS</span> The 12 = 4 + 8 count is <em>motivated</em> by this landscape, not derived from it. We do not claim the Substratum is F-theory or 2T-physics; only that 12 is not an arbitrary number in theoretical physics. A derivation that 12 is minimal and sufficient is an open problem.</p>
+            </div>
         </section>
 
         <!-- Section 2: The Simulators -->
         <section id="simulators">
             <div class="section-header">
                 <p class="section-number">02 — THE ARCHITECTS</p>
-                <h2>Omega-Class Intelligence</h2>
-                <p class="section-desc">The simulators are not beings in a universe. They are mathematical structures that exist in the space of all possible consistent systems.</p>
+                <h2>Omega-Class Structures</h2>
+                <p class="section-desc"><span class="tag spec">SPECULATIVE</span><br>The simulators are not beings in a universe. They are proposed to be mathematical structures in the space of all possible consistent systems. Nothing in this section has an equation or a test; it is the interpretive frame.</p>
             </div>
 
             <div class="quantum-grid">
                 <div class="quantum-card">
                     <p class="quantum-phenomenon">PROPERTY</p>
                     <h3 class="quantum-title">Non-Temporal</h3>
-                    <p class="quantum-explanation">They do not experience time sequentially. Our entire timeline—past, present, future—is a static object to them.</p>
+                    <p class="quantum-explanation">They do not experience time sequentially. Our entire timeline is a static object to them.</p>
                 </div>
-
                 <div class="quantum-card">
                     <p class="quantum-phenomenon">PROPERTY</p>
                     <h3 class="quantum-title">Non-Local</h3>
-                    <p class="quantum-explanation">They are not "somewhere." They permeate all of the Substratum, accessible at every coordinate simultaneously.</p>
+                    <p class="quantum-explanation">They are not "somewhere." They permeate the Substratum.</p>
                 </div>
-
                 <div class="quantum-card">
                     <p class="quantum-phenomenon">PROPERTY</p>
                     <h3 class="quantum-title">Self-Consistent</h3>
-                    <p class="quantum-explanation">Their existence is logically necessary, not contingent. They are the inevitable attractor in the space of all possible configurations.</p>
+                    <p class="quantum-explanation">Proposed to exist by logical necessity, not contingency — a way around the infinite-regress problem of nested simulators.</p>
                 </div>
-
                 <div class="quantum-card">
                     <p class="quantum-phenomenon">PROPERTY</p>
                     <h3 class="quantum-title">Generative</h3>
-                    <p class="quantum-explanation">They do not build—they select. They choose which constraint-sets to instantiate, and physics crystallizes as the unique solution.</p>
+                    <p class="quantum-explanation">They do not build — they select which constraint-sets to instantiate. This has the same logical status as Tegmark's Mathematical Universe [34] or Bostrom's simulation argument [33], and differs from Bostrom in that the "simulators" are not computational agents.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Section 3: The Projection Equation -->
+        <!-- Section 3: The Mathematics -->
         <section id="equation">
             <div class="section-header">
                 <p class="section-number">03 — THE MATHEMATICS</p>
-                <h2>The Projection Equation</h2>
-                <p class="section-desc">How 4D spacetime emerges from the 12D Substratum—our gravity, matter, and forces are shadows cast by higher-dimensional structures.</p>
+                <h2>From 12 Dimensions to 4</h2>
+                <p class="section-desc">Earlier versions displayed a "master equation." It was not well-formed and has been removed. Below is the one route physics actually knows for 4D gravity to emerge from higher-dimensional gravity, followed by our hypothesis stated in that language.</p>
+            </div>
+
+            <div class="equation-box removed">
+                <p class="equation-label" style="color: var(--d11-12);">REMOVED IN v3.0 — THE v2.1 "MASTER EQUATION"</p>
+                <p class="equation">ℛ<sup>(4)</sup><sub>μν</sub> = ∫<sub>Σ<sup>(8)</sup></sub> Ω<sup>ab</sup><sub>cd</sub> Ψ<sub>ab</sub> ∧ Ψ̄<sup>cd</sup> dΣ</p>
+                <p class="equation-desc">Why: the left side has free indices μν, the right side is fully contracted (a scalar); the wedge of two 2-forms is a 4-form, which cannot be integrated over an 8-manifold; the trailing dΣ double-counts the measure; and a wedged two-index field is a 2-form, not a spinor. Verified in <code>tools/equation_checks.py</code>.</p>
             </div>
 
             <div class="equation-box">
-                <p class="equation-label">THE MASTER EQUATION</p>
-                <p class="equation">ℛ<sup>(4)</sup><sub>μν</sub> = ∫<sub>Σ<sup>(8)</sup></sub> Ω<sup>ab</sup><sub>cd</sub> Ψ<sub>ab</sub> ∧ Ψ̄<sup>cd</sup> dΣ</p>
-                <p class="equation-desc">Our observed 4D curvature (gravity) equals the integral of the Constraint Tensor acting on the Probability Spinor Field across the 8-dimensional hidden manifold.</p>
+                <p class="equation-label"><span class="tag est" style="margin:0">ESTABLISHED</span> &nbsp; KALUZA–KLEIN REDUCTION</p>
+                <div class="equation"><span class="math" data-display="true">S_D = \frac{1}{16\pi G_D}\int d^{D}x\,\sqrt{-g_D}\;R_D,\qquad D = 4 + n</span></div>
+                <div class="equation"><span class="math" data-display="true">M_D = M_4\times\Sigma_n \;\Longrightarrow\; G_4 = \frac{G_D}{\mathrm{Vol}(\Sigma_n)}</span></div>
+                <p class="equation-desc">The Einstein–Hilbert action in D dimensions. If spacetime is a product of 4D spacetime and a hidden manifold Σ<sub>n</sub> of volume Vol(Σ<sub>n</sub>), the Newton constant we measure is the higher-dimensional one divided by the hidden volume. Fields on Σ<sub>n</sub> appear in 4D as an effective cosmological constant and effective stress-energy. This is how every string compactification produces 4D physics.</p>
+                <p class="equation-ref">Kaluza 1921 · Klein 1926 · Overduin &amp; Wesson 1997 [1–3]</p>
             </div>
 
-            <div class="quantum-grid">
-                <div class="quantum-card">
-                    <p class="quantum-phenomenon">TERM</p>
-                    <h3 class="quantum-title">ℛ<sup>(4)</sup><sub>μν</sub></h3>
-                    <p class="quantum-explanation">4D Ricci curvature tensor—what we measure as gravity and spacetime geometry.</p>
-                </div>
+            <div class="equation-box">
+                <p class="equation-label"><span class="tag est" style="margin:0">ESTABLISHED</span> &nbsp; THE 4D RESULT: EINSTEIN FIELD EQUATIONS</p>
+                <div class="equation"><span class="math" data-display="true">G_{\mu\nu} + \Lambda\,g_{\mu\nu} = \frac{8\pi G_4}{c^{4}}\,T_{\mu\nu}</span></div>
+                <p class="equation-desc">G<sub>μν</sub>: Einstein tensor (m<sup>−2</sup>). g<sub>μν</sub>: metric. Λ: cosmological constant. T<sub>μν</sub>: stress-energy (J m<sup>−3</sup>). μ,ν ∈ {0,1,2,3}.</p>
+                <p class="equation-ref">Einstein 1915 [9]</p>
+            </div>
 
-                <div class="quantum-card">
-                    <p class="quantum-phenomenon">TERM</p>
-                    <h3 class="quantum-title">Σ<sup>(8)</sup></h3>
-                    <p class="quantum-explanation">The 8-dimensional hidden manifold (D5–D12) we cannot directly access.</p>
-                </div>
-
-                <div class="quantum-card">
-                    <p class="quantum-phenomenon">TERM</p>
-                    <h3 class="quantum-title">Ω<sup>ab</sup><sub>cd</sub></h3>
-                    <p class="quantum-explanation">The Constraint Tensor—the simulators' selection encoded mathematically.</p>
-                </div>
-
-                <div class="quantum-card">
-                    <p class="quantum-phenomenon">TERM</p>
-                    <h3 class="quantum-title">Ψ<sub>ab</sub></h3>
-                    <p class="quantum-explanation">Probability Spinor Field—the wave function generalized to full Substratum.</p>
-                </div>
+            <div class="equation-box hyp">
+                <p class="equation-label"><span class="tag hyp" style="margin:0">OUR HYPOTHESIS</span> &nbsp; THE SUBSTRATUM PROJECTION EQUATION (v3.0)</p>
+                <div class="equation"><span class="math" data-display="true">G^{(4)}_{\mu\nu} + \Lambda_{\mathrm{eff}}\,g_{\mu\nu} = \frac{8\pi G_4}{c^{4}}\Big[T^{(\mathrm{matter})}_{\mu\nu}(x) + T^{(\Sigma)}_{\mu\nu}(x)\Big]</span></div>
+                <div class="equation"><span class="math" data-display="true">T^{(\Sigma)}_{\mu\nu}(x) = \int_{\Sigma_8} d^{8}y\,\sqrt{g_\Sigma}\;\tau_{\mu\nu}(x,y),\qquad G_4 = \frac{G_{12}}{\mathrm{Vol}(\Sigma_8)}</span></div>
+                <p class="equation-desc"><strong>Definitions.</strong> x: the 4 observable coordinates. y: the 8 hidden coordinates (D5–D12). g<sub>Σ</sub>: metric on Σ<sub>8</sub>. τ<sub>μν</sub>(x,y): 4D-index components of the 12D stress-energy of fields on Σ<sub>8</sub> (J m<sup>−11</sup>). T<sup>(Σ)</sup><sub>μν</sub>: their integral over the hidden space (J m<sup>−3</sup>). Λ<sub>eff</sub> = Λ − ½R<sub>Σ</sub>.<br><br><strong>Checks.</strong> Free indices balance; units balance; with T<sup>(Σ)</sup> → 0 and Λ<sub>eff</sub> → Λ it <em>is</em> the Einstein equation. <strong>What is ours</strong> is only the identification of Σ<sub>8</sub> with the D5–D12 roles and the claim that T<sup>(Σ)</sup> accounts for specific observed phenomena. That claim is not demonstrated; it needs a concrete g<sub>Σ</sub>, field content, and a mechanism stabilising Vol(Σ<sub>8</sub>) — the same open problems string compactification faces.</p>
             </div>
         </section>
 
-        <!-- Section 4: Quantum Explained -->
+        <!-- Section 4: Quantum -->
         <section id="quantum">
             <div class="section-header">
-                <p class="section-number">04 — THE EXPLANATION</p>
-                <h2>Quantum Mechanics Decoded</h2>
-                <p class="section-desc">Quantum weirdness isn't fundamental—it's an artifact of dimensional projection. We're seeing a 12D object through a 4D keyhole.</p>
+                <p class="section-number">04 — QUANTUM MECHANICS</p>
+                <h2>What Any Reinterpretation Must Reproduce</h2>
+                <p class="section-desc">Quantum mechanics is the most precisely tested theory in science. The Substratum picture is a proposed <em>reading</em> of it, not a replacement. Each card gives the established result first, then our reading, with what v2.1 got wrong.</p>
+            </div>
+
+            <div class="equation-box">
+                <p class="equation-label"><span class="tag est" style="margin:0">ESTABLISHED</span> &nbsp; ROBERTSON UNCERTAINTY RELATION</p>
+                <div class="equation"><span class="math" data-display="true">\sigma_A\,\sigma_B \;\ge\; \tfrac{1}{2}\big|\langle[A,B]\rangle\big|,\qquad [x,p]=i\hbar \;\Rightarrow\; \sigma_x\sigma_p \ge \tfrac{\hbar}{2}</span></div>
+                <p class="equation-desc">Position and momentum are conjugate variables <em>in the same space</em> — p generates translations in x. The relation is a theorem about Fourier pairs. Robertson 1929 [12].</p>
+            </div>
+
+            <div class="equation-box">
+                <p class="equation-label"><span class="tag est" style="margin:0">ESTABLISHED</span> &nbsp; BELL / CHSH AND THE TSIRELSON BOUND</p>
+                <div class="equation"><span class="math" data-display="true">S = E(a,b)+E(a,b')+E(a',b)-E(a',b'),\qquad |S|\le 2 \text{ (local realism)},\qquad |S|\le 2\sqrt{2} \text{ (quantum)}</span></div>
+                <p class="equation-desc">No local hidden-variable theory reproduces quantum correlations. Loophole-free experiments found |S| &gt; 2 [17–19] (2022 Nobel Prize: Aspect, Clauser, Zeilinger). Quantum mechanics never exceeds 2√2 [15]. Entanglement cannot send signals.</p>
+            </div>
+
+            <div class="equation-box">
+                <p class="equation-label"><span class="tag est" style="margin:0">ESTABLISHED</span> &nbsp; TUNNELLING TRANSMISSION (RECTANGULAR BARRIER)</p>
+                <div class="equation"><span class="math" data-display="true">T = \left[1+\frac{V_0^{2}\sinh^{2}(\kappa a)}{4E\,(V_0-E)}\right]^{-1},\qquad \kappa=\frac{\sqrt{2m(V_0-E)}}{\hbar}</span></div>
+                <p class="equation-desc">m: mass; E &lt; V<sub>0</sub>: energy; V<sub>0</sub>, a: barrier height and width. Measured tunnelling times exist: ultracold ⁸⁷Rb atoms spend 0.62(7) ms <em>inside</em> a 1.3 µm barrier [20]. The particle does not skip the barrier.</p>
             </div>
 
             <div class="quantum-grid">
                 <div class="quantum-card">
-                    <p class="quantum-phenomenon">SUPERPOSITION</p>
-                    <h3 class="quantum-title">Multi-State Existence</h3>
-                    <p class="quantum-explanation">Object exists fully in D5–7 probability manifold. We see only the partial projection—multiple states simultaneously because we can't resolve the full structure.</p>
+                    <p class="quantum-phenomenon">UNCERTAINTY</p>
+                    <span class="tag hyp">OUR HYPOTHESIS</span>
+                    <h3 class="quantum-title">One Object, Two Representations</h3>
+                    <p class="quantum-explanation">v2.1 said "position lives in D1–3 and momentum in D5–7." That contradicts the Robertson theorem and is withdrawn. v3.0: D1–3 and D5–7 are two representations of one Substratum state, as the position and momentum wave-functions are two Fourier representations of one vector. Any Substratum model must give σ<sub>x</sub>σ<sub>p</sub> ≥ ħ/2 exactly.</p>
                 </div>
-
-                <div class="quantum-card">
-                    <p class="quantum-phenomenon">WAVE COLLAPSE</p>
-                    <h3 class="quantum-title">Observation Effect</h3>
-                    <p class="quantum-explanation">Our measurement activates D10 observer-lock axis, sampling a single state from the probability manifold into our 4D experience.</p>
-                </div>
-
                 <div class="quantum-card">
                     <p class="quantum-phenomenon">ENTANGLEMENT</p>
-                    <h3 class="quantum-title">Non-Local Connection</h3>
-                    <p class="quantum-explanation">Particles share coordinates in D8–9 binding axes. They appear separate in D1–3 but are the same point in higher dimensions.</p>
+                    <span class="tag hyp">OUR HYPOTHESIS</span>
+                    <h3 class="quantum-title">D8–9 Binding — With Bell's Price</h3>
+                    <p class="quantum-explanation">"Particles share coordinates in D8–9" is a hidden-variable model. Bell's theorem [13,14] means it can match experiment only if it is <strong>non-local and contextual</strong> (the price Bohmian mechanics pays [16]), gives exactly |S| ≤ 2√2, and respects no-signalling. Under those constraints it is an interpretation on the same footing as Bohm or many-worlds and makes no distinct prediction yet.</p>
                 </div>
-
                 <div class="quantum-card">
-                    <p class="quantum-phenomenon">UNCERTAINTY</p>
-                    <h3 class="quantum-title">Precision Limits</h3>
-                    <p class="quantum-explanation">Cannot resolve both D1–3 position and D5–7 momentum projection simultaneously—a fundamental projection constraint, not a measurement failure.</p>
+                    <p class="quantum-phenomenon">TUNNELLING</p>
+                    <span class="tag hyp">OUR HYPOTHESIS</span>
+                    <h3 class="quantum-title">Support Inside the Barrier</h3>
+                    <p class="quantum-explanation">v2.1 said the particle "goes around in D5–7." That predicts zero time inside the barrier, contradicted by Ramos et al. 2020 [20]. v3.0: the full Substratum state has amplitude inside the barrier exactly as the wave-function does. The reading adds no new transmission probability.</p>
                 </div>
-
                 <div class="quantum-card">
-                    <p class="quantum-phenomenon">TUNNELING</p>
-                    <h3 class="quantum-title">Barrier Penetration</h3>
-                    <p class="quantum-explanation">Path exists in D5–7 probability space that bypasses D1–3 spatial barrier. The particle never "goes through"—it goes around, in dimensions we can't see.</p>
+                    <p class="quantum-phenomenon">SUPERPOSITION &amp; COLLAPSE</p>
+                    <span class="tag hyp">OUR HYPOTHESIS</span>
+                    <h3 class="quantum-title">Projection and Selection</h3>
+                    <p class="quantum-explanation">Superposition is the D1–4 appearance of a single Substratum state; "collapse" is the D10 coupling selecting an outcome. <span class="tag est" style="margin:0">ESTABLISHED</span> Decoherence [22,23] already explains why macroscopic superpositions are not seen, with no conscious observer required. The D10 reading becomes physics only if it predicts something decoherence does not (Prediction 6).</p>
                 </div>
-
                 <div class="quantum-card">
-                    <p class="quantum-phenomenon">WAVE-PARTICLE DUALITY</p>
-                    <h3 class="quantum-title">Dual Nature</h3>
-                    <p class="quantum-explanation">The full object is neither wave nor particle—those are just different D4 projections of the same higher-dimensional entity.</p>
+                    <p class="quantum-phenomenon">PLANCK SCALE</p>
+                    <span class="tag est">ESTABLISHED</span>
+                    <h3 class="quantum-title">Not a Known Lattice</h3>
+                    <p class="quantum-explanation"><span class="math">\ell_P=\sqrt{\hbar G/c^{3}}\approx1.616\times10^{-35}\,\mathrm{m}</span>, <span class="math">t_P=\sqrt{\hbar G/c^{5}}\approx5.391\times10^{-44}\,\mathrm{s}</span> (v2.1 wrote h for ħ; corrected). Spacetime discreteness at this scale is <em>not</em> established. Fermi timing of GRB 090510 gives <strong>E<sub>QG,1</sub> &gt; 7.6 E<sub>Planck</sub></strong> [31,32]: any linear-order Planck-scale "refresh rate" is already excluded.</p>
+                </div>
+                <div class="quantum-card">
+                    <p class="quantum-phenomenon">SPEED OF LIGHT</p>
+                    <span class="tag hyp">OUR HYPOTHESIS</span>
+                    <h3 class="quantum-title">Invariant Speed as Projection Limit</h3>
+                    <p class="quantum-explanation">c = ℓ<sub>P</sub>/t<sub>P</sub> is an <em>identity</em>, not a derivation. The "bandwidth" reading — c as the maximum rate correlations propagate across D1–4 — is a restatement of relativistic causality, not an explanation of it, and is subject to the same Lorentz-invariance bound.</p>
                 </div>
             </div>
         </section>
@@ -1009,13 +1132,13 @@
             <div class="section-header">
                 <p class="section-number">05 — THE INTERFACE</p>
                 <h2>Consciousness as D10 Access</h2>
-                <p class="section-desc">The brain is not the generator of consciousness—it's the antenna. Consciousness is the D10 interface layer that anchors projection into experience.</p>
+                <p class="section-desc"><span class="tag spec">SPECULATIVE</span><br>This entire section is speculative. The strongest current evidence points against its simplest version. It is kept because it is part of the original hypothesis — and the counter-evidence is stated.</p>
             </div>
 
             <div class="consciousness-visual">
                 <div class="brain-interface">
                     <div class="brain-core">
-                        <div class="brain-label">D1–4<br>BRAIN<br>ANTENNA</div>
+                        <div class="brain-label">D1–4<br>BRAIN<br>TRANSDUCER</div>
                     </div>
                 </div>
                 <div class="connection-line"></div>
@@ -1024,140 +1147,268 @@
                 </div>
             </div>
 
+            <div class="prose">
+                <p><span class="tag spec">SPECULATIVE</span> The hypothesis: consciousness is the D10 interface layer, and the brain is a transducer that couples to it rather than the sole generator of experience.</p>
+                <p><span class="tag est">ESTABLISHED</span> Focal brain damage produces focal, predictable losses of conscious content — memory, language, face recognition, personality. General anaesthetics reversibly abolish consciousness by acting on specific molecular targets and disrupting cortical integration [36]. Decoherence needs no conscious observer [22]. There is no experiment in which a conscious observer, with all physical couplings held equal, changed a quantum outcome. A pure "antenna" model does not explain why particular damage removes particular contents, nor why a drug switches experience off. This is the single strongest argument against this section.</p>
+                <p><span class="tag spec">SPECULATIVE</span> A transducer model can accommodate specific losses — but then it is indistinguishable from ordinary materialism unless D10 is given a role the brain cannot play alone. No such role has been specified in a testable way.</p>
+            </div>
+
             <div class="quantum-grid">
                 <div class="quantum-card">
-                    <p class="quantum-phenomenon">IMPLICATION</p>
-                    <h3 class="quantum-title">Death Reframed</h3>
-                    <p class="quantum-explanation">Decoupling from D1–4, not annihilation. The D10 state may persist—consciousness doesn't require the antenna to exist.</p>
+                    <p class="quantum-phenomenon">IF TRUE</p>
+                    <span class="tag spec">SPECULATIVE</span>
+                    <h3 class="quantum-title">Death</h3>
+                    <p class="quantum-explanation">Would be decoupling from D1–4. Whether any D10 state persists is unknown, and this framework offers no way to find out.</p>
                 </div>
-
                 <div class="quantum-card">
-                    <p class="quantum-phenomenon">IMPLICATION</p>
-                    <h3 class="quantum-title">Memory Location</h3>
-                    <p class="quantum-explanation">Encoded in D5–7 probability structures, not just neurons. The brain retrieves—it doesn't solely store.</p>
+                    <p class="quantum-phenomenon">IF TRUE</p>
+                    <span class="tag spec">SPECULATIVE</span>
+                    <h3 class="quantum-title">Memory</h3>
+                    <p class="quantum-explanation">Could be partly encoded outside neurons. The established evidence is that memory is stored in synaptic and cellular changes and is lost with the relevant tissue; nothing here contradicts that.</p>
                 </div>
-
                 <div class="quantum-card">
-                    <p class="quantum-phenomenon">IMPLICATION</p>
+                    <p class="quantum-phenomenon">IF TRUE</p>
+                    <span class="tag spec">SPECULATIVE</span>
                     <h3 class="quantum-title">Free Will</h3>
-                    <p class="quantum-explanation">Real, if D10 has degrees of freedom the simulators left unconstrained. Agency may be a designed feature, not an illusion.</p>
+                    <p class="quantum-explanation">Would be real if D10 has unconstrained degrees of freedom — undefined until "unconstrained degree of freedom" is given meaning.</p>
                 </div>
-
                 <div class="quantum-card">
-                    <p class="quantum-phenomenon">IMPLICATION</p>
+                    <p class="quantum-phenomenon">IF TRUE</p>
+                    <span class="tag spec">SPECULATIVE</span>
                     <h3 class="quantum-title">Interconnection</h3>
-                    <p class="quantum-explanation">All consciousness shares D10. The sense of separation is a D1–4 artifact—at the interface level, we are not fundamentally distinct.</p>
+                    <p class="quantum-explanation">All consciousness would share D10. A philosophical position, not a physical claim.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Section 6: Testable Predictions -->
+        <!-- Section 6: Predictions -->
         <section id="predictions">
             <div class="section-header">
                 <p class="section-number">06 — THE TESTS</p>
-                <h2>Falsifiable Predictions</h2>
-                <p class="section-desc">A theory must be testable. These predictions can be experimentally verified or refuted—distinguishing this from pure philosophy.</p>
+                <h2>Predictions, Re-examined Against 2026 Data</h2>
+                <p class="section-desc">Several v2.1 predictions were already contradicted by data or were not predictions at all. What remains is stated so that it <em>could</em> fail.</p>
             </div>
 
             <div class="predictions-grid">
                 <div class="prediction-card">
                     <span class="prediction-number">01</span>
-                    <h3 class="prediction-title">Lattice Echoes</h3>
-                    <p class="prediction-desc">Ultra-high-energy cosmic rays (~10²⁰ eV) should show directional anisotropy correlating with a 12D lattice projection. Reanalysis of Pierre Auger Observatory data required.</p>
+                    <span class="tag hyp">OUR HYPOTHESIS</span>
+                    <h3 class="prediction-title">UHECR Lattice Signature (revised)</h3>
+                    <p class="prediction-desc"><strong>Already observed:</strong> Auger reported a 6.5 % dipole above 8×10<sup>18</sup> eV at &gt;5.2σ in 2017 [29], now 6.8σ [30], consistent with extragalactic sources. <strong>Distinctive signature required:</strong> high-multipole power with discrete rotational symmetry (e.g. ℓ = 4, 6, 8 cubic harmonics) in a frame unrelated to the Galactic/supergalactic planes or CMB dipole, growing as a power of energy, and absent at linear order to satisfy the Fermi bound.</p>
+                    <p class="status">STATUS: NOT DETECTED</p>
                 </div>
-
                 <div class="prediction-card">
                     <span class="prediction-number">02</span>
-                    <h3 class="prediction-title">Entanglement Saturation</h3>
-                    <p class="prediction-desc">D8–9 has finite relational capacity. At extreme scales (>10⁶ particles), measurable degradation—"bandwidth throttling"—should appear.</p>
+                    <span class="tag hyp">OUR HYPOTHESIS</span>
+                    <h3 class="prediction-title">Entanglement Saturation (threshold corrected)</h3>
+                    <p class="prediction-desc">The v2.1 threshold "&gt;10<sup>6</sup> particles" was exceeded in 2001: two 10<sup>12</sup>-atom caesium ensembles were entangled [25]; in 2021 two 70 pg drumheads (≈1.6×10<sup>12</sup> atoms each) were deterministically entangled [26,27]; genuine 51-qubit entanglement was verified in 2023 [28]. <strong>Restated:</strong> there exists a finite N* beyond which genuine N-partite entanglement cannot be prepared, with the failure not attributable to known decoherence. No value of N* is predicted.</p>
+                    <p class="status">STATUS: OPEN — TESTABLE AS QUANTUM COMPUTERS SCALE</p>
                 </div>
-
                 <div class="prediction-card">
                     <span class="prediction-number">03</span>
-                    <h3 class="prediction-title">Observer Density Effects</h3>
-                    <p class="prediction-desc">Regions of high conscious observer concentration should show subtle statistical deviation in quantum randomness—D10 projection creating non-random noise.</p>
+                    <span class="tag hyp">OUR HYPOTHESIS</span>
+                    <h3 class="prediction-title">Observer-Density Effects (requirements added)</h3>
+                    <p class="prediction-desc">The Global Consciousness Project has searched for this for two decades; its analyses are criticised for post hoc event selection [37], and its own lead analyst concluded in 2017 that the data do not support a global-consciousness effect [38]. <strong>Not testable until:</strong> an operational observer criterion is defined, the experiment is pre-registered (events, windows, statistic, stopping rule), and the effect size is stated in advance.</p>
+                    <p class="status">STATUS: RESEARCH DIRECTION, NOT YET A PREDICTION</p>
                 </div>
-
                 <div class="prediction-card">
                     <span class="prediction-number">04</span>
-                    <h3 class="prediction-title">Hawking Information</h3>
-                    <p class="prediction-desc">Black hole radiation should carry encoded D11–12 boundary information. Decoding it would grant direct access to constraint parameters.</p>
+                    <span class="tag hyp">OUR HYPOTHESIS</span>
+                    <h3 class="prediction-title">Black-Hole Information (what would be distinctive)</h3>
+                    <p class="prediction-desc"><span class="math">S_{BH}=\frac{k_B c^{3}A}{4G\hbar}</span>, <span class="math">T_H=\frac{\hbar c^{3}}{8\pi G M k_B}</span> [39,40]. The mainstream expectation is already that information is preserved — the Page curve [42], derived semiclassically in 2019 via the island formula [43,44]. <strong>Distinctive claim required:</strong> a departure from the Page curve (e.g. information available before the Page time, or extra structure beyond mass, charge, spin). No mechanism specified.</p>
+                    <p class="status">STATUS: NO MECHANISM YET</p>
                 </div>
-
                 <div class="prediction-card">
                     <span class="prediction-number">05</span>
-                    <h3 class="prediction-title">Mathematical Limits</h3>
-                    <p class="prediction-desc">Structures describing D12 Origin axis properties should be in-principle unprovable from inside the projection—a new class of incompleteness.</p>
+                    <span class="tag spec">SPECULATIVE</span>
+                    <h3 class="prediction-title">Mathematical Limits (moved to philosophy)</h3>
+                    <p class="prediction-desc">"Structures describing D12 are unprovable from inside" cannot be falsified: Gödel [35] already guarantees unprovable truths, and nothing distinguishes a "D12-unprovable" statement from an ordinary Gödel sentence. Retained as philosophy, not prediction.</p>
+                    <p class="status">STATUS: NOT FALSIFIABLE</p>
+                </div>
+                <div class="prediction-card">
+                    <span class="prediction-number">06</span>
+                    <span class="tag hyp">OUR HYPOTHESIS</span>
+                    <h3 class="prediction-title">Decoherence Asymmetry (reframed)</h3>
+                    <p class="prediction-desc">"Frequently measured vs. isolated systems decohere differently" is standard physics — the quantum Zeno effect [21]. <strong>The only distinctive version:</strong> outcome statistics depend on whether a <em>conscious</em> observer rather than a passive device receives the result, with every physical coupling held identical. Expected result on standard physics: null. Falsified if pre-registered experiments return nulls at increasing sensitivity.</p>
+                    <p class="status">STATUS: OPEN — HARD TO DESIGN</p>
                 </div>
             </div>
         </section>
 
-        <!-- Section 7: Implications -->
-        <section id="implications">
+        <!-- Section 7: Open Problems -->
+        <section id="open-problems">
             <div class="section-header">
-                <p class="section-number">07 — THE MEANING</p>
-                <h2>What This Changes</h2>
-                <p class="section-desc">If directionally correct, this framework reshapes our understanding of reality, science, ethics, and purpose.</p>
+                <p class="section-number">07 — OPEN PROBLEMS</p>
+                <h2>Where Help Is Needed</h2>
+                <p class="section-desc">Transparency about what is not established is the point. Any of these is a good first contribution.</p>
             </div>
+            <div class="open-problems">
+                <table>
+                    <thead><tr><th>#</th><th>Problem</th><th>What a solution looks like</th></tr></thead>
+                    <tbody>
+                        <tr><td>M1</td><td>Specify g<sub>Σ</sub> and the field content on Σ<sub>8</sub></td><td>A concrete compactification; a computed T<sup>(Σ)</sup> and Λ<sub>eff</sub> — even a toy model with Σ<sub>8</sub> = T<sup>8</sup> and one scalar field</td></tr>
+                        <tr><td>M2</td><td>Stabilise Vol(Σ<sub>8</sub>)</td><td>A potential whose minimum fixes the hidden volume; consistency with short-range gravity tests</td></tr>
+                        <tr><td>M3</td><td>Show 12 is minimal and sufficient</td><td>A derivation, or a proof that fewer dimensions cannot host the D5–D10 roles</td></tr>
+                        <tr><td>M4</td><td>Map D5–7, D8–9, D10 to real mathematical structures</td><td>Is D5–7 a representation of Hilbert space? Is D8–9 a Bohmian-type configuration space?</td></tr>
+                        <tr><td>M5</td><td>Reconcile finite "projection resolution" with Lorentz invariance</td><td>A Lorentz-invariant discreteness model consistent with E<sub>QG,1</sub> &gt; 7.6 E<sub>Pl</sub></td></tr>
+                        <tr><td>M6</td><td>A non-local, contextual, no-signalling D8–9 model</td><td>Reproduces |S| ≤ 2√2 and makes at least one distinct prediction</td></tr>
+                        <tr><td>P1</td><td>Dark sector</td><td>What T<sup>(Σ)</sup> contributes to the ≈6×10<sup>−10</sup> J m<sup>−3</sup> dark-energy density; whether anything in Σ<sub>8</sub> behaves as cold dark matter</td></tr>
+                        <tr><td>P2</td><td>Observer criterion</td><td>An operational definition, measurable independently of the effect sought — unblocks Predictions 3 and 6</td></tr>
+                        <tr><td>P3</td><td>Brain damage &amp; anaesthesia</td><td>A role for D10 that the brain cannot play alone</td></tr>
+                        <tr><td>P4</td><td>Page-curve departure</td><td>A mechanism for Prediction 4</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-            <div class="implications-flow">
-                <div class="implication-item">
-                    <div class="implication-icon">🔬</div>
-                    <div class="implication-content">
-                        <h3 class="implication-title">Scientific Priority Shift</h3>
-                        <p class="implication-text">Redirect from "conquer nature" to "understand architecture." Prioritize quantum computing, consciousness research, and mathematical foundations over brute-force particle physics.</p>
-                    </div>
-                </div>
-
-                <div class="implication-item">
-                    <div class="implication-icon">⚖️</div>
-                    <div class="implication-content">
-                        <h3 class="implication-title">Ethics Still Binding</h3>
-                        <p class="implication-text">Simulated suffering still hurts. If all consciousness shares D10, harming another being damages a different projection of the same substrate—ethics becomes structurally justified.</p>
-                    </div>
-                </div>
-
-                <div class="implication-item">
-                    <div class="implication-icon">🧠</div>
-                    <div class="implication-content">
-                        <h3 class="implication-title">Consciousness is Primary</h3>
-                        <p class="implication-text">Materialism inverts. Matter is projection; consciousness is interface. Meditation and awareness practices become literally training your D10 access—not metaphor.</p>
-                    </div>
-                </div>
-
-                <div class="implication-item">
-                    <div class="implication-icon">📐</div>
-                    <div class="implication-content">
-                        <h3 class="implication-title">Mathematics as Communication</h3>
-                        <p class="implication-text">Math isn't invented—it's the native language of the Substratum. Learning mathematics is learning to read the source code. The door to D12 is in the equations.</p>
-                    </div>
-                </div>
-
-                <div class="implication-item">
-                    <div class="implication-icon">🌐</div>
-                    <div class="implication-content">
-                        <h3 class="implication-title">Collective Intelligence Imperative</h3>
-                        <p class="implication-text">No single mind cracks D12. Open knowledge sharing, collaborative research, and removing institutional barriers become existential priorities.</p>
-                    </div>
-                </div>
+        <!-- Section 8: References -->
+        <section id="references">
+            <div class="section-header">
+                <p class="section-number">08 — REFERENCES</p>
+                <h2>Sources</h2>
+                <p class="section-desc">Every citation was checked against the publisher's or arXiv's record during the v3.0 revision. Full list with DOIs in <a href="THEORY.md" style="color: var(--d1-4);">THEORY.md</a>.</p>
+            </div>
+            <div class="references">
+                <h3>Extra dimensions</h3>
+                <ol>
+                    <li>Kaluza, T. (1921). Sitzungsber. Preuss. Akad. Wiss. Berlin, 966.</li>
+                    <li>Klein, O. (1926). Z. Phys. 37, 895.</li>
+                    <li>Overduin &amp; Wesson (1997). Phys. Rep. 283, 303. <a href="https://arxiv.org/abs/gr-qc/9805018">gr-qc/9805018</a></li>
+                    <li>Nahm, W. (1978). Nucl. Phys. B 135, 149.</li>
+                    <li>Cremmer, Julia &amp; Scherk (1978). Phys. Lett. B 76, 409.</li>
+                    <li>Witten, E. (1995). Nucl. Phys. B 443, 85. <a href="https://arxiv.org/abs/hep-th/9503124">hep-th/9503124</a></li>
+                    <li>Vafa, C. (1996). "Evidence for F-theory." Nucl. Phys. B 469, 403. <a href="https://arxiv.org/abs/hep-th/9602022">hep-th/9602022</a></li>
+                    <li>Bars, I. (2001). "Survey of two-time physics." Class. Quantum Grav. 18, 3113. <a href="https://arxiv.org/abs/hep-th/0008164">hep-th/0008164</a></li>
+                </ol>
+                <h3>General relativity, Casimir</h3>
+                <ol start="9" style="counter-reset: ref 8;">
+                    <li>Einstein, A. (1915). Sitzungsber. Preuss. Akad. Wiss. Berlin, 844.</li>
+                    <li>Casimir, H. B. G. (1948). Proc. Kon. Ned. Akad. Wet. 51, 793.</li>
+                    <li>Lamoreaux, S. K. (1997). Phys. Rev. Lett. 78, 5.</li>
+                </ol>
+                <h3>Quantum mechanics, Bell tests, tunnelling, decoherence</h3>
+                <ol start="12" style="counter-reset: ref 11;">
+                    <li>Robertson, H. P. (1929). Phys. Rev. 34, 163.</li>
+                    <li>Bell, J. S. (1964). Physics 1, 195.</li>
+                    <li>Clauser, Horne, Shimony &amp; Holt (1969). Phys. Rev. Lett. 23, 880.</li>
+                    <li>Tsirelson, B. S. (1980). Lett. Math. Phys. 4, 93.</li>
+                    <li>Bohm, D. (1952). Phys. Rev. 85, 166 &amp; 180; Kochen &amp; Specker (1967). J. Math. Mech. 17, 59.</li>
+                    <li>Hensen, B. et al. (2015). Nature 526, 682. <a href="https://arxiv.org/abs/1508.05949">1508.05949</a></li>
+                    <li>Giustina, M. et al. (2015). Phys. Rev. Lett. 115, 250401. <a href="https://arxiv.org/abs/1511.03190">1511.03190</a></li>
+                    <li>Shalm, L. K. et al. (2015). Phys. Rev. Lett. 115, 250402. <a href="https://arxiv.org/abs/1511.03189">1511.03189</a></li>
+                    <li>Ramos, Spierings, Racicot &amp; Steinberg (2020). Nature 583, 529. <a href="https://arxiv.org/abs/1907.13523">1907.13523</a></li>
+                    <li>Itano, Heinzen, Bollinger &amp; Wineland (1990). "Quantum Zeno effect." Phys. Rev. A 41, 2295.</li>
+                    <li>Zurek, W. H. (2003). Rev. Mod. Phys. 75, 715. <a href="https://arxiv.org/abs/quant-ph/0105127">quant-ph/0105127</a></li>
+                    <li>Schlosshauer, M. (2019). Phys. Rep. 831, 1. <a href="https://arxiv.org/abs/1911.06282">1911.06282</a></li>
+                    <li>CODATA 2018 recommended values (NIST).</li>
+                </ol>
+                <h3>Large-scale entanglement</h3>
+                <ol start="25" style="counter-reset: ref 24;">
+                    <li>Julsgaard, Kozhekin &amp; Polzik (2001). Nature 413, 400. <a href="https://arxiv.org/abs/quant-ph/0106057">quant-ph/0106057</a></li>
+                    <li>Kotler, S. et al. (2021). Science 372, 622. <a href="https://arxiv.org/abs/2004.05515">2004.05515</a></li>
+                    <li>Mercier de Lépinay et al. (2021). Science 372, 625.</li>
+                    <li>Cao, S. et al. (2023). Nature 619, 738. <a href="https://doi.org/10.1038/s41586-023-06195-1">doi:10.1038/s41586-023-06195-1</a></li>
+                </ol>
+                <h3>Cosmic rays, Lorentz invariance</h3>
+                <ol start="29" style="counter-reset: ref 28;">
+                    <li>Pierre Auger Collaboration (2017). Science 357, 1266. <a href="https://arxiv.org/abs/1709.07321">1709.07321</a></li>
+                    <li>Bianciotto, M., for the Pierre Auger Collaboration (2025). EPJ Web Conf. 319, 07001. <a href="https://arxiv.org/abs/2507.19243">2507.19243</a></li>
+                    <li>Abdo, A. A. et al. (2009). Nature 462, 331.</li>
+                    <li>Vasileiou, V. et al. (2013). Phys. Rev. D 87, 122001. <a href="https://arxiv.org/abs/1305.3463">1305.3463</a></li>
+                </ol>
+                <h3>Simulation, mathematical universe, incompleteness</h3>
+                <ol start="33" style="counter-reset: ref 32;">
+                    <li>Bostrom, N. (2003). Phil. Quarterly 53, 243.</li>
+                    <li>Tegmark, M. (2008). Found. Phys. 38, 101. <a href="https://arxiv.org/abs/0704.0646">0704.0646</a></li>
+                    <li>Gödel, K. (1931). Monatsh. Math. Phys. 38, 173.</li>
+                </ol>
+                <h3>Consciousness, observer effects</h3>
+                <ol start="36" style="counter-reset: ref 35;">
+                    <li>Alkire, Hudetz &amp; Tononi (2008). "Consciousness and anesthesia." Science 322, 876.</li>
+                    <li>Scargle, J. D. (2002). J. Sci. Exploration 16, 571.</li>
+                    <li>Bancel, P. A. (2017). Explore 13, 94. <a href="https://doi.org/10.1016/j.explore.2016.12.003">doi:10.1016/j.explore.2016.12.003</a></li>
+                </ol>
+                <h3>Black-hole thermodynamics and information</h3>
+                <ol start="39" style="counter-reset: ref 38;">
+                    <li>Bekenstein, J. D. (1973). Phys. Rev. D 7, 2333.</li>
+                    <li>Hawking, S. W. (1975). Commun. Math. Phys. 43, 199.</li>
+                    <li>Hawking, S. W. (1976). Phys. Rev. D 14, 2460.</li>
+                    <li>Page, D. N. (1993). Phys. Rev. Lett. 71, 3743. <a href="https://arxiv.org/abs/hep-th/9306083">hep-th/9306083</a></li>
+                    <li>Penington, G. (2020). JHEP 09 (2020) 002. <a href="https://arxiv.org/abs/1905.08255">1905.08255</a></li>
+                    <li>Almheiri, Engelhardt, Marolf &amp; Maxfield (2019). JHEP 12 (2019) 063. <a href="https://arxiv.org/abs/1905.08762">1905.08762</a></li>
+                </ol>
             </div>
         </section>
 
         <!-- Call to Action -->
         <section class="cta-section" id="contribute">
             <h2 class="cta-title">This Framework is Open</h2>
-            <p class="cta-text">This is a first draft—a conversation, not a conclusion. The theory requires scrutiny, expansion, and collective refinement. If you want to understand who created us and how, we need every mind engaged.</p>
+            <p class="cta-text">This is a hypothesis, not a conclusion. Version 3.0 removed what could not be checked and kept what can fail. If you can see a flaw, a missing citation, or a way to make one of the open problems concrete, we want to hear it.</p>
             <div class="cta-buttons">
-                <button class="cta-btn primary" onclick="window.print()">Download / Print</button>
-                <button class="cta-btn secondary" onclick="navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied!'))">Share This</button>
+                <a class="cta-btn primary" href="https://github.com/JBG-32/substratum-theory/issues/new" target="_blank" rel="noopener">Report a Flaw / Open an Issue</a>
+                <a class="cta-btn secondary" href="https://github.com/JBG-32/substratum-theory/discussions" target="_blank" rel="noopener">Join the Discussion</a>
+                <button class="cta-btn secondary" id="share-btn" type="button">Copy Link</button>
+                <button class="cta-btn secondary" type="button" onclick="window.print()">Print</button>
             </div>
+            <p class="copy-status" id="copy-status" aria-live="polite"></p>
+            <p class="feedback-links">Full text with all derivations, tags and references: <a href="https://github.com/JBG-32/substratum-theory/blob/main/THEORY.md">THEORY.md</a> · Equation checks: <a href="https://github.com/JBG-32/substratum-theory/blob/main/tools/equation_checks.py">tools/equation_checks.py</a></p>
         </section>
     </main>
 
     <footer>
-        <p class="footer-meta">THE SUBSTRATUM THEORY — FIRST DISCOVERY DRAFT — 2025</p>
-        <p class="attribution">A collaborative exploration between human curiosity and artificial intelligence.<br>Created by Johnny Hinojosa & Claude (Anthropic)</p>
-        <p style="margin-top: 1rem; font-size: 0.75rem;">This work is released for open discussion and contribution.<br>The simulation doesn't change what matters. It reframes why it matters.</p>
+        <p class="footer-meta">THE SUBSTRATUM THEORY — v3.0 RIGOR UPDATE — OCTOBER 2026</p>
+        <p class="attribution">Johnny Hinojosa, developed with assistance from Claude, an AI model by Anthropic.<br>Licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Not peer-reviewed. Not established science.</p>
+        <p style="margin-top: 1rem; font-size: 0.75rem;">The door to D12, if there is one, is still in the equations. They now have to be the right equations.</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" crossorigin="anonymous"></script>
+    <script>
+        // Render equations with KaTeX if it loaded; otherwise the raw TeX stays visible.
+        (function () {
+            if (typeof katex === 'undefined') return;
+            document.querySelectorAll('.math').forEach(function (el) {
+                var tex = el.textContent;
+                try {
+                    katex.render(tex, el, {
+                        displayMode: el.dataset.display === 'true',
+                        throwOnError: false
+                    });
+                } catch (e) { /* leave raw TeX visible */ }
+            });
+        })();
+
+        // Share button: clipboard copy with inline status (no alert()).
+        (function () {
+            var btn = document.getElementById('share-btn');
+            var status = document.getElementById('copy-status');
+            if (!btn) return;
+            btn.addEventListener('click', function () {
+                var url = window.location.href;
+                function done(ok) {
+                    status.textContent = ok ? 'LINK COPIED TO CLIPBOARD' : 'COPY FAILED — URL: ' + url;
+                    btn.textContent = ok ? 'Copied' : 'Copy Link';
+                    btn.classList.toggle('copied', ok);
+                    setTimeout(function () {
+                        status.textContent = '';
+                        btn.textContent = 'Copy Link';
+                        btn.classList.remove('copied');
+                    }, 2500);
+                }
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(url).then(function () { done(true); }, function () { done(false); });
+                } else {
+                    try {
+                        var ta = document.createElement('textarea');
+                        ta.value = url; ta.setAttribute('readonly', '');
+                        ta.style.position = 'absolute'; ta.style.left = '-9999px';
+                        document.body.appendChild(ta); ta.select();
+                        var ok = document.execCommand('copy');
+                        document.body.removeChild(ta);
+                        done(ok);
+                    } catch (e) { done(false); }
+                }
+            });
+        })();
+    </script>
 </body>
 </html>
