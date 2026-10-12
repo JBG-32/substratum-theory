@@ -343,7 +343,9 @@ A hypothesis earns credibility by risking falsification. Each v2.1 prediction ha
 
 **ESTABLISHED.** v2.1 predicted "degradation at > 10⁶ particles." That threshold was already exceeded two decades ago: two caesium ensembles of ≈ 10¹² atoms each were entangled in 2001 [Julsgaard, Kozhekin & Polzik 2001], and in 2021 two 70-picogram aluminium drumheads (≈ 1.6 × 10¹² atoms each, computed in the script) were deterministically entangled [Kotler et al. 2021; Mercier de Lépinay et al. 2021]. These are *collective-mode* (effectively two-mode) entanglement. Genuine multipartite entanglement has been verified across 51 superconducting qubits without post-selection [Cao et al. 2023], and a 120-qubit GHZ state with fidelity 0.56(3) — above the 1/2 witness threshold for genuine multipartite entanglement, with 28 % post-selection — has been reported [Javadi-Abhari et al. 2025].
 
-**OUR HYPOTHESIS — restated.** If D8–9 has finite relational capacity, the capacity must exceed 10¹² atoms in collective modes and ≳ 10² parties in genuine multipartite entanglement. The restated, falsifiable claim is: *there exists a finite number N\* such that genuine N-partite entanglement cannot be prepared or verified for N > N\*, with the failure not attributable to known decoherence channels.* No value of N\* is predicted. This is testable as quantum computers scale; it is falsified in practice if entanglement witnesses continue to track the independently measured decoherence budget at every scale reached.
+**OUR HYPOTHESIS — restated.** If D8–9 has finite relational capacity, the capacity must exceed 10¹² atoms in collective modes and ≳ 10² parties in genuine multipartite entanglement. The restated claim is: *there exists a finite number N\* such that genuine N-partite entanglement cannot be prepared or verified for N > N\*, with the failure not attributable to known decoherence channels.*
+
+**Status: not yet falsifiable.** Stated this way, every successful experiment only raises the lower bound on N\* (a result at N is always compatible with N\* = N + 1), so no finite experiment can refute it. To become a genuine prediction it needs one of: (i) a predicted upper bound on N\*; (ii) a capacity-scaling law, e.g. an excess infidelity that grows with N beyond what independently measured noise models predict; or (iii) a predicted dependence of N\* on some controllable parameter. Until one is supplied, this is listed as Open Problem M7, not as a falsifiable prediction.
 
 ### Prediction 3: Observer-density effects (requirements added)
 
@@ -422,6 +424,7 @@ Transparency about what is *not* established is part of the project. Contributio
 | M4 | Assign D5–7, D8–9, D10 to actual mathematical structures | e.g. is D5–7 a representation of Hilbert space? Is D8–9 a Bohmian-type configuration space? |
 | M5 | Reconcile a finite "projection resolution" with Lorentz invariance | A Lorentz-invariant discreteness model consistent with E_QG,1 > 7.6 E_Pl and E_QG,2 > 1.3 × 10¹¹ GeV |
 | M6 | Non-local, contextual, no-signalling D8–9 model | A model that reproduces |S| ≤ 2√2 and makes at least one distinct prediction |
+| M7 | Make Prediction 2 falsifiable | A predicted upper bound on N\*, or a capacity-scaling law (excess infidelity vs N beyond measured noise models) |
 
 ### 11.2 Physical open problems
 

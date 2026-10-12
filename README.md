@@ -60,7 +60,7 @@ Supergravity is consistent in at most 11 dimensions; M-theory is 11-dimensional;
 ## Predictions (v3.0, re-examined against existing data)
 
 1. **UHECR anisotropy** — Auger already observed a 6.5 % dipole above 8 EeV (2017). The hypothesis now requires a *distinct* signature: high-multipole power with discrete symmetry in a non-astrophysical frame, scaling as a power of energy, absent at linear order. Not detected.
-2. **Entanglement saturation** — the old "> 10⁶ particles" threshold was exceeded in 2001 (10¹² atoms). Genuine multipartite entanglement now reaches 51 qubits without post-selection (2023) and a 120-qubit GHZ state with post-selection (2025). Restated: capacity must exceed 10¹² atoms in collective modes and ≳ 10² genuine parties; a finite N* is asserted but not predicted.
+2. **Entanglement saturation** — the old "> 10⁶ particles" threshold was exceeded in 2001 (10¹² atoms). Genuine multipartite entanglement now reaches 51 qubits without post-selection (2023) and a 120-qubit GHZ state with post-selection (2025). Restated: capacity must exceed 10¹² atoms in collective modes and ≳ 10² genuine parties; a finite N* is asserted but not predicted, so as stated it is not yet falsifiable (open problem M7: needs an upper bound or a capacity-scaling law).
 3. **Observer-density effects** — requires an operational observer criterion and pre-registration; the Global Consciousness Project record counts against an easy-to-detect effect.
 4. **Black-hole information** — information preservation is already the mainstream expectation (Page curve, island formula). A distinctive claim would be a departure from the Page curve. No mechanism yet.
 5. **Mathematical limits** — not falsifiable; moved to philosophy.
