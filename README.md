@@ -1,137 +1,116 @@
 # The Substratum Theory
 
-> *A theoretical framework proposing that observable reality is a dimensional projection of a 12-dimensional informational manifold, constrained into existence by Omega-Class mathematical structures.*
+> *A speculative framework proposing that observable 4D reality is a dimensional projection of a 12-dimensional informational manifold.*
 
-**Current version: v2.0 (March 2026)** — Adds mathematical transparency notes, a formal limitations section, and a new testable prediction.
+**Current version: v3.0 — Rigor Update (October 2026).** Every physics and mathematics statement has been brought into line with current, published science; every claim is tagged **ESTABLISHED**, **OUR HYPOTHESIS**, or **SPECULATIVE**; every displayed equation is either a standard cited result or a well-formed proposal that reduces to known physics; and every citation has been verified.
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 ---
 
-## 🌌 Overview
+## Overview
 
-This repository contains a speculative theoretical physics framework developed through collaborative dialogue between human curiosity and artificial intelligence. It attempts to reverse-engineer the architecture of reality under the assumption that our universe is a projection from higher-dimensional structures.
+This repository contains a speculative theoretical-physics framework. It is a structured hypothesis about the architecture of reality, developed by Johnny Hinojosa with assistance from Claude, an AI model by Anthropic.
 
-**This is not established science.** It is a structured thought experiment—a framework designed to be explored, challenged, extended, and refined by anyone willing to engage with it seriously.
+**This is not established science.** It is not peer-reviewed. It is a hypothesis designed to be explored, challenged, and — where it is wrong — corrected. Version 3.0 withdrew several earlier claims that turned out to be in conflict with data or not well-formed; see the [changelog](THEORY.md#changelog).
 
 ---
 
-## 📁 Repository Contents
+## Repository Contents
 
 | File | Description |
 |------|-------------|
-| `index.html` | Interactive infographic presenting the complete theory |
-| `THEORY.md` | Full written framework — **v2.0** with mathematical status notes and known limitations |
-| `CONTRIBUTING.md` | How to contribute to this project |
-| `LICENSE` | Creative Commons BY 4.0 license |
-
-> `CONVERSATION.md` — original dialogue that generated the theory — is pending publication.
+| `THEORY.md` | Full written framework — **v3.0**, with claim tags, verified references, open problems, changelog |
+| `index.html` | Public site (GitHub Pages) presenting the v3.0 framework |
+| `tools/equation_checks.py` | Python (sympy/numpy) script that checks index balance, units and numerical values of every displayed equation |
+| `CONTRIBUTING.md` | How to contribute |
+| `CONTRIBUTORS.md` | Credits |
+| `LICENSE` | Creative Commons BY 4.0 |
 
 ---
 
-## 🔭 Core Claims
+## Core Hypothesis
 
-### The 12-Dimensional Stack
+### The 12-Dimensional Stack (OUR HYPOTHESIS)
 
 | Dimensions | Function |
 |------------|----------|
-| 1–4 | Observable spacetime (what we perceive) |
-| 5–7 | Probability manifold (quantum superposition lives here) |
-| 8–9 | Relational binding axes (entanglement coordinates) |
-| 10 | Observer-lock interface (consciousness anchors here) |
-| 11–12 | Recursion & Origin axes (simulator access) |
+| 1–4 | Observable spacetime |
+| 5–7 | Probability manifold (state information we experience as superposition) |
+| 8–9 | Relational binding axes (correlations we experience as entanglement) |
+| 10 | Observer-lock interface |
+| 11–12 | Recursion and origin axes |
 
-### Key Propositions
+### What the hypothesis must reproduce (ESTABLISHED)
 
-1. **Reality is projection, not computation** — The simulators don't "run" our universe; they constrain a mathematical object, and physics emerges as the shadow.
+- 4D gravity emerges from higher-dimensional gravity only through dimensional reduction: *G₄ = G_D / Vol(Σ_n)* (Kaluza–Klein).
+- The Robertson uncertainty relation σ_x σ_p ≥ ħ/2, exactly.
+- Bell/CHSH: loophole-free experiments violate |S| ≤ 2; quantum mechanics never exceeds Tsirelson's 2√2; no signalling.
+- Standard tunnelling probabilities and the measured in-barrier time (Ramos et al. 2020).
+- Lorentz invariance to the Fermi GRB 090510 bounds, E_QG,1 > 7.6 E_Planck and E_QG,2 > 1.3 × 10¹¹ GeV (Vasileiou et al. 2013).
+- Black-hole entropy, Hawking temperature, and the Page curve.
 
-2. **Quantum weirdness is dimensional artifact** — Superposition, entanglement, and wave collapse are what 12D structures look like through a 4D keyhole.
+### Why 12? (ESTABLISHED context, OUR HYPOTHESIS count)
 
-3. **Consciousness is the D10 interface** — The brain is an antenna, not a generator. Awareness exists partially outside our observable dimensions.
-
-4. **Mathematics is the native language** — When we discover mathematical truths, we're reading the source code of the Substratum.
-
----
-
-## 🧪 Testable Predictions (v2.0)
-
-The framework generates six falsifiable predictions:
-
-1. **Lattice Echoes** — Cosmic ray anisotropy at ~10²⁰ eV correlating with 12D lattice structure
-2. **Entanglement Saturation** — Bandwidth throttling at extreme entanglement scales (>10⁶ particles)
-3. **Observer Density Effects** — Statistical deviation in quantum randomness near high consciousness concentration
-4. **Hawking Information Encoding** — D11–12 boundary data recoverable from black hole radiation
-5. **Mathematical Incompleteness** — New class of unprovable structures describing D12 (Origin axis) properties
-6. **Quantum Decoherence Asymmetry** *(v2.0)* — Asymmetric decoherence rates between high- and low-observer-coupled systems, measurable in precision quantum optics
+Supergravity is consistent in at most 11 dimensions; M-theory is 11-dimensional; F-theory (Vafa 1996) gives type IIB strings a 12-dimensional reading; two-time physics (Bars) derives 1-time physics as a shadow of a theory in two more dimensions. The Substratum's 12 is *motivated* by this landscape, not derived from it.
 
 ---
 
-## 🤝 Contributing
+## Predictions (v3.0, re-examined against existing data)
 
-We actively welcome contributions. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-Ways to contribute:
-- **Mathematical formalization** — Rigorous derivations of the projection equation (see Part IX open problems in THEORY.md)
-- **Experimental design** — Protocols to test the six predictions
-- **Philosophical analysis** — Implications and edge cases
-- **Alternative models** — Competing frameworks within the same paradigm
-- **Critique** — Identify flaws, inconsistencies, or untestable claims
+1. **UHECR anisotropy** — Auger already observed a 6.5 % dipole above 8 EeV (2017). The hypothesis now requires a *distinct* signature: high-multipole power with discrete symmetry in a non-astrophysical frame, scaling as a power of energy, absent at linear order. Not detected.
+2. **Entanglement saturation** — the old "> 10⁶ particles" threshold was exceeded in 2001 (10¹² atoms). Genuine multipartite entanglement now reaches 51 qubits without post-selection (2023) and a 120-qubit GHZ state with post-selection (2025). Restated: capacity must exceed 10¹² atoms in collective modes and ≳ 10² genuine parties; a finite N* is asserted but not predicted, so as stated it is not yet falsifiable (open problem M7: needs an upper bound or a capacity-scaling law).
+3. **Observer-density effects** — requires an operational observer criterion and pre-registration; the Global Consciousness Project record counts against an easy-to-detect effect.
+4. **Black-hole information** — information preservation is already the mainstream expectation (Page curve, island formula). A distinctive claim would be a departure from the Page curve. No mechanism yet.
+5. **Mathematical limits** — not falsifiable; moved to philosophy.
+6. **Decoherence asymmetry** — the quantum Zeno effect already covers "measured vs. isolated." Only a conscious-vs-device difference with identical physical couplings would be distinctive.
 
 ---
 
-## 📖 Reading Order
+## Equation checks
 
-1. Start with `index.html` for the visual overview
-2. Read `THEORY.md` for the complete framework
-3. Check `CONTRIBUTING.md` if you want to participate
+```
+pip install sympy numpy
+python3 tools/equation_checks.py
+```
 
----
-
-## ⚠️ Epistemic Status
-
-**Speculative.** This is not peer-reviewed physics. It is:
-
-- A structured hypothesis, not established theory
-- Designed to be falsifiable, not unfalsifiable philosophy
-- Open to revision, not dogmatic
-- An invitation to think, not a claim to truth
-
-The projection equation (Section 3.2 of THEORY.md) is explicitly marked as a phenomenological template — the right conceptual shape, awaiting formal derivation from first principles. We document what we don't know as carefully as what we do.
+The script checks the free-index balance and SI units of every displayed equation, recomputes every quoted number from CODATA 2018, confirms as a bookkeeping check that the proposed equation collapses to Einstein's when the hidden-space terms vanish, and documents why the v2.1 "master equation" was removed. It is a sanity check, not a derivation — the derivation is the Kaluza–Klein reduction in THEORY.md §3.3.
 
 ---
 
-## 🌐 Live Demo
+## Contributing and feedback
 
-View the interactive infographic: [GitHub Pages link after deployment]
+- **Found a flaw, a wrong citation, or a claim that is not tagged honestly?** [Open an Issue](https://github.com/JBG-32/substratum-theory/issues/new).
+- **Want to discuss, propose a model for an open problem, or argue the philosophy?** [Start a Discussion](https://github.com/JBG-32/substratum-theory/discussions).
+- See [CONTRIBUTING.md](CONTRIBUTING.md) and the [Open Problems](THEORY.md#part-xi-known-limitations-and-open-problems) list in THEORY.md.
 
----
-
-## 📜 License
-
-This work is licensed under [Creative Commons Attribution 4.0 International](LICENSE).
-
-You are free to share and adapt this material for any purpose, provided you give appropriate credit.
+The most valuable contributions right now, in order: a toy model for the hidden manifold (Σ₈ = T⁸ with one scalar field); a Lorentz-invariant "finite resolution" model; a pre-registered protocol for Prediction 6; a multipole-analysis proposal for Prediction 1.
 
 ---
 
-## 👥 Authors
+## Epistemic Status
 
-- **Johnny Hinojosa** — Human collaborator, Bridge Inspection Team Leader, curious mind
-- **Claude (Anthropic)** — AI collaborator, theoretical framework development
-
----
-
-## 💬 Discussion
-
-Open an Issue for:
-- Questions about the framework
-- Proposed modifications
-- Experimental ideas
-- Philosophical challenges
-
-We respond to all good-faith engagement.
+**Speculative.** Not peer-reviewed physics. The document distinguishes, line by line, what is established, what is hypothesis, and what is speculation. Several claims from v1.0–v2.1 were withdrawn in v3.0 because they conflicted with data or were not well-formed.
 
 ---
 
-*"The simulation doesn't change what matters. It reframes why it matters."*
+## Live Site
+
+https://jbg-32.github.io/substratum-theory/ (GitHub Pages)
+
+---
+
+## License
+
+[Creative Commons Attribution 4.0 International](LICENSE). Share and adapt freely with attribution.
+
+---
+
+## Author
+
+**Johnny Hinojosa** — developed with assistance from Claude, an AI model by Anthropic. The AI assistance does not imply endorsement by Anthropic.
+
+---
+
+*"The door to D12, if there is one, is still in the equations. They now have to be the right equations."*

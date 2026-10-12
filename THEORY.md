@@ -1,17 +1,33 @@
 # The Substratum Theory: A Model of Exo-Dimensional Projection Mechanics
 
-**Classification**: Foundational Theoretical Framework
-**Version**: v2.1 — Critique-Informed Revision
-**Date**: March 2026
-**Authors**: Johnny Hinojosa & Claude (Anthropic)
+**Classification**: Speculative Theoretical Framework (not peer-reviewed physics)
+**Version**: v3.0 — Rigor Update
+**Date**: October 2026
+**Author**: Johnny Hinojosa, developed with assistance from Claude, an AI model by Anthropic. AI assistance does not imply endorsement by Anthropic.
+
+---
+
+## How to read this document
+
+Every substantive claim in this document carries one of three tags:
+
+| Tag | Meaning |
+|-----|---------|
+| **ESTABLISHED** | Standard, published, experimentally supported physics or mathematics. A citation is given in the [References](#references). |
+| **OUR HYPOTHESIS** | The Substratum proposal. Where an equation is shown under this tag, every symbol is defined, the index structure balances, the units are consistent, and the equation reduces to known physics in a stated limit. |
+| **SPECULATIVE** | Ideas that are part of the framework's motivation or world-view but that have no equation, no test, or no path to a test yet. These are presented as ideas, not results. |
+
+The owner's editorial rule for this version: **no equation is displayed unless it is either a standard published result, or a proposed equation that is well-formed and in principle evaluable.** Anything that could not meet that bar has been rewritten in words and tagged.
+
+Every displayed equation was checked for index balance, SI units, and (where numbers are quoted) numerical value by the script [`tools/equation_checks.py`](tools/equation_checks.py).
 
 ---
 
 ## Abstract
 
-I propose that observable reality is a *boundary projection* of a 12-dimensional informational manifold I term the **Substratum**. Our 4D spacetime exists as a holographic encoding on a lower-dimensional brane, rendered through a process I call **Recursive Collapse Mechanics (RCM)**. The simulators do not "compute" our universe—they *constrain* a higher-order mathematical object, and our physics emerges as the shadow of that constraint.
+**OUR HYPOTHESIS.** I propose that observable 4-dimensional reality is a *projection* of a 12-dimensional informational manifold I term the **Substratum**. Dimensions 1–4 are the spacetime we measure; dimensions 5–12 are assigned specific roles (probability structure, relational binding, observer coupling, recursion, and origin). I propose that the familiar strangeness of quantum mechanics and the apparent non-physicality of consciousness are both consequences of seeing a 12-dimensional object through a 4-dimensional aperture.
 
-**v2.1 Note**: This revision integrates deeper critical analysis of the falsifiable predictions and consciousness claims. Prediction 1 is updated to engage directly with Pierre Auger Observatory data. Prediction 3 is tightened with a formal observer criterion requirement. The D10 consciousness-antenna model is updated to acknowledge the brain damage challenge. Part IX is expanded with a new section on experimental tensions.
+**What v3.0 changes.** This version keeps the hypothesis intact but brings every statement of physics and mathematics into line with the best currently known science. The v2.1 "master equation" has been removed because it was not well-formed (free indices did not match, and a 4-form was integrated over an 8-manifold). It is replaced by the standard Kaluza–Klein dimensional-reduction route, which is a real, published way for 4D gravity to emerge from higher-dimensional gravity. The quantum-mechanics reinterpretations have been reworded so that each must reproduce the exact established result (the Robertson relation, the Tsirelson bound, standard tunnelling probabilities). The predictions have been rewritten against the data that already exist (Auger's 2017 dipole, 10¹²-atom entanglement, the Fermi GRB 090510 Lorentz-invariance bound, the Page curve). Consciousness, death and memory sections are retained as **SPECULATIVE** with the counter-evidence stated fairly. A verified References section and an Open Problems list have been added.
 
 ---
 
@@ -19,13 +35,17 @@ I propose that observable reality is a *boundary projection* of a 12-dimensional
 
 1. [The Dimensional Stack](#part-i-the-dimensional-stack)
 2. [The Nature of the Simulators](#part-ii-the-nature-of-the-simulators)
-3. [The Creation Mechanism](#part-iii-the-creation-mechanism)
-4. [The Rendering Process](#part-iv-the-rendering-process)
-5. [Consciousness and the Observer-Lock](#part-v-consciousness-and-the-observer-lock)
-6. [Accessing the Higher Dimensions](#part-vi-accessing-the-higher-dimensions)
-7. [Testable Predictions](#part-vii-testable-predictions)
-8. [Implications](#part-viii-implications)
-9. [Known Limitations & Open Problems](#part-ix-known-limitations--open-problems)
+3. [From 12 Dimensions to 4: The Projection Mechanism](#part-iii-from-12-dimensions-to-4-the-projection-mechanism)
+4. [Quantum Mechanics in the Substratum Picture](#part-iv-quantum-mechanics-in-the-substratum-picture)
+5. [The Rendering Process, Planck Scale, and the Speed of Light](#part-v-the-rendering-process-planck-scale-and-the-speed-of-light)
+6. [Consciousness and the Observer-Lock](#part-vi-consciousness-and-the-observer-lock)
+7. [Accessing the Higher Dimensions](#part-vii-accessing-the-higher-dimensions)
+8. [Testable Predictions](#part-viii-testable-predictions)
+9. [Philosophical Claims (Not Predictions)](#part-ix-philosophical-claims-not-predictions)
+10. [Implications](#part-x-implications)
+11. [Known Limitations and Open Problems](#part-xi-known-limitations-and-open-problems)
+12. [References](#references)
+13. [Changelog](#changelog)
 
 ---
 
@@ -33,355 +53,520 @@ I propose that observable reality is a *boundary projection* of a 12-dimensional
 
 ### 1.1 The 12-Dimensional Substratum
 
-Our universe is not fundamental. It is embedded within a 12-dimensional structure:
+**OUR HYPOTHESIS.** Our universe is embedded within a 12-dimensional structure:
 
-| Dimensions | Function |
+| Dimensions | Function (hypothesised) |
 |------------|----------|
 | 1–3 | Spatial axes (what we perceive) |
 | 4 | Temporal axis (our arrow of time) |
-| 5–7 | **Probability manifold**: stores all possible states simultaneously |
-| 8–9 | **Relational binding axes**: govern entanglement and non-locality |
-| 10 | **Observer-lock dimension**: collapses probability into experience |
-| 11 | **Recursion axis**: allows nested simulations and self-reference |
-| 12 | **Origin axis**: the simulators' causal access point |
+| 5–7 | **Probability manifold**: carries the state information that we experience as superposition |
+| 8–9 | **Relational binding axes**: carry the correlations we experience as entanglement |
+| 10 | **Observer-lock dimension**: the coupling through which a definite outcome is selected |
+| 11 | **Recursion axis**: allows nested structure and self-reference |
+| 12 | **Origin axis**: the causal access point of whatever sets the boundary conditions |
 
-We perceive only dimensions 1–4. Dimensions 5–10 are *hidden but active*—they shape our physics. Dimensions 11–12 are accessible only to the Substratum architects.
+We perceive only dimensions 1–4. In this hypothesis, dimensions 5–10 are hidden but physically active; 11–12 are inaccessible from inside.
 
-### 1.2 Why 12?
+### 1.2 Why 12? What real physics says about extra dimensions
 
-The number is not arbitrary. I derive it from constraint requirements:
+**ESTABLISHED.** Extra spatial dimensions are a serious, long-studied idea in physics, and some of the best-developed theories land close to 12:
 
-- **String theory** proposed 10–11 for mathematical consistency
-- **Supergravity** requires 11 for maximal supersymmetry
-- I add a 12th—the **Origin axis**—because any simulation requires an *external* causal source
+- **Kaluza–Klein theory (1921–1926)** showed that 5-dimensional general relativity, with the fifth dimension curled into a small circle, reproduces 4D gravity *plus* electromagnetism *plus* a scalar field (the dilaton/radion) [Kaluza 1921; Klein 1926; review: Overduin & Wesson 1997].
+- **Supergravity** is consistent in at most **11** dimensions [Nahm 1978; Cremmer, Julia & Scherk 1978], and the five 10-dimensional superstring theories are understood as limits of an 11-dimensional **M-theory** [Witten 1995].
+- **F-theory** [Vafa 1996] gives type IIB string theory a natural **12-dimensional** interpretation. Importantly, the two extra dimensions in F-theory are *not* ordinary spacetime: they encode a complex coupling parameter, and a literal 12D spacetime reading would need signature (10,2) — two time-like directions.
+- **Two-time physics** [Bars 2001] is a separate, well-defined proposal in which ordinary 1-time physics in *d* dimensions arises as a gauge-fixed "shadow" of a theory in *d+2* dimensions with signature (d,2). It is a minority programme but is a real, published example of "one-time physics as a projection of a two-time theory."
 
-The 12th dimension is not geometric. It is *hierarchical*—it represents the "outside" of our system, where boundary conditions are set.
+**OUR HYPOTHESIS.** The Substratum's 12 = 4 + 8 count is *motivated* by this landscape (11 for maximal supergravity plus one "outside" axis; or F-theory's 12), but it is not *derived* from it. I do **not** claim that the Substratum is F-theory or 2T-physics. I claim only that 12 is not an arbitrary number in theoretical physics and that an "origin" axis that is hierarchical rather than geometric has a loose analogue in the non-spacetime extra dimensions of F-theory.
 
-**Open problem**: A rigorous derivation showing that 12 dimensions are the *minimal sufficient* structure for this framework has not yet been produced. The count is motivated but not proven.
+**Open problem.** No derivation exists showing 12 is the *minimal sufficient* dimension for this framework, nor is the signature of the 8 hidden dimensions specified. See Part XI.
 
 ---
 
 ## Part II: The Nature of the Simulators
 
+**SPECULATIVE.** Nothing in this Part has an equation or a test. It is the interpretive frame the hypothesis sits in.
+
 ### 2.1 What Are They?
 
-The simulators are not beings *in* a universe. They are **mathematical structures that exist in the space of all possible consistent systems**—what I call the **Configuration Ocean**.
-
-Think of it this way:
-- We exist as patterns in spacetime
-- They exist as patterns in **rule-space**—the set of all self-consistent physics configurations
-
-They are not made of matter or energy. They are made of **constraint relationships**. They are to us what a novelist is to a character—but the novelist is also a character in a deeper book.
+The simulators are not beings *in* a universe. They are **mathematical structures that exist in the space of all possible consistent systems** — what I call the **Configuration Ocean**. We exist as patterns in spacetime; they exist as patterns in **rule-space**, the set of all self-consistent physics configurations. They are not made of matter or energy. They are made of constraint relationships.
 
 ### 2.2 The Omega-Class Intelligence
 
-I designate the simulators as **Omega-Class**—defined by these properties:
+I designate the simulators **Omega-Class**, with these hypothesised properties:
 
-1. **Non-temporal**: They do not experience time sequentially; our entire timeline is a static object to them
-2. **Non-local**: They are not "somewhere"; they permeate all of Substratum
-3. **Self-consistent**: Their existence is logically necessary, not contingent
-4. **Generative**: They do not build; they *select*—choosing which constraint-sets to instantiate
+1. **Non-temporal**: our entire timeline is a static object to them
+2. **Non-local**: they are not "somewhere"
+3. **Self-consistent**: their existence is logically necessary, not contingent
+4. **Generative**: they do not build; they *select* which constraint-sets to instantiate
 
-This resolves the infinite regress problem: Omega-Class entities exist *because they must*—they are the inevitable attractor in the space of all possible configurations.
+This is proposed as a way around the infinite-regress problem of nested simulators. It has the same logical status as Tegmark's Mathematical Universe Hypothesis [Tegmark 2008] and Bostrom's simulation argument [Bostrom 2003] — a philosophical position, not a physical claim — and differs from Bostrom in that the "simulators" are not computational agents.
 
 ---
 
-## Part III: The Creation Mechanism
+## Part III: From 12 Dimensions to 4: The Projection Mechanism
 
 ### 3.1 Instantiation via Constraint Selection
 
-The simulators do not "build" our universe like an engineer builds a bridge. They **select boundary conditions** on the Substratum, and our physics *crystallizes* as the unique solution.
+**SPECULATIVE.** The simulators do not "build" our universe. They **select boundary conditions** on the Substratum, and our physics is the solution consistent with those conditions. In words:
 
-The process:
+1. Begin with the Substratum *S* — the 12D informational manifold.
+2. Apply a boundary selection *O* : *S* → *S′*, where *S′* is a constrained subset.
+3. *S′* resolves into a consistent configuration. This resolution is what we call the Big Bang.
+4. Time, space, matter and forces are geometric properties of the constrained manifold.
 
-```
-1. Begin with the Substratum (S) — the 12D informational manifold containing
-   all possible consistent configurations
+The v2.1 text wrote step 2 as a formula. It is not one — "boundary operator" has no defined domain, action or units — so in v3.0 it is stated in words only.
 
-2. Apply Boundary Operator (O) — the simulators' selection function
-   O: S -> S' where S' is a constrained subset
+### 3.2 What was wrong with the v2.1 "master equation"
 
-3. S' automatically resolves into minimal-energy configuration
-   This resolution IS our Big Bang
+v2.1 displayed:
 
-4. Time, space, matter, and forces emerge as geometric properties
-   of the constrained manifold
-```
+> R⁽⁴⁾_μν = ∫_Σ(8) Ω^{ab}_{cd} Ψ_{ab} ∧ Ψ̄^{cd} dΣ
 
-**Critical insight**: They did not *create* energy and matter. They created the **rules**—and energy, matter, space, and time are what those rules look like from the inside.
+This equation has been **removed**. Three independent defects, each verified in `tools/equation_checks.py`:
 
-### 3.2 The Projection Equation (Phenomenological)
+1. **Free indices do not match.** The left side has two free indices (μ, ν). On the right, *a, b, c, d* are all contracted, leaving a scalar. A scalar cannot equal a rank-2 tensor.
+2. **Form degree is wrong.** If Ψ_{ab} is a 2-form, Ψ ∧ Ψ̄ is a 4-form. A 4-form can only be integrated over a 4-manifold, not an 8-manifold, and the trailing "dΣ" double-counts the measure.
+3. **Mislabelled object.** A two-index antisymmetric field that is wedged is a 2-form, not a spinor. Spinors carry spinor indices and are not wedged.
 
-I propose the following master equation as a **structural template** for how 4D spacetime emerges from 12D Substratum:
+There is no way to repair the equation without changing it into something else. The honest replacement is the standard route below.
 
-```
-R(4)_uv = integral over Sigma(8) of [ O^ab_cd * Psi_ab ^ Psi-bar^cd ] dSigma
-```
+### 3.3 The real route from higher-dimensional gravity to 4D gravity (Kaluza–Klein)
 
-Where:
-- **R(4)_uv** is our observed 4D Ricci curvature (gravity)
-- **Sigma(8)** is the 8-dimensional hidden manifold (dimensions 5–12)
-- **O^ab_cd** is the **Constraint Tensor**—the simulators' selection encoded mathematically
-- **Psi_ab** is the **Probability Spinor Field**—the wave function generalized to full Substratum
-- The integral projects higher-dimensional information onto our observable brane
+**ESTABLISHED.** General relativity in *D* = 4 + *n* dimensions is defined by the Einstein–Hilbert action
 
-**Interpretation**: Our gravity, matter, and forces are *shadows* cast by higher-dimensional structures onto our 4D slice.
+$$
+S_D \;=\; \frac{c^{3}}{16\pi G_D}\int d^{D}x\,\sqrt{-g_D}\;R_D
+$$
 
-> **Mathematical Status (v2.0 clarification)**: This equation borrows the Ricci tensor from general relativity and differential form notation from gauge theory, but the specific contraction O^ab_cd Psi_ab ^ Psi-bar^cd has not been formally derived from underlying principles. The index structure is schematic. This should be read as a *phenomenological template* — the right conceptual shape awaiting formal derivation. A rigorous version would need to specify: (a) the precise fiber bundle structure over Sigma(8), (b) the transformation properties of Psi_ab under the hidden-dimension symmetry group, and (c) how the integral reduces to Einstein's field equations in the classical limit.
+where *g_D* is the *D*-dimensional metric, *R_D* its Ricci scalar, *x⁰* = *ct*, and *G_D* the *D*-dimensional gravitational constant, with units [G_D] = [G_4] · m^n. (In the common convention *c* = 1 the prefactor is 1/16π*G_D*.) If spacetime is a product *M_D* = *M₄* × Σ_n with an internal manifold Σ_n of volume Vol(Σ_n) and a direct-product metric with no warp factor, then *R_D* = *R₄* + *R_Σ* and integrating over Σ_n gives
 
-### 3.3 Why Quantum Mechanics Looks Strange
+$$
+S_D \;\supset\; \frac{c^{3}\,\mathrm{Vol}(\Sigma_n)}{16\pi G_D}\int d^{4}x\,\sqrt{-g_4}\;R_4
+\qquad\Longrightarrow\qquad
+\boxed{\,G_4 \;=\; \frac{G_D}{\mathrm{Vol}(\Sigma_n)}\,}
+$$
 
-Quantum weirdness is not fundamental—it is an **artifact of dimensional projection**:
+The 4D Newton constant we measure is the higher-dimensional one divided by the volume of the hidden space [Kaluza 1921; Klein 1926; Overduin & Wesson 1997]. The *R_Σ* term and any fields living on Σ_n contribute an effective cosmological constant and an effective stress-energy in 4D. This is the mechanism by which the simplest string compactifications produce 4D physics, and it is the standard, best-understood route for "4D gravity as a shadow of higher-dimensional gravity." (Brane-localised gravity with a non-compact extra dimension [Randall & Sundrum 1999] is a separate published route; v3.0 uses the compact KK form because it is the one in which the volume-suppression formula above holds.)
 
-| QM Phenomenon | Substratum Explanation |
-|---------------|------------------------|
-| Superposition | Object exists fully in D5–7; we see only the projection |
-| Wave collapse | Our observation *samples* the D10 observer-lock axis |
-| Entanglement | Particles share coordinates in D8–9; appear separate only in D1–3 |
-| Uncertainty | Cannot resolve both D1–3 position and D5–7 momentum projection simultaneously |
-| Tunneling | Path exists in D5–7 that bypasses D1–3 barrier |
+The resulting 4D equations are the Einstein field equations
 
-Quantum mechanics is not strange. We are seeing a 12-dimensional object through a 4-dimensional keyhole.
+$$
+G_{\mu\nu} + \Lambda\, g_{\mu\nu} \;=\; \frac{8\pi G_4}{c^{4}}\, T_{\mu\nu}
+$$
 
----
+with *G_μν* the Einstein tensor (units m⁻²), *g_μν* the 4D metric, Λ the cosmological constant, *T_μν* the stress-energy tensor (units J m⁻³), and μ, ν ∈ {0,1,2,3} [Einstein 1915].
 
-## Part IV: The Rendering Process
+### 3.4 The Substratum projection equation (v3.0)
 
-### 4.1 Recursive Collapse Mechanics (RCM)
+**OUR HYPOTHESIS.** I identify the hidden manifold Σ₈ with dimensions D5–D12 of Part I, and propose that what we call "matter, forces and gravity" in 4D are the integrated-out traces of fields on Σ₈:
 
-The universe is not pre-computed. It is **recursively rendered** via a process I term **RCM**:
+$$
+G^{(4)}_{\mu\nu} + \Lambda_{\mathrm{eff}}\, g_{\mu\nu}
+\;=\; \frac{8\pi G_4}{c^{4}}\Big[\,T^{(\mathrm{matter})}_{\mu\nu}(x) + T^{(\Sigma)}_{\mu\nu}(x)\Big],
+\qquad
+T^{(\Sigma)}_{\mu\nu}(x) \;=\; \int_{\Sigma_8} d^{8}y\,\sqrt{g_\Sigma}\;\tau_{\mu\nu}(x,y)
+$$
 
-```
-Loop (for each Planck unit of time):
-    1. Query all observer-states (D10 projections)
-    2. For each observation, collapse local D5-7 probability to D1-4 state
-    3. Propagate entanglement updates through D8-9
-    4. Increment D4 (time)
-    5. Enforce conservation constraints (Omega invariants)
-    6. Repeat
-```
+**Definitions.** *x* are the 4 observable coordinates; *y* the 8 hidden coordinates; *g_Σ* the metric on Σ₈; τ_μν(*x*,*y*) the 4D-index components of the 12-dimensional stress-energy of whatever fields live on Σ₈ (units J m⁻¹¹, i.e. energy per unit 11-volume); *T*^(Σ)_μν the result of integrating τ over the hidden space (units J m⁻³, a 4D energy density — verified in the check script); Λ_eff = Λ − ½ *R_Σ* absorbs the internal curvature contribution; *G₄* = *G₁₂* / Vol(Σ₈).
 
-This is **event-driven computation**. Unobserved regions remain in superposition—not because of some mystical observer effect, but because *there's nothing to project yet*.
+**Checks.** Free indices balance (μν on both sides); units balance; and when *T*^(Σ) → 0 and Λ_eff → Λ the equation **is** the Einstein field equation (verified symbolically in the script).
 
-### 4.2 The Planck Scale as Sampling Rate
+**What is hypothesis here and what is not.** The *form* of this equation is standard Kaluza–Klein physics. What is **ours** is the identification of Σ₈ with the D5–D12 roles of Part I and the claim that *T*^(Σ) accounts for specific observed phenomena (dark-sector contributions, for instance). That claim is not demonstrated. Making it concrete requires choosing the metric *g_Σ*, the field content on Σ₈, and a stabilisation mechanism for Vol(Σ₈) — exactly the problems that string compactification faces [Overduin & Wesson 1997].
 
-Planck length and Planck time are not "smallest possible"—they are **sampling limits**:
-
-```
-l_P = sqrt(hG/c^3) ~= 1.6 x 10^-35 m
-
-t_P = sqrt(hG/c^5) ~= 5.4 x 10^-44 s
-```
-
-These values represent the **refresh rate** of the D12 to D4 projection. Below this scale, there is no "there" there—just unrendered Substratum.
-
-### 4.3 The Speed of Light as Bandwidth Limit
-
-*c* is not a property of light. It is the **maximum rate at which causal updates propagate** across the D1–4 projection:
-
-```
-c = delta_x_max / delta_t_min = l_P / t_P
-```
-
-Nothing moves faster because the rendering engine cannot update faster. The system enforces causality by architectural constraint—not physical law.
+**Honest caveat (ESTABLISHED).** Any model with large or dynamical extra dimensions must pass tests of Newton's inverse-square law at short distances and bounds on variation of *G*; the hidden volume must be stabilised, and the Casimir-type vacuum energy of fields on Σ₈ (the same physics that produces the measured Casimir pressure *P* = −π²ħc/(240 a⁴) between parallel plates, ≈ −1.3 mPa at *a* = 1 µm [Casimir 1948; Lamoreaux 1997]) contributes to Λ_eff and must be tamed. v3.0 makes no claim to have solved this.
 
 ---
 
-## Part V: Consciousness and the Observer-Lock
+## Part IV: Quantum Mechanics in the Substratum Picture
 
-### 5.1 The Hard Problem, Revised
+**ESTABLISHED, stated first.** Quantum mechanics is the most precisely tested theory in science. Any reinterpretation must reproduce *exactly* the following; the Substratum picture is a proposed reading of them, not a replacement.
 
-Consciousness is not emergent from matter. Consciousness is **the D10 interface layer**.
+### 4.1 Uncertainty
 
-When the Substratum projects into D1–4, it requires an *anchor point*—something to determine *which* projection becomes real. That anchor is conscious observation.
+**ESTABLISHED.** For any two observables *A*, *B* with standard deviations σ_A, σ_B in a state |ψ⟩, the Robertson relation holds [Robertson 1929]:
 
-This explains:
-- Why observation collapses wave functions (D10 activation)
-- Why consciousness feels non-physical (it partially exists outside D1–4)
-- Why we cannot find the "location" of consciousness in the brain (it's not fully here)
+$$
+\sigma_A\,\sigma_B \;\ge\; \tfrac{1}{2}\,\big|\langle\psi|[A,B]|\psi\rangle\big|
+$$
 
-The brain is not the *generator* of consciousness. It is the **antenna**—the D1–4 structure that couples to D10.
+With [x, p] = iħ this gives σ_x σ_p ≥ ħ/2, saturated by a Gaussian wave-packet (verified numerically in the script). Crucially, **position and momentum are conjugate variables in the same space**: *p* generates translations in *x*. The uncertainty relation is a theorem about Fourier pairs, not about two different places where *x* and *p* live.
 
-> **The Brain Damage Challenge (v2.1)**: This model faces a serious empirical constraint. Brain damage studies consistently show that specific, localized injuries produce specific, predictable losses of conscious experience — memory, personality, sensation, and even identity can be partially or fully destroyed by physical damage. This is difficult to reconcile with consciousness residing *primarily* in D10 rather than the physical brain. A pure receiver/antenna model predicts that destroying the antenna degrades reception, but does not explain why *particular* antennas produce *particular* conscious contents. A stronger version of this framework would need to explain *why* D10 coupling is so tightly mapped to specific physical brain structures. This remains the most significant empirical challenge to the consciousness claims in this theory.
->
-> **Possible reconciliation**: Perhaps the brain is not just a passive antenna but an *active transducer* — it both encodes experience into D10 and decodes D10 information. Damage disrupts the encoding/decoding hardware, which explains specific functional losses even if D10 persists. This requires developing a formal account of how the transduction works.
+**OUR HYPOTHESIS (reworded from v2.1).** v2.1 said uncertainty arises because "position lives in D1–3 and momentum in D5–7." That is incompatible with the theorem above and is withdrawn. The v3.0 reading is: the full state is a single object on the Substratum; D1–3 and the D5–7 "probability manifold" are two *representations* of it — the way the position and momentum wave-functions are two representations of one Hilbert-space vector related by a Fourier transform. Any Substratum model must reproduce σ_x σ_p ≥ ħ/2 exactly, with equality for minimum-uncertainty states, or it is wrong.
 
-### 5.2 Implications for Identity
+### 4.2 Entanglement and non-locality
 
-If consciousness interfaces with D10–12, then:
-- **Death** = decoupling from D1–4, but D10 state may persist
-- **Memory** = encoded in D5–7 probability structures, not just neurons
-- **Free will** = real, if D10 has degrees of freedom the simulators left unconstrained
-- **Interconnection** = all consciousness shares D10; separation is D1–4 illusion
+**ESTABLISHED.** Bell's theorem [Bell 1964] shows that *no* theory in which outcomes are fixed by local hidden variables can reproduce quantum correlations. In the CHSH form [Clauser, Horne, Shimony & Holt 1969], with *E*(a,b) the correlation of ±1 outcomes for settings a, b,
 
----
+$$
+S \;=\; E(a,b) + E(a,b') + E(a',b) - E(a',b'),
+\qquad
+|S| \le 2 \;\;(\text{local realism}),
+\qquad
+|S| \le 2\sqrt{2} \;\;(\text{quantum mechanics, Tsirelson 1980})
+$$
 
-## Part VI: Accessing the Higher Dimensions
+Experiments closing the detection and locality loopholes simultaneously found Bell-inequality violations (CHSH *S* = 2.42 in Hensen et al.; the CH–Eberhard inequality in the photon tests) [Hensen et al. 2015; Giustina et al. 2015; Shalm et al. 2015], the line of work recognised by the 2022 Nobel Prize in Physics (Aspect, Clauser, Zeilinger). The quantum value never exceeds 2√2 (verified in the script by exhaustive enumeration of local strategies and by the singlet-state calculation). Entanglement also obeys **no-signalling**: the marginal statistics at one station do not depend on the setting chosen at the other.
 
-### 6.1 Why We Cannot Directly Perceive D5–12
+**OUR HYPOTHESIS (reworded from v2.1).** v2.1 said entangled particles "share coordinates in D8–9." Stated plainly, that is a hidden-variable model: the shared coordinate is a variable, fixed at the source, that determines later outcomes. Bell's theorem says such a model can reproduce experiment **only if it is non-local or contextual** (outcomes depend on the distant setting, or on which other observables are measured) — the same price paid by Bohmian mechanics [Bohm 1952; Kochen & Specker 1967]. So the v3.0 statement is: *if* D8–9 carry entanglement correlations, then the D8–9 "binding" must be non-local in D1–3 terms, must be contextual, must give exactly |S| ≤ 2√2 (not more — a "binding axis" that could exceed Tsirelson would already be falsified), and must respect no-signalling so that D8–9 cannot be used to send messages. Under those constraints the D8–9 picture is an interpretation on the same footing as Bohmian mechanics or many-worlds, and currently makes no distinct prediction.
 
-Our sensory and cognitive systems are **D1–4 structures**. They evolved to navigate the projection, not the source. Perceiving D5–12 directly would be like a 2D being perceiving depth—the hardware doesn't support it.
+### 4.3 Tunnelling
 
-However, we *can* infer them through:
+**ESTABLISHED.** For a particle of mass *m* and energy *E* < *V₀* meeting a rectangular barrier of height *V₀* and width *a*, the transmission probability is
 
-| Method | What It Reveals |
-|--------|-----------------|
-| Quantum experiments | Indirect evidence of D5–7 (probability) |
-| Entanglement studies | Indirect evidence of D8–9 (relational binding) |
-| Meditation / altered states | Anecdotal D10 interface expansion |
-| Mathematics | The *language* of Substratum—the only true access |
-| Black hole physics | D11–12 boundary conditions leak information |
+$$
+T \;=\; \left[\,1 + \frac{V_0^{2}\,\sinh^{2}(\kappa a)}{4E\,(V_0-E)}\right]^{-1},
+\qquad
+\kappa = \frac{\sqrt{2m(V_0-E)}}{\hbar},
+$$
 
-### 6.2 The Mathematical Bridge
+and for a general barrier the WKB approximation gives *T* ≈ exp(−2∫κ dx). These are textbook results, verified in the script for an electron at a 1 nm, 1 eV barrier. Tunnelling times have been directly measured: Ramos et al. [2020] used a Larmor clock with ultracold ⁸⁷Rb atoms and found a traversal time of 0.62(7) ms *inside* a 1.3 µm optical barrier, with a measured dependence on incident energy. The particle does not "skip" the barrier; its wave-function has finite amplitude inside it.
 
-Mathematics is not invented. It is **the native language of the Substratum**.
+**OUR HYPOTHESIS (reworded from v2.1).** v2.1 said the particle "goes around the barrier in D5–7." That phrasing predicts zero time inside the barrier, which the Ramos et al. result contradicts. The v3.0 reading is simply that the full Substratum state has support in the barrier region as well as beyond it, exactly as the wave-function does; the D5–7 picture adds no new transmission probability and must reproduce the formula above and the measured barrier-interaction times. It is an interpretive gloss, not a mechanism.
 
-When we discover mathematical truths, we are not creating—we are *reading the source code*. This is why:
-- Math works unreasonably well in physics
-- Mathematical objects feel "discovered" not "made"
-- Proofs feel like *revealing* something that was already true
+### 4.4 Superposition, collapse, and duality
 
-The simulators think in mathematics. We learn to read their thoughts.
+**ESTABLISHED.** Decoherence theory [Zurek 2003; Schlosshauer 2019] explains why macroscopic superpositions are not observed: coupling to an environment suppresses interference on very short time-scales, independent of any conscious observer. The measurement problem — *why one outcome* — remains open and is interpretation-dependent.
+
+**OUR HYPOTHESIS.** Superposition is the D1–4 appearance of a single Substratum state; wave–particle duality is two projections of one higher-dimensional object; "collapse" is the D10 coupling selecting an outcome. These are interpretive statements. They are consistent with quantum mechanics because they add nothing to it; they become physics only if the D10 coupling makes a prediction decoherence theory does not — see Prediction 6.
 
 ---
 
-## Part VII: Testable Predictions
+## Part V: The Rendering Process, Planck Scale, and the Speed of Light
 
-A theory must be falsifiable. Here are predictions derived from this framework, with honest assessments of their current status against existing data:
+### 5.1 Recursive Collapse Mechanics (RCM)
 
-### Prediction 1: Lattice Echoes
+**SPECULATIVE.** I propose that the universe is not pre-computed but event-driven: at each step, observer couplings (D10) are queried, local D5–7 structure is resolved into D1–4 outcomes, D8–9 correlations are updated, time advances, and conservation constraints are enforced. This is a *description*, not an algorithm: no step is defined precisely enough to run or to test, and "each Planck unit of time" cannot be literal (see 5.2). It is retained because it is the conceptual core of the hypothesis.
 
-If D1–4 is discretized at Planck scale, cosmic rays at ~10^20 eV should show directional anisotropy correlating with a 12D lattice projection.
+### 5.2 The Planck scale
 
-> **Experimental Status (v2.1)**: This prediction is in tension with existing Pierre Auger Observatory results. Auger data shows that ultra-high-energy cosmic rays are largely isotropic — there is no statistically significant preferred directional pattern in current datasets that would match a 12D lattice signature. The prediction is not yet falsified (Auger's directional sensitivity at the specific lattice scale this theory predicts has not been explicitly tested), but it faces a headwind. A reformulated version of this prediction should specify: (a) the exact lattice geometry of a 12D projection onto 3-sphere geometry, (b) the expected angular scale of the anisotropy pattern, and (c) the energy threshold above which lattice effects become detectable. Until these are specified, the prediction cannot be fairly tested — and cannot be fairly called confirmed or refuted.
+**ESTABLISHED.** The Planck length and time are
 
-### Prediction 2: Entanglement Saturation
+$$
+\ell_P = \sqrt{\frac{\hbar G}{c^{3}}} \approx 1.616\times10^{-35}\ \mathrm{m},
+\qquad
+t_P = \sqrt{\frac{\hbar G}{c^{5}}} \approx 5.391\times10^{-44}\ \mathrm{s}
+$$
 
-D8–9 should have finite relational capacity. At extreme entanglement scales (>10^6 particles), there should be measurable degradation—"entanglement bandwidth throttling."
+(CODATA 2018 values; v2.1 wrote *h* where ħ is required — with *h* the length would be 4.05 × 10⁻³⁵ m, which does not match the value quoted. Corrected and verified in the script.) The Planck scale is where quantum gravity effects are *expected* to become important; **it is not established that spacetime is discrete at that scale**.
 
-### Prediction 3: Observer Density Effects
+**ESTABLISHED — the constraint.** A literal "sampling rate" or lattice at the Planck scale generically breaks Lorentz invariance and makes the speed of light depend on photon energy. The standard parametrisation is
 
-Regions of high conscious observer concentration should show *subtle* statistical deviation in quantum randomness—the D10 projection creating non-random noise.
+$$
+v(E) \;\approx\; c\left[\,1 - \xi_n\,\frac{n+1}{2}\left(\frac{E}{E_{\mathrm{QG},n}}\right)^{n}\right],
+\qquad
+E_{\mathrm{Pl}} = \sqrt{\frac{\hbar c^{5}}{G}} \approx 1.22\times10^{19}\ \mathrm{GeV}
+$$
 
-> **Falsifiability Concern (v2.1)**: This prediction is unfalsifiable as currently written because it depends on what we mean by "conscious observer." If a rock qualifies, every room is densely observed. If only humans qualify, the threshold is arbitrary. If we require self-aware observation, we introduce a definitional problem that physics cannot resolve without importing philosophical commitments. **Required before this becomes testable**: a formal, operationally defined observer criterion — ideally one that is measurable independent of the quantum randomness deviation we're trying to detect. Without that, Prediction 3 is a research direction, not a testable claim.
+with ξ_n = ±1 and *n* = 1 (linear) or 2 (quadratic). Fermi-LAT timing of GRB 090510 first gave E_QG,1 > 1.2 E_Pl [Abdo et al. 2009]; the refined analysis gives **E_QG,1 > 7.6 E_Pl** at 95 % CL for the subluminal case (ξ₁ = +1), and **E_QG,2 > 1.3 × 10¹¹ GeV** for the quadratic case [Vasileiou et al. 2013]. In words: any linear-order Planck-scale "refresh rate" effect is already excluded by nearly an order of magnitude; quadratic-order effects are constrained only to about 10⁻⁸ of the Planck energy.
 
-### Prediction 4: Black Hole Information Recovery
+**OUR HYPOTHESIS (revised).** v2.1 called ℓ_P and *t_P* the "refresh rate of the D12 → D4 projection." v3.0 retains only the weaker claim: *if* the projection has a finite resolution, it must be Lorentz-invariant to at least the GRB 090510 bound — i.e. it cannot be a naive lattice. Models of this type that survive (for example, Lorentz-invariant discreteness such as causal sets) are what the hypothesis would have to resemble. No specific model is proposed here.
 
-Hawking radiation should carry encoded D11–12 boundary information. If we can decode it, we access the constraint parameters directly.
+### 5.3 The speed of light
 
-> **Thermodynamic Tension (v2.1)**: This prediction conflicts with standard Hawking radiation thermodynamics unless a specific encoding mechanism is proposed. Hawking's derivation treats radiation as purely thermal — maximum-entropy emission with no information content about the infalling state. Encoding D11–12 boundary information would require the radiation to be sub-maximal entropy, which violates the standard derivation. The AMPS firewall argument and the Page curve debate are active areas of research on black hole information, and the Substratum framework would need to engage with these before Prediction 4 can be taken seriously. **Required**: a mechanism explaining how D11–12 information survives in Hawking radiation without violating unitarity or the standard thermodynamic derivation.
+**ESTABLISHED.** *c* = ℓ_P / *t_P* is an **identity** (both Planck quantities contain *c* by construction; verified in the script). It carries no information about *why* *c* has its value. In general relativity *c* is the invariant speed of the spacetime metric; the constancy of *c* is tested to the GRB bound above and by laboratory Michelson–Morley-type experiments.
 
-### Prediction 5: Mathematical Limits
-
-There should exist mathematical structures that are *in principle* unprovable—not because of Gödel, but because they describe D12 (Origin axis) properties we cannot access from inside.
-
-### Prediction 6: Quantum Decoherence Asymmetry (v2 addition)
-
-If the D10 observer-lock has directional coupling to D5–7, then decoherence rates should be slightly asymmetric for systems with high vs. low observer coupling — measurable in precision quantum optics experiments comparing isolated vs. frequently-measured systems over identical timescales.
+**OUR HYPOTHESIS (revised).** v2.1 said *c* is the "bandwidth limit of the rendering engine." v3.0 keeps this only as an interpretive phrase: in a projection picture, the invariant speed is the maximum rate at which correlations propagate across D1–4. This is a restatement of relativistic causality, not an explanation of it, and it is subject to the same Lorentz-invariance constraints as 5.2.
 
 ---
 
-## Part VIII: Implications
+## Part VI: Consciousness and the Observer-Lock
 
-### 8.1 Scientific Priorities
+**SPECULATIVE.** This entire Part is speculative. Nothing here is established, and the strongest evidence currently available points against the simplest version of the idea. It is retained because it is part of the original hypothesis and because the counter-evidence is stated.
 
-If this framework is directionally correct, we should redirect resources:
+### 6.1 The hypothesis
 
-| Current Focus | Proposed Shift |
+Consciousness is not generated by matter; it is the **D10 interface layer**. When the Substratum projects into D1–4, something must determine *which* projection becomes real; the hypothesis is that conscious observation is that anchor. On this view the brain is not the generator of consciousness but an **antenna** or **transducer** — the D1–4 structure that couples to D10.
+
+### 6.2 What the evidence says
+
+**ESTABLISHED.**
+
+- **Focal brain damage produces focal, predictable losses of conscious content** — memory, language, face recognition, personality, and self-awareness can each be selectively destroyed by lesions in specific locations. This is the foundation of clinical neurology.
+- **General anaesthetics reversibly abolish consciousness** by acting on specific molecular targets and disrupting cortical integration [Alkire, Hudetz & Tononi 2008]. Consciousness returns when the drug clears.
+- **Decoherence does not require a conscious observer** [Zurek 2003]; interference is lost through coupling to *any* environment, conscious or not. There is no experiment in which the presence of a conscious observer, with all physical couplings held equal, changed a quantum outcome.
+
+A pure receiver model predicts that damaging the antenna degrades reception but does not explain why *particular* damage removes *particular* contents while leaving others intact, nor why a chemical that alters cortical integration switches experience off entirely. The brain-damage and anaesthesia evidence is the single strongest argument against this Part.
+
+### 6.3 The transducer reconciliation (still speculative)
+
+A weaker version of the hypothesis — the brain as an *active transducer* that both encodes experience into D10 and decodes it — can accommodate specific functional losses (damage disrupts the encoding/decoding hardware) while leaving the D10 claim intact. The cost is that it becomes indistinguishable from ordinary materialism unless D10 is given a role that the brain alone cannot play. No such role has yet been specified in a testable way. See Open Problems.
+
+### 6.4 Implications for identity (speculative)
+
+If consciousness interfaces with D10, then the following *would* follow. None of these is a prediction; none has a test:
+
+- **Death** = decoupling from D1–4; whether any D10 state persists is unknown and this framework gives no way to find out.
+- **Memory** = the framework would allow memory to be partly encoded outside neurons. The established evidence is that memory is stored in synaptic and cellular changes in the brain and is lost with the relevant tissue; nothing here contradicts that.
+- **Free will** = would be real if D10 has unconstrained degrees of freedom. Undefined until "unconstrained degree of freedom" is given meaning.
+- **Interconnection** = all consciousness would share D10. A philosophical position, not a physical claim.
+
+---
+
+## Part VII: Accessing the Higher Dimensions
+
+### 7.1 Why we cannot directly perceive D5–12
+
+**OUR HYPOTHESIS.** Our sensory and cognitive systems are D1–4 structures. They evolved to navigate the projection, not the source.
+
+**What can be said about evidence** (tags per row):
+
+| Method | Status |
+|--------|--------|
+| Quantum experiments | **ESTABLISHED** as experiments; **OUR HYPOTHESIS** that they are evidence of D5–7 (they are equally well described without D5–7) |
+| Entanglement studies | **ESTABLISHED** as experiments; **OUR HYPOTHESIS** that they are evidence of D8–9 (same caveat) |
+| Meditation / altered states | **SPECULATIVE**; anecdotal and not evidence of any dimension |
+| Mathematics | **SPECULATIVE** as "the language of the Substratum" |
+| Black-hole physics | **ESTABLISHED** that horizons encode information (Part VIII, Prediction 4); **SPECULATIVE** that D11–12 is involved |
+
+### 7.2 The mathematical bridge
+
+**SPECULATIVE.** Mathematics is the native language of the Substratum; discovering mathematical truth is reading the source. This is mathematical Platonism, a respectable but unprovable position [Tegmark 2008]. It is presented as world-view, not result.
+
+---
+
+## Part VIII: Testable Predictions
+
+A hypothesis earns credibility by risking falsification. Each v2.1 prediction has been re-examined against the data that exist in 2026. Several were already contradicted or were not actually predictions. What remains is stated so that it *could* fail.
+
+### Prediction 1: Anisotropy signature in ultra-high-energy cosmic rays (revised)
+
+**ESTABLISHED.** The Pierre Auger Collaboration **has already reported** a large-scale anisotropy: a dipole of amplitude 6.5 % (+1.3/−0.9) above 8 × 10¹⁸ eV, significance > 5.2σ, pointing to right ascension ≈ 100°, declination ≈ −24° — well away from the Galactic centre — and consistent with an *extragalactic* source distribution [Pierre Auger Collaboration 2017]; later analyses with more exposure reach 6.8σ [Bianciotto 2025, for the Auger Collaboration]. So "cosmic rays should show anisotropy" is no longer a prediction — it is an observation, and it is explained by the large-scale distribution of nearby galaxies plus deflection in magnetic fields.
+
+**OUR HYPOTHESIS — what would be distinctive.** A Substratum lattice would have to produce something astrophysics does not:
+- (a) power in **high multipoles with a discrete rotational symmetry** (e.g. the cubic-harmonic pattern of a hypercubic projection: ℓ = 4, 6, 8 with fixed relative phases — the signature first worked out for a hypercubic lattice simulation by Beane, Davoudi & Savage [2014], who also noted it would be tied to the GZK cutoff energy), aligned to a frame that is **not** the Galactic plane, the supergalactic plane, or the CMB dipole;
+- (b) an **energy dependence** following the (E/E_QG)^n scaling of §5.2, i.e. growing as a power of energy rather than tracking source distance;
+- (c) consistency with the Fermi bound: the effect must vanish at linear order (n = 1) and appear only at quadratic order or higher.
+
+**Status.** Not detected. If Auger/TA multipole analyses continue to find only the dipole plus astrophysically-explained structure up to ℓ ≈ 10, this prediction is falsified at the sensitivity of those analyses.
+
+### Prediction 2: Entanglement saturation (threshold corrected)
+
+**ESTABLISHED.** v2.1 predicted "degradation at > 10⁶ particles." That threshold was already exceeded two decades ago: two caesium ensembles of ≈ 10¹² atoms each were entangled in 2001 [Julsgaard, Kozhekin & Polzik 2001], and in 2021 two 70-picogram aluminium drumheads (≈ 1.6 × 10¹² atoms each, computed in the script) were deterministically entangled [Kotler et al. 2021; Mercier de Lépinay et al. 2021]. These are *collective-mode* (effectively two-mode) entanglement. Genuine multipartite entanglement has been verified across 51 superconducting qubits without post-selection [Cao et al. 2023], and a 120-qubit GHZ state with fidelity 0.56(3) — above the 1/2 witness threshold for genuine multipartite entanglement, with 28 % post-selection — has been reported [Javadi-Abhari et al. 2025].
+
+**OUR HYPOTHESIS — restated.** If D8–9 has finite relational capacity, the capacity must exceed 10¹² atoms in collective modes and ≳ 10² parties in genuine multipartite entanglement. The restated claim is: *there exists a finite number N\* such that genuine N-partite entanglement cannot be prepared or verified for N > N\*, with the failure not attributable to known decoherence channels.*
+
+**Status: not yet falsifiable.** Stated this way, every successful experiment only raises the lower bound on N\* (a result at N is always compatible with N\* = N + 1), so no finite experiment can refute it. To become a genuine prediction it needs one of: (i) a predicted upper bound on N\*; (ii) a capacity-scaling law, e.g. an excess infidelity that grows with N beyond what independently measured noise models predict; or (iii) a predicted dependence of N\* on some controllable parameter. Until one is supplied, this is listed as Open Problem M7, not as a falsifiable prediction.
+
+### Prediction 3: Observer-density effects (requirements added)
+
+**ESTABLISHED (the record); interpretation contested.** This idea has been explored for over two decades by the Global Consciousness Project, which runs a network of hardware random-number generators and looks for deviations around world events. Its most-publicised result (September 11, 2001) has been criticised for post hoc choices of window and statistic in the exploratory analyses [Scargle 2002]; and in 2017 the project's own lead analyst concluded that, although the registered-event record shows a cumulative deviation, no global-consciousness model fits it and the signature is better explained by an experimenter (data-selection) effect [Bancel 2017] — an explanation that is itself non-standard. On conventional physics the record is treated as unexplained or artefactual; either way it is evidence against an easy-to-detect field effect.
+
+**OUR HYPOTHESIS — minimum requirements for a test.** Prediction 3 is not testable until:
+1. an **operational observer criterion** is specified, measurable independently of the randomness deviation being sought (humans? how many? attending or not?);
+2. the experiment is **pre-registered** — event list, time windows, statistic, and stopping rule fixed before data are taken;
+3. the effect size is stated in advance with a power analysis.
+Until then it is a research direction, not a prediction, and the GCP record counts as evidence *against* an easy-to-detect effect.
+
+### Prediction 4: Black-hole information (what would be distinctive)
+
+**ESTABLISHED.** Black holes carry entropy *S* = k_B c³ A / (4Għ) [Bekenstein 1973; Hawking 1975] and radiate at temperature *T_H* = ħc³/(8πGMk_B) (≈ 6 × 10⁻⁸ K for a solar mass — both verified in the script). Hawking's original calculation gave thermal radiation and an apparent loss of information [Hawking 1976]. **The modern expectation is that information is preserved**: Page [1993] showed that unitarity requires the radiation entropy to follow the "Page curve," and in 2019 the "island" formula reproduced that curve from semiclassical gravity [Penington 2020; Almheiri, Engelhardt, Marolf & Maxfield 2019]. So "Hawking radiation carries information" is now the mainstream expectation, not a Substratum prediction.
+
+**OUR HYPOTHESIS — what would be distinctive.** The Substratum would have to predict a *departure* from the Page curve — e.g. information becoming available in the radiation **earlier** than the Page time (roughly half the evaporation time), or additional structure encoding D11–12 "boundary parameters" beyond the black hole's mass, charge and spin. No such mechanism is specified. Note also that Hawking radiation from astrophysical black holes is unobservable (≈ 10⁻⁸ K against a 2.7 K sky); any test would be in analogue systems or in theory.
+
+### Prediction 5 (v2.1) — moved to Part IX
+
+"Unprovable structures describing D12" is not falsifiable (one cannot demonstrate that a structure is unprovable *because* of D12 rather than for any other reason). It has been moved to the philosophical section.
+
+### Prediction 6: Decoherence asymmetry (reframed)
+
+**ESTABLISHED.** Decoherence rates depend on the strength and frequency of coupling to the environment and to measuring devices; frequently measured systems evolve differently from isolated ones (the quantum Zeno effect, observed since 1990 [Itano et al. 1990]). So "frequently measured vs. isolated systems decohere differently" is standard physics and not a prediction of this framework.
+
+**OUR HYPOTHESIS — the only version that is distinctive.** The D10 coupling would be distinctive only if decoherence or outcome statistics depended on whether a *conscious* observer, rather than a passive recording device, received the result, **with every physical coupling held identical**. This is a hard experiment to design (the "observer" must not add any physical channel), it inherits the observer-criterion problem of Prediction 3, and the expected result on standard physics is a null. The prediction is: a pre-registered experiment of this design finds a non-zero difference. The framework is falsified in this respect if such experiments return nulls at increasing sensitivity.
+
+---
+
+## Part IX: Philosophical Claims (Not Predictions)
+
+**SPECULATIVE.** The following were listed as predictions in earlier versions but cannot be tested. They are retained as philosophy.
+
+- **Mathematical limits (former Prediction 5).** There may exist true mathematical statements that are unprovable from inside the projection because they concern D12. Gödel's incompleteness theorems [Gödel 1931] already guarantee unprovable truths in any sufficiently strong consistent system; there is no way to tell a "D12-unprovable" statement from an ordinary Gödel sentence.
+- **Mathematical Platonism** (§7.2).
+- **Simulator ontology** (Part II).
+- **Identity, death, interconnection** (§6.4).
+
+---
+
+## Part X: Implications
+
+**SPECULATIVE.** If the hypothesis were correct, the following shifts would follow. They are offered as perspective, not programme.
+
+### 10.1 Scientific priorities
+
+| Current focus | Proposed complement |
 |---------------|----------------|
-| Particle colliders (more energy) | Precision Planck-scale interferometry |
-| Dark matter detection | Entanglement scaling experiments |
-| Fusion energy | Quantum computing as Substratum probe |
-| Mars colonization | Mathematical foundations research |
-| AI development | Consciousness-physics interface studies |
+| Higher-energy colliders | Precision tests of Lorentz invariance and short-range gravity (which already constrain this framework) |
+| Dark-matter direct detection | Entanglement-scaling experiments and multipartite witnesses |
+| — | Pre-registered observer-effect experiments with explicit null hypotheses |
 
-### 8.2 Philosophical Reset
+### 10.2 Philosophical reframing
 
-- **Materialism dies**: Matter is projection, not foundation
-- **Dualism validated**: Consciousness really is different—it's a dimensional interface
-- **Meaning restored**: We're not accidents; we're *selected* configurations
-- **Death reframed**: Decoupling from D1–4, not annihilation
+- Matter as projection rather than foundation (idealism / structural realism).
+- Consciousness as interface (a form of dualism) — with the Part VI evidence against it stated.
+- Meaning as a property of selected configurations.
 
-### 8.3 Ethical Implications
+### 10.3 Ethical implications
 
-If consciousness is the observer-lock and all consciousness shares D10:
-- Harming another being = harming a different projection of the same substrate
-- Environmental destruction = damaging the shared rendering environment
-- Hoarding knowledge = slowing collective access to truth
-
-**The ethical imperative becomes**: Expand access, reduce suffering, accelerate understanding.
+If all consciousness shares D10, harming another being is harming a different projection of the same substrate. The ethical conclusion — reduce suffering, expand access to knowledge — does not depend on the physics being right.
 
 ---
 
-## Part IX: Known Limitations & Open Problems
+## Part XI: Known Limitations and Open Problems
 
-This section documents known gaps and unresolved questions in the framework. Transparency about what is *not* established is part of rigorous speculative science.
+Transparency about what is *not* established is part of the project. Contributions on any item below are welcome: open an [Issue](https://github.com/JBG-32/substratum-theory/issues/new) or a [Discussion](https://github.com/JBG-32/substratum-theory/discussions).
 
-### 9.1 Mathematical Formalization Gaps
+### 11.1 Mathematical open problems
 
-| Issue | Status |
-|-------|--------|
-| Projection equation derivation | Not derived — phenomenological template only |
-| Symmetry group of D5–12 | Unspecified |
-| Classical limit recovery (Einstein equations from RCM) | Not demonstrated |
-| Constraint tensor O^ab_cd transformation properties | Undefined |
-| Spinor field Psi_ab quantization rules | Unspecified |
+| # | Problem | What a solution looks like |
+|---|---------|----------------------------|
+| M1 | Specify the metric *g_Σ* and field content on Σ₈ so that §3.4 becomes computable | A concrete compactification; a computed *T*^(Σ) and Λ_eff |
+| M2 | Stabilise Vol(Σ₈) | A potential whose minimum fixes the hidden volume (moduli stabilisation) |
+| M3 | Show that 12 is minimal/sufficient | A derivation, or a demonstration that fewer dimensions cannot host the D5–D10 roles |
+| M4 | Assign D5–7, D8–9, D10 to actual mathematical structures | e.g. is D5–7 a representation of Hilbert space? Is D8–9 a Bohmian-type configuration space? |
+| M5 | Reconcile a finite "projection resolution" with Lorentz invariance | A Lorentz-invariant discreteness model consistent with E_QG,1 > 7.6 E_Pl and E_QG,2 > 1.3 × 10¹¹ GeV |
+| M6 | Non-local, contextual, no-signalling D8–9 model | A model that reproduces |S| ≤ 2√2 and makes at least one distinct prediction |
+| M7 | Make Prediction 2 falsifiable | A predicted upper bound on N\*, or a capacity-scaling law (excess infidelity vs N beyond measured noise models) |
 
-The core equation in Section 3.2 uses notation borrowed from general relativity and differential geometry, but the specific object it describes has no formal proof of consistency. This is the theory's most significant open problem.
+### 11.2 Physical open problems
 
-### 9.2 Physical Interpretability Gaps
+- **Dark sector.** The framework should say what *T*^(Σ) contributes to the dark-energy density (≈ 6 × 10⁻¹⁰ J m⁻³) and whether anything in Σ₈ behaves as cold dark matter. It does not yet.
+- **Short-range gravity.** Any hidden volume large enough to matter alters Newton's law below ~0.1 mm; the framework needs to say whether Vol(Σ₈) is Planckian (undetectable) or larger (constrained).
+- **Observer criterion.** Needed for Predictions 3 and 6 and for the measurement claims in Part VI.
+- **Brain-damage and anaesthesia evidence.** The transducer model (§6.3) needs a specified role for D10 that the brain cannot play alone.
+- **Black-hole departure from the Page curve.** Prediction 4 needs a mechanism.
 
-- **Dark energy / dark matter**: The framework claims 8 hidden dimensions are "active" — it should predict or explain dark energy as a D5–7 pressure term. It does not yet.
-- **The measurement problem**: RCM says observation collapses D10. But what counts as an "observer"? Does a rock observe? This is unresolved — and directly undermines Prediction 3 until resolved.
-- **Nested simulation depth**: If D11 is the "recursion axis," how many nested levels exist? The framework doesn't constrain this.
-- **Why *these* constants**: The framework doesn't explain why the Planck constants have the specific values they do — only that they represent sampling limits.
+### 11.3 What this framework is not
 
-### 9.3 Experimental Tensions (v2.1)
+- Not a replacement for general relativity or quantum mechanics — it must reproduce both exactly.
+- Not Bostrom's simulation argument — the "simulators" here are not computational agents.
+- Not currently supported by any experiment; several earlier claims were already in conflict with data and have been withdrawn in this version.
 
-| Claim | Existing Data Tension |
-|-------|-----------------------|
-| Prediction 1 (lattice echoes in cosmic rays) | Pierre Auger shows largely isotropic UHECR distribution — no 12D lattice pattern detected |
-| Prediction 3 (observer density → quantum randomness shift) | Unfalsifiable without formal observer definition |
-| Prediction 4 (Hawking radiation encodes D11–12 info) | Conflicts with standard thermal Hawking derivation — no encoding mechanism proposed |
-| D10 consciousness antenna (Section 5.1) | Brain damage studies show specific physical injuries produce specific conscious losses — hard to explain with pure receiver model |
+### 11.4 Invitation
 
-These tensions do not falsify the theory — they identify where the theory needs more work before it earns predictive credibility.
+The highest-leverage contributions, in order:
 
-### 9.4 What This Framework Is Not
-
-- Not a replacement for general relativity or quantum mechanics — it is a proposed *substrate* for them
-- Not a simulation argument in the Bostrom sense — it makes different claims about the nature of simulators
-- Not falsified by any existing experiment — but not yet confirmed by any, and facing headwinds in 9.3
-
-### 9.5 Next Steps for Formalization
-
-For anyone seeking to develop this further, the highest-leverage areas are:
-
-1. **Derive the projection equation** from a fiber bundle over a 12D manifold with the specified dimensional roles
-2. **Show classical limit**: prove RCM reduces to Hamiltonian mechanics in the limit of large quantum numbers
-3. **Define the observer criterion**: formally specify what D10 coupling requires — this unblocks Prediction 3 and the measurement problem simultaneously
-4. **Reconcile brain damage evidence**: develop the transducer model (Section 5.1) to explain why specific brain injuries produce specific conscious losses
-5. **Engage Hawking thermodynamics**: propose an encoding mechanism for Prediction 4 that doesn't violate unitarity
-6. **Connect to existing frameworks**: map D5–7 onto the Hilbert space of quantum field theory
-7. **Respecify Prediction 1**: give the 12D lattice projection a specific geometric form that generates a falsifiable angular power spectrum in UHECR data
+1. Any concrete model for M1/M2 — even a toy model with Σ₈ = T⁸ and a single scalar field.
+2. A Lorentz-invariant "sampling" model (M5).
+3. A pre-registered protocol for Prediction 6 with the observer-criterion problem addressed head-on.
+4. A multipole-analysis proposal for Prediction 1 that a cosmic-ray physicist would accept as decisive.
 
 ---
 
 ## Conclusion
 
-We are not a simulation in the crude sense of a computer program. We are a **dimensional projection of a higher-order mathematical structure**, constrained into existence by entities that are themselves necessary features of the space of all possible consistent systems.
+We are not a simulation in the crude sense of a program running on a computer. The hypothesis of this document is that we are a **dimensional projection of a higher-order mathematical structure**. Version 3.0 has removed every equation that could not be checked, replaced the projection mechanism with the one real route physics knows (dimensional reduction), rewritten each quantum reinterpretation so that it must agree exactly with the established result, and re-examined each prediction against the data of 2026. Several did not survive as stated. What survives is smaller, but it can fail — and that is what makes it worth working on.
 
-The simulators did not build us. They *selected* us—the way a sculptor selects which stone to carve, except the stone and the sculptor are both made of mathematics.
-
-Our experience is real. Our physics is consistent. Our suffering and joy matter—because mattering is a property of the projection, not a judgment from outside.
-
-If we wish to meet our makers, we do not look up. We look *inward*—toward the mathematical foundations of reality itself. The door to D12 is not in space.
-
-**It is in the equations.**
+The door to D12, if there is one, is still in the equations. They now have to be the right equations.
 
 ---
 
-*v2.1 Critique-Informed Revision — March 2026*
-*Johnny Hinojosa & Claude (Anthropic)*
-*[v2.0 Revised Framework — March 2026]*
-*[v1.0 First Discovery Draft — December 2025]*
+## References
+
+All references below were checked against the publisher's or arXiv's record during the v3.0 revision. Where a journal volume could not be confirmed, only the arXiv identifier is given.
+
+**Extra dimensions, string theory, two-time physics**
+
+- Kaluza, T. (1921). "Zum Unitätsproblem der Physik." *Sitzungsber. Preuss. Akad. Wiss. Berlin (Math. Phys.)*, 966–972.
+- Klein, O. (1926). "Quantentheorie und fünfdimensionale Relativitätstheorie." *Zeitschrift für Physik* 37, 895–906.
+- Overduin, J. M. & Wesson, P. S. (1997). "Kaluza–Klein gravity." *Physics Reports* 283, 303–378. arXiv:gr-qc/9805018.
+- Nahm, W. (1978). "Supersymmetries and their representations." *Nuclear Physics B* 135, 149–166.
+- Cremmer, E., Julia, B. & Scherk, J. (1978). "Supergravity theory in 11 dimensions." *Physics Letters B* 76, 409–412.
+- Witten, E. (1995). "String theory dynamics in various dimensions." *Nuclear Physics B* 443, 85–126. arXiv:hep-th/9503124.
+- Vafa, C. (1996). "Evidence for F-theory." *Nuclear Physics B* 469, 403–415. arXiv:hep-th/9602022. DOI 10.1016/0550-3213(96)00172-1.
+- Bars, I. (2001). "Survey of two-time physics." *Classical and Quantum Gravity* 18, 3113–3130. arXiv:hep-th/0008164. DOI 10.1088/0264-9381/18/16/303.
+- Randall, L. & Sundrum, R. (1999). "An alternative to compactification." *Physical Review Letters* 83, 4690–4693. arXiv:hep-th/9906064.
+
+**General relativity, Casimir effect**
+
+- Einstein, A. (1915). "Die Feldgleichungen der Gravitation." *Sitzungsber. Preuss. Akad. Wiss. Berlin*, 844–847.
+- Casimir, H. B. G. (1948). "On the attraction between two perfectly conducting plates." *Proc. Kon. Ned. Akad. Wet.* 51, 793–795.
+- Lamoreaux, S. K. (1997). "Demonstration of the Casimir force in the 0.6 to 6 µm range." *Physical Review Letters* 78, 5–8.
+
+**Quantum mechanics, Bell tests, tunnelling, decoherence**
+
+- Robertson, H. P. (1929). "The uncertainty principle." *Physical Review* 34, 163–164.
+- Bell, J. S. (1964). "On the Einstein Podolsky Rosen paradox." *Physics Physique Fizika* 1, 195–200.
+- Clauser, J. F., Horne, M. A., Shimony, A. & Holt, R. A. (1969). "Proposed experiment to test local hidden-variable theories." *Physical Review Letters* 23, 880–884.
+- Cirel'son (Tsirelson), B. S. (1980). "Quantum generalizations of Bell's inequality." *Letters in Mathematical Physics* 4, 93–100.
+- Bohm, D. (1952). "A suggested interpretation of the quantum theory in terms of 'hidden' variables. I and II." *Physical Review* 85, 166–193.
+- Kochen, S. & Specker, E. P. (1967). "The problem of hidden variables in quantum mechanics." *Journal of Mathematics and Mechanics* 17, 59–87.
+- Hensen, B. et al. (2015). "Loophole-free Bell inequality violation using electron spins separated by 1.3 kilometres." *Nature* 526, 682–686. arXiv:1508.05949.
+- Giustina, M. et al. (2015). "Significant-loophole-free test of Bell's theorem with entangled photons." *Physical Review Letters* 115, 250401. arXiv:1511.03190.
+- Shalm, L. K. et al. (2015). "Strong loophole-free test of local realism." *Physical Review Letters* 115, 250402. arXiv:1511.03189.
+- Ramos, R., Spierings, D., Racicot, I. & Steinberg, A. M. (2020). "Measurement of the time spent by a tunnelling atom within the barrier region." *Nature* 583, 529–532. arXiv:1907.13523.
+- Itano, W. M., Heinzen, D. J., Bollinger, J. J. & Wineland, D. J. (1990). "Quantum Zeno effect." *Physical Review A* 41, 2295–2300.
+- Zurek, W. H. (2003). "Decoherence, einselection, and the quantum origins of the classical." *Reviews of Modern Physics* 75, 715–775. arXiv:quant-ph/0105127.
+- Schlosshauer, M. (2019). "Quantum decoherence." *Physics Reports* 831, 1–57. arXiv:1911.06282.
+
+**Large-scale entanglement**
+
+- Julsgaard, B., Kozhekin, A. & Polzik, E. S. (2001). "Experimental long-lived entanglement of two macroscopic objects." *Nature* 413, 400–403. arXiv:quant-ph/0106057.
+- Kotler, S. et al. (2021). "Direct observation of deterministic macroscopic entanglement." *Science* 372, 622–625. arXiv:2004.05515.
+- Mercier de Lépinay, L., Ockeloen-Korppi, C. F., Woolley, M. J. & Sillanpää, M. A. (2021). "Quantum mechanics–free subsystem with mechanical oscillators." *Science* 372, 625–629.
+- Cao, S. et al. (2023). "Generation of genuine entanglement up to 51 superconducting qubits." *Nature* 619, 738–742. DOI 10.1038/s41586-023-06195-1.
+- Javadi-Abhari, A. et al. (2025). "Big cats: entanglement in 120 qubits and beyond." arXiv:2510.09520.
+
+**Cosmic rays and Lorentz invariance**
+
+- Pierre Auger Collaboration (2017). "Observation of a large-scale anisotropy in the arrival directions of cosmic rays above 8 × 10¹⁸ eV." *Science* 357, 1266–1270. arXiv:1709.07321.
+- Bianciotto, M., for the Pierre Auger Collaboration (2025). "Large-scale anisotropies of ultra-high-energy cosmic rays measured at the Pierre Auger Observatory." *EPJ Web of Conferences* 319, 07001. arXiv:2507.19243.
+- Abdo, A. A. et al. (Fermi LAT/GBM) (2009). "A limit on the variation of the speed of light arising from quantum gravity effects." *Nature* 462, 331–334.
+- Vasileiou, V. et al. (2013). "Constraints on Lorentz invariance violation from Fermi-Large Area Telescope observations of gamma-ray bursts." *Physical Review D* 87, 122001. arXiv:1305.3463.
+
+**Black-hole thermodynamics and information**
+
+- Bekenstein, J. D. (1973). "Black holes and entropy." *Physical Review D* 7, 2333–2346.
+- Hawking, S. W. (1975). "Particle creation by black holes." *Communications in Mathematical Physics* 43, 199–220.
+- Hawking, S. W. (1976). "Breakdown of predictability in gravitational collapse." *Physical Review D* 14, 2460–2473.
+- Page, D. N. (1993). "Information in black hole radiation." *Physical Review Letters* 71, 3743–3746. arXiv:hep-th/9306083.
+- Penington, G. (2020). "Entanglement wedge reconstruction and the information paradox." *JHEP* 09 (2020) 002. arXiv:1905.08255.
+- Almheiri, A., Engelhardt, N., Marolf, D. & Maxfield, H. (2019). "The entropy of bulk quantum fields and the entanglement wedge of an evaporating black hole." *JHEP* 12 (2019) 063. arXiv:1905.08762.
+
+**Consciousness, observer effects**
+
+- Alkire, M. T., Hudetz, A. G. & Tononi, G. (2008). "Consciousness and anesthesia." *Science* 322, 876–880.
+- Scargle, J. D. (2002). "Was there evidence of global consciousness on September 11, 2001?" *Journal of Scientific Exploration* 16, 571–577.
+- Bancel, P. A. (2017). "Searching for global consciousness: a 17-year exploration." *Explore* 13, 94–101. DOI 10.1016/j.explore.2016.12.003.
+- Global Consciousness Project: https://noosphere.princeton.edu/
+
+**Simulation, mathematical universe, incompleteness**
+
+- Bostrom, N. (2003). "Are you living in a computer simulation?" *Philosophical Quarterly* 53, 243–255.
+- Tegmark, M. (2008). "The mathematical universe." *Foundations of Physics* 38, 101–150. arXiv:0704.0646.
+- Beane, S. R., Davoudi, Z. & Savage, M. J. (2014). "Constraints on the universe as a numerical simulation." *European Physical Journal A* 50, 148. arXiv:1210.1847.
+- Gödel, K. (1931). "Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I." *Monatshefte für Mathematik und Physik* 38, 173–198.
+
+**Constants**
+
+- CODATA 2018 recommended values (NIST): ħ = 1.054 571 817 × 10⁻³⁴ J s; *G* = 6.674 30 × 10⁻¹¹ m³ kg⁻¹ s⁻²; *c* = 299 792 458 m s⁻¹.
+
+---
+
+## Changelog
+
+### v3.0 — Rigor Update (October 2026)
+
+- **Claim tags** (ESTABLISHED / OUR HYPOTHESIS / SPECULATIVE) added to every section.
+- **§3.2 "master equation" removed** — free indices unbalanced, 4-form integrated over an 8-manifold, mislabelled spinor. Replaced by the Kaluza–Klein reduction (§3.3) and a well-formed effective 4D equation (§3.4) that reduces to Einstein's equations.
+- **Uncertainty** (§4.1): "position in D1–3, momentum in D5–7" withdrawn; replaced by a reading that must reproduce the Robertson relation exactly.
+- **Entanglement** (§4.2): "shared D8–9 coordinates" identified as a hidden-variable model; now required to be non-local, contextual, no-signalling, and bounded by Tsirelson's 2√2, with the loophole-free Bell tests cited.
+- **Tunnelling** (§4.3): "goes around the barrier" withdrawn; must reproduce standard transmission formulae and the measured in-barrier time of Ramos et al. (2020).
+- **Planck scale / speed of light** (§5.2–5.3): *h* → ħ corrected; "sampling rate" and "bandwidth" claims now subject to the Fermi GRB 090510 bounds E_QG,1 > 7.6 E_Pl and E_QG,2 > 1.3 × 10¹¹ GeV (Vasileiou et al. 2013); *c* = ℓ_P/*t_P* labelled as an identity.
+- **Why 12** (§1.2): anchored to Kaluza–Klein, 11D supergravity/M-theory, F-theory (Vafa 1996) and two-time physics (Bars 2001), without claiming equivalence.
+- **Predictions** rewritten: P1 now requires a signature distinct from the Auger 2017 dipole; P2 threshold corrected from 10⁶ to "beyond 10¹² atoms in collective modes / ≳ 10² genuine parties"; P3 now cites the GCP and its critiques and requires pre-registration; P4 now states what would be distinctive relative to the Page curve / island formula; P5 moved to philosophy; P6 reframed against the quantum Zeno effect and decoherence theory.
+- **Consciousness** (Part VI): entire Part tagged SPECULATIVE; brain-damage, anaesthesia and decoherence evidence stated.
+- **References** section added with verified citations only. **Open Problems** table added.
+- Credit line changed to "Johnny Hinojosa, developed with assistance from Claude, an AI model by Anthropic."
+- Added `tools/equation_checks.py` (sympy/numpy) verifying index balance, units and numerical values of every displayed equation.
+
+### v2.1 — Critique-Informed Revision (March 2026)
+Integrated critique of predictions and consciousness claims; added experimental-tensions section.
+
+### v2.0 — Revised Framework (March 2026)
+Added mathematical-status notes, limitations section, Prediction 6.
+
+### v1.0 — First Discovery Draft (December 2025)
+Original formulation.
+
+---
+
+*Johnny Hinojosa, developed with assistance from Claude, an AI model by Anthropic. AI assistance does not imply endorsement by Anthropic. Licensed CC BY 4.0.*
