@@ -903,7 +903,7 @@
         .feedback-links { margin-top: 2rem; font-size: 0.9rem; color: var(--muted); }
         .feedback-links a { color: var(--d1-4); text-decoration: none; border-bottom: 1px dotted var(--dim); }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 </head>
 <body>
     <div class="bg-grid"></div>
@@ -926,7 +926,7 @@
         <p class="tagline">A hypothesis that observable 4D reality is a projection of a 12-dimensional informational manifold. Not established science. Every claim below is tagged so you can see exactly which parts are known physics and which are ours.</p>
         <div class="legend">
             <span><span class="tag est">ESTABLISHED</span> published, tested physics</span>
-            <span><span class="tag hyp">OUR HYPOTHESIS</span> the proposal, well-formed and testable</span>
+            <span><span class="tag hyp">OUR HYPOTHESIS</span> the proposal, well-formed and meant to be testable</span>
             <span><span class="tag spec">SPECULATIVE</span> ideas without a test yet</span>
         </div>
         <div class="scroll-indicator">EXPLORE</div>
@@ -987,7 +987,7 @@
             </div>
 
             <div class="prose">
-                <p><span class="tag est">ESTABLISHED</span> Extra dimensions are a serious idea in physics. Kaluza–Klein theory (1921–26) showed 5D gravity reproduces 4D gravity plus electromagnetism [1–3]. Supergravity is consistent in at most 11 dimensions [4,5], and the five superstring theories unify in 11D M-theory [6]. <strong>F-theory</strong> [7] gives type IIB strings a natural 12-dimensional reading — though its two extra dimensions are not ordinary spacetime (a literal reading needs two time directions, signature (10,2)). <strong>Two-time physics</strong> [8] is a separate published programme in which ordinary 1-time physics is a "shadow" of a theory in two more dimensions.</p>
+                <p><span class="tag est">ESTABLISHED</span> Extra dimensions are a serious idea in physics. Kaluza–Klein theory (1921–26) showed 5D gravity reproduces 4D gravity plus electromagnetism plus a scalar field (the dilaton/radion) [1–3]. Supergravity is consistent in at most 11 dimensions [4,5], and the five superstring theories unify in 11D M-theory [6]. <strong>F-theory</strong> [7] gives type IIB strings a natural 12-dimensional reading — though its two extra dimensions are not ordinary spacetime (a literal reading needs two time directions, signature (10,2)). <strong>Two-time physics</strong> [8] is a separate published programme in which ordinary 1-time physics is a "shadow" of a theory in two more dimensions.</p>
                 <p><span class="tag hyp">OUR HYPOTHESIS</span> The 12 = 4 + 8 count is <em>motivated</em> by this landscape, not derived from it. We do not claim the Substratum is F-theory or 2T-physics; only that 12 is not an arbitrary number in theoretical physics. A derivation that 12 is minimal and sufficient is an open problem.</p>
             </div>
         </section>
@@ -1029,7 +1029,7 @@
             <div class="section-header">
                 <p class="section-number">03 — THE MATHEMATICS</p>
                 <h2>From 12 Dimensions to 4</h2>
-                <p class="section-desc">Earlier versions displayed a "master equation." It was not well-formed and has been removed. Below is the one route physics actually knows for 4D gravity to emerge from higher-dimensional gravity, followed by our hypothesis stated in that language.</p>
+                <p class="section-desc">Earlier versions displayed a "master equation." It was not well-formed and has been removed. Below is the standard, best-understood route for 4D gravity to emerge from higher-dimensional gravity, followed by our hypothesis stated in that language.</p>
             </div>
 
             <div class="equation-box removed">
@@ -1040,9 +1040,9 @@
 
             <div class="equation-box">
                 <p class="equation-label"><span class="tag est" style="margin:0">ESTABLISHED</span> &nbsp; KALUZA–KLEIN REDUCTION</p>
-                <div class="equation"><span class="math" data-display="true">S_D = \frac{1}{16\pi G_D}\int d^{D}x\,\sqrt{-g_D}\;R_D,\qquad D = 4 + n</span></div>
+                <div class="equation"><span class="math" data-display="true">S_D = \frac{c^{3}}{16\pi G_D}\int d^{D}x\,\sqrt{-g_D}\;R_D,\qquad D = 4 + n,\quad x^{0}=ct</span></div>
                 <div class="equation"><span class="math" data-display="true">M_D = M_4\times\Sigma_n \;\Longrightarrow\; G_4 = \frac{G_D}{\mathrm{Vol}(\Sigma_n)}</span></div>
-                <p class="equation-desc">The Einstein–Hilbert action in D dimensions. If spacetime is a product of 4D spacetime and a hidden manifold Σ<sub>n</sub> of volume Vol(Σ<sub>n</sub>), the Newton constant we measure is the higher-dimensional one divided by the hidden volume. Fields on Σ<sub>n</sub> appear in 4D as an effective cosmological constant and effective stress-energy. This is how every string compactification produces 4D physics.</p>
+                <p class="equation-desc">The Einstein–Hilbert action in D dimensions (SI prefactor c³/16πG<sub>D</sub>; in units with c = 1 it is 1/16πG<sub>D</sub>). If spacetime is a direct product (no warp factor) of 4D spacetime and a hidden manifold Σ<sub>n</sub> of volume Vol(Σ<sub>n</sub>), the Newton constant we measure is the higher-dimensional one divided by the hidden volume. Fields on Σ<sub>n</sub> appear in 4D as an effective cosmological constant and effective stress-energy. This is how the simplest string compactifications produce 4D physics. (Brane-localised gravity with a non-compact extra dimension [45] is a separate published route.)</p>
                 <p class="equation-ref">Kaluza 1921 · Klein 1926 · Overduin &amp; Wesson 1997 [1–3]</p>
             </div>
 
@@ -1078,7 +1078,7 @@
             <div class="equation-box">
                 <p class="equation-label"><span class="tag est" style="margin:0">ESTABLISHED</span> &nbsp; BELL / CHSH AND THE TSIRELSON BOUND</p>
                 <div class="equation"><span class="math" data-display="true">S = E(a,b)+E(a,b')+E(a',b)-E(a',b'),\qquad |S|\le 2 \text{ (local realism)},\qquad |S|\le 2\sqrt{2} \text{ (quantum)}</span></div>
-                <p class="equation-desc">No local hidden-variable theory reproduces quantum correlations. Loophole-free experiments found |S| &gt; 2 [17–19] (2022 Nobel Prize: Aspect, Clauser, Zeilinger). Quantum mechanics never exceeds 2√2 [15]. Entanglement cannot send signals.</p>
+                <p class="equation-desc">No local hidden-variable theory reproduces quantum correlations. Loophole-free experiments found Bell-inequality violations (CHSH S = 2.42 in Hensen et al.; CH–Eberhard in the photon tests) [17–19] — the line of work recognised by the 2022 Nobel Prize in Physics (Aspect, Clauser, Zeilinger). Quantum mechanics never exceeds 2√2 [15]. Entanglement cannot send signals.</p>
             </div>
 
             <div class="equation-box">
@@ -1116,7 +1116,7 @@
                     <p class="quantum-phenomenon">PLANCK SCALE</p>
                     <span class="tag est">ESTABLISHED</span>
                     <h3 class="quantum-title">Not a Known Lattice</h3>
-                    <p class="quantum-explanation"><span class="math">\ell_P=\sqrt{\hbar G/c^{3}}\approx1.616\times10^{-35}\,\mathrm{m}</span>, <span class="math">t_P=\sqrt{\hbar G/c^{5}}\approx5.391\times10^{-44}\,\mathrm{s}</span> (v2.1 wrote h for ħ; corrected). Spacetime discreteness at this scale is <em>not</em> established. Fermi timing of GRB 090510 gives <strong>E<sub>QG,1</sub> &gt; 7.6 E<sub>Planck</sub></strong> [31,32]: any linear-order Planck-scale "refresh rate" is already excluded.</p>
+                    <p class="quantum-explanation"><span class="math">\ell_P=\sqrt{\hbar G/c^{3}}\approx1.616\times10^{-35}\,\mathrm{m}</span>, <span class="math">t_P=\sqrt{\hbar G/c^{5}}\approx5.391\times10^{-44}\,\mathrm{s}</span> (v2.1 wrote h for ħ; corrected). Spacetime discreteness at this scale is <em>not</em> established. Fermi timing of GRB 090510 gives <strong>E<sub>QG,1</sub> &gt; 7.6 E<sub>Planck</sub></strong> (95 % CL, subluminal case) and E<sub>QG,2</sub> &gt; 1.3×10<sup>11</sup> GeV [32] (an earlier analysis gave 1.2 E<sub>Planck</sub> [31]): any linear-order Planck-scale "refresh rate" is already excluded.</p>
                 </div>
                 <div class="quantum-card">
                     <p class="quantum-phenomenon">SPEED OF LIGHT</p>
@@ -1194,21 +1194,21 @@
                     <span class="prediction-number">01</span>
                     <span class="tag hyp">OUR HYPOTHESIS</span>
                     <h3 class="prediction-title">UHECR Lattice Signature (revised)</h3>
-                    <p class="prediction-desc"><strong>Already observed:</strong> Auger reported a 6.5 % dipole above 8×10<sup>18</sup> eV at &gt;5.2σ in 2017 [29], now 6.8σ [30], consistent with extragalactic sources. <strong>Distinctive signature required:</strong> high-multipole power with discrete rotational symmetry (e.g. ℓ = 4, 6, 8 cubic harmonics) in a frame unrelated to the Galactic/supergalactic planes or CMB dipole, growing as a power of energy, and absent at linear order to satisfy the Fermi bound.</p>
+                    <p class="prediction-desc"><strong>Already observed:</strong> Auger reported a 6.5 % dipole above 8×10<sup>18</sup> eV at &gt;5.2σ in 2017 [29], now 6.8σ [30], consistent with extragalactic sources. <strong>Distinctive signature required:</strong> high-multipole power with discrete rotational symmetry (e.g. ℓ = 4, 6, 8 cubic harmonics — the lattice signature worked out by Beane, Davoudi &amp; Savage [46]) in a frame unrelated to the Galactic/supergalactic planes or CMB dipole, growing as a power of energy, and absent at linear order to satisfy the Fermi bound.</p>
                     <p class="status">STATUS: NOT DETECTED</p>
                 </div>
                 <div class="prediction-card">
                     <span class="prediction-number">02</span>
                     <span class="tag hyp">OUR HYPOTHESIS</span>
                     <h3 class="prediction-title">Entanglement Saturation (threshold corrected)</h3>
-                    <p class="prediction-desc">The v2.1 threshold "&gt;10<sup>6</sup> particles" was exceeded in 2001: two 10<sup>12</sup>-atom caesium ensembles were entangled [25]; in 2021 two 70 pg drumheads (≈1.6×10<sup>12</sup> atoms each) were deterministically entangled [26,27]; genuine 51-qubit entanglement was verified in 2023 [28]. <strong>Restated:</strong> there exists a finite N* beyond which genuine N-partite entanglement cannot be prepared, with the failure not attributable to known decoherence. No value of N* is predicted.</p>
+                    <p class="prediction-desc">The v2.1 threshold "&gt;10<sup>6</sup> particles" was exceeded in 2001: two 10<sup>12</sup>-atom caesium ensembles were entangled [25]; in 2021 two 70 pg drumheads (≈1.6×10<sup>12</sup> atoms each) were deterministically entangled [26,27]; genuine 51-qubit entanglement without post-selection was verified in 2023 [28], and a 120-qubit GHZ state (fidelity 0.56(3), 28 % post-selection) in 2025 [47]. <strong>Restated:</strong> the capacity must exceed 10<sup>12</sup> atoms in collective modes and ≳10<sup>2</sup> genuine parties; there exists a finite N* beyond which genuine N-partite entanglement cannot be prepared, with the failure not attributable to known decoherence. No value of N* is predicted.</p>
                     <p class="status">STATUS: OPEN — TESTABLE AS QUANTUM COMPUTERS SCALE</p>
                 </div>
                 <div class="prediction-card">
                     <span class="prediction-number">03</span>
                     <span class="tag hyp">OUR HYPOTHESIS</span>
                     <h3 class="prediction-title">Observer-Density Effects (requirements added)</h3>
-                    <p class="prediction-desc">The Global Consciousness Project has searched for this for two decades; its analyses are criticised for post hoc event selection [37], and its own lead analyst concluded in 2017 that the data do not support a global-consciousness effect [38]. <strong>Not testable until:</strong> an operational observer criterion is defined, the experiment is pre-registered (events, windows, statistic, stopping rule), and the effect size is stated in advance.</p>
+                    <p class="prediction-desc">The Global Consciousness Project has searched for this for two decades. Its most-publicised result (September 11, 2001) has been criticised for post hoc choices of window and statistic [37]; in 2017 its own lead analyst concluded that, although the registered-event record shows a cumulative deviation, no global-consciousness model fits it and the signature is better explained by an experimenter (data-selection) effect [38] — itself a non-standard explanation. On conventional physics the record is unexplained or artefactual; either way it is evidence against an easy-to-detect field effect. <strong>Not testable until:</strong> an operational observer criterion is defined, the experiment is pre-registered (events, windows, statistic, stopping rule), and the effect size is stated in advance.</p>
                     <p class="status">STATUS: RESEARCH DIRECTION, NOT YET A PREDICTION</p>
                 </div>
                 <div class="prediction-card">
@@ -1250,7 +1250,7 @@
                         <tr><td>M2</td><td>Stabilise Vol(Σ<sub>8</sub>)</td><td>A potential whose minimum fixes the hidden volume; consistency with short-range gravity tests</td></tr>
                         <tr><td>M3</td><td>Show 12 is minimal and sufficient</td><td>A derivation, or a proof that fewer dimensions cannot host the D5–D10 roles</td></tr>
                         <tr><td>M4</td><td>Map D5–7, D8–9, D10 to real mathematical structures</td><td>Is D5–7 a representation of Hilbert space? Is D8–9 a Bohmian-type configuration space?</td></tr>
-                        <tr><td>M5</td><td>Reconcile finite "projection resolution" with Lorentz invariance</td><td>A Lorentz-invariant discreteness model consistent with E<sub>QG,1</sub> &gt; 7.6 E<sub>Pl</sub></td></tr>
+                        <tr><td>M5</td><td>Reconcile finite "projection resolution" with Lorentz invariance</td><td>A Lorentz-invariant discreteness model consistent with E<sub>QG,1</sub> &gt; 7.6 E<sub>Pl</sub> and E<sub>QG,2</sub> &gt; 1.3×10<sup>11</sup> GeV</td></tr>
                         <tr><td>M6</td><td>A non-local, contextual, no-signalling D8–9 model</td><td>Reproduces |S| ≤ 2√2 and makes at least one distinct prediction</td></tr>
                         <tr><td>P1</td><td>Dark sector</td><td>What T<sup>(Σ)</sup> contributes to the ≈6×10<sup>−10</sup> J m<sup>−3</sup> dark-energy density; whether anything in Σ<sub>8</sub> behaves as cold dark matter</td></tr>
                         <tr><td>P2</td><td>Observer criterion</td><td>An operational definition, measurable independently of the effect sought — unblocks Predictions 3 and 6</td></tr>
@@ -1266,7 +1266,7 @@
             <div class="section-header">
                 <p class="section-number">08 — REFERENCES</p>
                 <h2>Sources</h2>
-                <p class="section-desc">Every citation was checked against the publisher's or arXiv's record during the v3.0 revision. Full list with DOIs in <a href="THEORY.md" style="color: var(--d1-4);">THEORY.md</a>.</p>
+                <p class="section-desc">Every citation was checked against the publisher's or arXiv's record during the v3.0 revision. Full list with DOIs in <a href="https://github.com/JBG-32/substratum-theory/blob/main/THEORY.md" style="color: var(--d1-4);">THEORY.md</a>.</p>
             </div>
             <div class="references">
                 <h3>Extra dimensions</h3>
@@ -1337,6 +1337,12 @@
                     <li>Penington, G. (2020). JHEP 09 (2020) 002. <a href="https://arxiv.org/abs/1905.08255">1905.08255</a></li>
                     <li>Almheiri, Engelhardt, Marolf &amp; Maxfield (2019). JHEP 12 (2019) 063. <a href="https://arxiv.org/abs/1905.08762">1905.08762</a></li>
                 </ol>
+                <h3>Added in review</h3>
+                <ol start="45" style="counter-reset: ref 44;">
+                    <li>Randall, L. &amp; Sundrum, R. (1999). "An alternative to compactification." Phys. Rev. Lett. 83, 4690. <a href="https://arxiv.org/abs/hep-th/9906064">hep-th/9906064</a></li>
+                    <li>Beane, Davoudi &amp; Savage (2014). "Constraints on the universe as a numerical simulation." Eur. Phys. J. A 50, 148. <a href="https://arxiv.org/abs/1210.1847">1210.1847</a></li>
+                    <li>Javadi-Abhari, A. et al. (2025). "Big cats: entanglement in 120 qubits and beyond." <a href="https://arxiv.org/abs/2510.09520">2510.09520</a></li>
+                </ol>
             </div>
         </section>
 
@@ -1357,11 +1363,11 @@
 
     <footer>
         <p class="footer-meta">THE SUBSTRATUM THEORY — v3.0 RIGOR UPDATE — OCTOBER 2026</p>
-        <p class="attribution">Johnny Hinojosa, developed with assistance from Claude, an AI model by Anthropic.<br>Licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Not peer-reviewed. Not established science.</p>
+        <p class="attribution">Johnny Hinojosa, developed with assistance from Claude, an AI model by Anthropic. AI assistance does not imply endorsement by Anthropic.<br>Licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Not peer-reviewed. Not established science.</p>
         <p style="margin-top: 1rem; font-size: 0.75rem;">The door to D12, if there is one, is still in the equations. They now have to be the right equations.</p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
     <script>
         // Render equations with KaTeX if it loaded; otherwise the raw TeX stays visible.
         (function () {

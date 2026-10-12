@@ -170,6 +170,7 @@ G_D, Vol, R4, RS = sp.symbols("G_D Vol R_4 R_Sigma", positive=True)
 S_density_4d = (Vol / (16 * sp.pi * G_D)) * R4
 G_4_eff = sp.solve(sp.Eq(1 / (16 * sp.pi * sp.Symbol("G_4", positive=True)) * R4, S_density_4d),
                    sp.Symbol("G_4", positive=True))[0]
+# (bookkeeping check; the reduction itself is the derivation in THEORY.md §3.3)
 record("LIMIT", "KK: coefficient of ∫√-g4 R4 identifies G_4 = G_D/Vol(Σ)",
        sp.simplify(G_4_eff - G_D / Vol) == 0, f"G_4 = {G_4_eff}")
 # Illustrative numeric: if Σ_8 were a flat torus of side L, Vol = L^8.
@@ -205,6 +206,7 @@ kappa = sp.Symbol("kappa")  # 8πG_4/c^4
 proposed = sp.Eq(Gmn + Lam_eff * gmn, kappa * (T_mat + T_sig))
 gr = sp.Eq(Gmn + Lam * gmn, kappa * T_mat)
 reduced = proposed.subs({T_sig: 0, Lam_eff: Lam})
+# (bookkeeping check; the reduction itself is the derivation in THEORY.md §3.3)
 record("LIMIT", "Effective equation → Einstein equations when T^(Σ)=0, Λ_eff=Λ",
        sp.simplify(reduced.lhs - gr.lhs) == 0 and sp.simplify(reduced.rhs - gr.rhs) == 0,
        f"{reduced}")
@@ -324,12 +326,15 @@ record("NUMERIC", "E_Planck ≈ 1.22×10^19 GeV", abs(E_Pl_GeV / 1.2209e19 - 1) 
 #     GRB 090510: E_QG,1 > 7.6 E_Pl  (Vasileiou et al. 2013)
 # ==========================================================================
 print("\n=== 11. Lorentz invariance / lattice spacetime ===")
-E_QG1_GeV = 7.6 * E_Pl_GeV
+E_QG1_GeV = 7.6 * E_Pl_GeV   # Vasileiou et al. 2013, 95% CL, subluminal (xi_1=+1); Abdo et al. 2009 gave 1.2 E_Pl
+E_QG2_GeV = 1.3e11           # Vasileiou et al. 2013, quadratic case
 # Fractional velocity shift for a 10^20 eV = 10^11 GeV cosmic ray, linear order:
 E_cr_GeV = 1e11
 dv_over_c = 1.0 * (E_cr_GeV / E_QG1_GeV)
 record("NUMERIC", "Linear-order (n=1) LIV at 10^20 eV is bounded to |δv/c| < ~10^-9 (E_QG,1 > 7.6 E_Pl)",
        dv_over_c < 2e-8, f"(E/E_QG,1) = {dv_over_c:.2e}")
+record("NUMERIC", "Quadratic-order (n=2) LIV at 10^20 eV: (E/E_QG,2)^2 with E_QG,2 = 1.3e11 GeV",
+       (E_cr_GeV / E_QG2_GeV) ** 2 < 1.0, f"(E/E_QG,2)^2 = {(E_cr_GeV/E_QG2_GeV)**2:.2e}  (E_QG,2/E_Pl = {E_QG2_GeV/E_Pl_GeV:.1e})")
 # Naive Planck-lattice expectation (E_QG ~ E_Pl, n=1) would give (E/E_Pl):
 record("NUMERIC", "A naive Planck-scale lattice (E_QG,1 = E_Pl) is EXCLUDED by GRB 090510 (7.6 E_Pl > E_Pl)",
        7.6 > 1.0, "any Substratum 'sampling' model must suppress linear-order dispersion")

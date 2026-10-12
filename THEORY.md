@@ -3,7 +3,7 @@
 **Classification**: Speculative Theoretical Framework (not peer-reviewed physics)
 **Version**: v3.0 — Rigor Update
 **Date**: October 2026
-**Author**: Johnny Hinojosa, developed with assistance from Claude, an AI model by Anthropic
+**Author**: Johnny Hinojosa, developed with assistance from Claude, an AI model by Anthropic. AI assistance does not imply endorsement by Anthropic.
 
 ---
 
@@ -71,7 +71,7 @@ We perceive only dimensions 1–4. In this hypothesis, dimensions 5–10 are hid
 
 **ESTABLISHED.** Extra spatial dimensions are a serious, long-studied idea in physics, and some of the best-developed theories land close to 12:
 
-- **Kaluza–Klein theory (1921–1926)** showed that 5-dimensional general relativity, with the fifth dimension curled into a small circle, reproduces 4D gravity *plus* electromagnetism [Kaluza 1921; Klein 1926; review: Overduin & Wesson 1997].
+- **Kaluza–Klein theory (1921–1926)** showed that 5-dimensional general relativity, with the fifth dimension curled into a small circle, reproduces 4D gravity *plus* electromagnetism *plus* a scalar field (the dilaton/radion) [Kaluza 1921; Klein 1926; review: Overduin & Wesson 1997].
 - **Supergravity** is consistent in at most **11** dimensions [Nahm 1978; Cremmer, Julia & Scherk 1978], and the five 10-dimensional superstring theories are understood as limits of an 11-dimensional **M-theory** [Witten 1995].
 - **F-theory** [Vafa 1996] gives type IIB string theory a natural **12-dimensional** interpretation. Importantly, the two extra dimensions in F-theory are *not* ordinary spacetime: they encode a complex coupling parameter, and a literal 12D spacetime reading would need signature (10,2) — two time-like directions.
 - **Two-time physics** [Bars 2001] is a separate, well-defined proposal in which ordinary 1-time physics in *d* dimensions arises as a gauge-fixed "shadow" of a theory in *d+2* dimensions with signature (d,2). It is a minority programme but is a real, published example of "one-time physics as a projection of a two-time theory."
@@ -135,18 +135,18 @@ There is no way to repair the equation without changing it into something else. 
 **ESTABLISHED.** General relativity in *D* = 4 + *n* dimensions is defined by the Einstein–Hilbert action
 
 $$
-S_D \;=\; \frac{1}{16\pi G_D}\int d^{D}x\,\sqrt{-g_D}\;R_D
+S_D \;=\; \frac{c^{3}}{16\pi G_D}\int d^{D}x\,\sqrt{-g_D}\;R_D
 $$
 
-where *g_D* is the *D*-dimensional metric, *R_D* its Ricci scalar, and *G_D* the *D*-dimensional gravitational constant, with units [G_D] = [G_4] · m^n. If spacetime is a product *M_D* = *M₄* × Σ_n with an internal manifold Σ_n of volume Vol(Σ_n) and a metric that does not mix the two factors, then *R_D* = *R₄* + *R_Σ* and integrating over Σ_n gives
+where *g_D* is the *D*-dimensional metric, *R_D* its Ricci scalar, *x⁰* = *ct*, and *G_D* the *D*-dimensional gravitational constant, with units [G_D] = [G_4] · m^n. (In the common convention *c* = 1 the prefactor is 1/16π*G_D*.) If spacetime is a product *M_D* = *M₄* × Σ_n with an internal manifold Σ_n of volume Vol(Σ_n) and a direct-product metric with no warp factor, then *R_D* = *R₄* + *R_Σ* and integrating over Σ_n gives
 
 $$
-S_D \;\supset\; \frac{\mathrm{Vol}(\Sigma_n)}{16\pi G_D}\int d^{4}x\,\sqrt{-g_4}\;R_4
+S_D \;\supset\; \frac{c^{3}\,\mathrm{Vol}(\Sigma_n)}{16\pi G_D}\int d^{4}x\,\sqrt{-g_4}\;R_4
 \qquad\Longrightarrow\qquad
 \boxed{\,G_4 \;=\; \frac{G_D}{\mathrm{Vol}(\Sigma_n)}\,}
 $$
 
-The 4D Newton constant we measure is the higher-dimensional one divided by the volume of the hidden space [Kaluza 1921; Klein 1926; Overduin & Wesson 1997]. The *R_Σ* term and any fields living on Σ_n contribute an effective cosmological constant and an effective stress-energy in 4D. This is the mechanism by which string compactifications produce 4D physics, and it is the only published, consistent way known for "4D gravity as a shadow of higher-dimensional gravity."
+The 4D Newton constant we measure is the higher-dimensional one divided by the volume of the hidden space [Kaluza 1921; Klein 1926; Overduin & Wesson 1997]. The *R_Σ* term and any fields living on Σ_n contribute an effective cosmological constant and an effective stress-energy in 4D. This is the mechanism by which the simplest string compactifications produce 4D physics, and it is the standard, best-understood route for "4D gravity as a shadow of higher-dimensional gravity." (Brane-localised gravity with a non-compact extra dimension [Randall & Sundrum 1999] is a separate published route; v3.0 uses the compact KK form because it is the one in which the volume-suppression formula above holds.)
 
 The resulting 4D equations are the Einstein field equations
 
@@ -205,7 +205,7 @@ S \;=\; E(a,b) + E(a,b') + E(a',b) - E(a',b'),
 |S| \le 2\sqrt{2} \;\;(\text{quantum mechanics, Tsirelson 1980})
 $$
 
-Experiments closing the detection and locality loopholes simultaneously found |S| > 2 [Hensen et al. 2015; Giustina et al. 2015; Shalm et al. 2015], the work recognised by the 2022 Nobel Prize in Physics (Aspect, Clauser, Zeilinger). The quantum value never exceeds 2√2 (verified in the script by exhaustive enumeration of local strategies and by the singlet-state calculation). Entanglement also obeys **no-signalling**: the marginal statistics at one station do not depend on the setting chosen at the other.
+Experiments closing the detection and locality loopholes simultaneously found Bell-inequality violations (CHSH *S* = 2.42 in Hensen et al.; the CH–Eberhard inequality in the photon tests) [Hensen et al. 2015; Giustina et al. 2015; Shalm et al. 2015], the line of work recognised by the 2022 Nobel Prize in Physics (Aspect, Clauser, Zeilinger). The quantum value never exceeds 2√2 (verified in the script by exhaustive enumeration of local strategies and by the singlet-state calculation). Entanglement also obeys **no-signalling**: the marginal statistics at one station do not depend on the setting chosen at the other.
 
 **OUR HYPOTHESIS (reworded from v2.1).** v2.1 said entangled particles "share coordinates in D8–9." Stated plainly, that is a hidden-variable model: the shared coordinate is a variable, fixed at the source, that determines later outcomes. Bell's theorem says such a model can reproduce experiment **only if it is non-local or contextual** (outcomes depend on the distant setting, or on which other observables are measured) — the same price paid by Bohmian mechanics [Bohm 1952; Kochen & Specker 1967]. So the v3.0 statement is: *if* D8–9 carry entanglement correlations, then the D8–9 "binding" must be non-local in D1–3 terms, must be contextual, must give exactly |S| ≤ 2√2 (not more — a "binding axis" that could exceed Tsirelson would already be falsified), and must respect no-signalling so that D8–9 cannot be used to send messages. Under those constraints the D8–9 picture is an interpretation on the same footing as Bohmian mechanics or many-worlds, and currently makes no distinct prediction.
 
@@ -257,7 +257,7 @@ v(E) \;\approx\; c\left[\,1 - \xi_n\,\frac{n+1}{2}\left(\frac{E}{E_{\mathrm{QG},
 E_{\mathrm{Pl}} = \sqrt{\frac{\hbar c^{5}}{G}} \approx 1.22\times10^{19}\ \mathrm{GeV}
 $$
 
-with ξ_n = ±1 and *n* = 1 (linear) or 2 (quadratic). Fermi-LAT timing of GRB 090510 gives **E_QG,1 > 7.6 E_Pl** at 95 % CL [Abdo et al. 2009; Vasileiou et al. 2013]. In words: any linear-order Planck-scale "refresh rate" effect is already excluded by nearly an order of magnitude. Quadratic-order effects are far less constrained (E_QG,2 ≳ 10¹⁰–10¹¹ GeV).
+with ξ_n = ±1 and *n* = 1 (linear) or 2 (quadratic). Fermi-LAT timing of GRB 090510 first gave E_QG,1 > 1.2 E_Pl [Abdo et al. 2009]; the refined analysis gives **E_QG,1 > 7.6 E_Pl** at 95 % CL for the subluminal case (ξ₁ = +1), and **E_QG,2 > 1.3 × 10¹¹ GeV** for the quadratic case [Vasileiou et al. 2013]. In words: any linear-order Planck-scale "refresh rate" effect is already excluded by nearly an order of magnitude; quadratic-order effects are constrained only to about 10⁻⁸ of the Planck energy.
 
 **OUR HYPOTHESIS (revised).** v2.1 called ℓ_P and *t_P* the "refresh rate of the D12 → D4 projection." v3.0 retains only the weaker claim: *if* the projection has a finite resolution, it must be Lorentz-invariant to at least the GRB 090510 bound — i.e. it cannot be a naive lattice. Models of this type that survive (for example, Lorentz-invariant discreteness such as causal sets) are what the hypothesis would have to resemble. No specific model is proposed here.
 
@@ -333,7 +333,7 @@ A hypothesis earns credibility by risking falsification. Each v2.1 prediction ha
 **ESTABLISHED.** The Pierre Auger Collaboration **has already reported** a large-scale anisotropy: a dipole of amplitude 6.5 % (+1.3/−0.9) above 8 × 10¹⁸ eV, significance > 5.2σ, pointing to right ascension ≈ 100°, declination ≈ −24° — well away from the Galactic centre — and consistent with an *extragalactic* source distribution [Pierre Auger Collaboration 2017]; later analyses with more exposure reach 6.8σ [Bianciotto 2025, for the Auger Collaboration]. So "cosmic rays should show anisotropy" is no longer a prediction — it is an observation, and it is explained by the large-scale distribution of nearby galaxies plus deflection in magnetic fields.
 
 **OUR HYPOTHESIS — what would be distinctive.** A Substratum lattice would have to produce something astrophysics does not:
-- (a) power in **high multipoles with a discrete rotational symmetry** (e.g. the cubic-harmonic pattern of a hypercubic projection: ℓ = 4, 6, 8 with fixed relative phases), aligned to a frame that is **not** the Galactic plane, the supergalactic plane, or the CMB dipole;
+- (a) power in **high multipoles with a discrete rotational symmetry** (e.g. the cubic-harmonic pattern of a hypercubic projection: ℓ = 4, 6, 8 with fixed relative phases — the signature first worked out for a hypercubic lattice simulation by Beane, Davoudi & Savage [2014], who also noted it would be tied to the GZK cutoff energy), aligned to a frame that is **not** the Galactic plane, the supergalactic plane, or the CMB dipole;
 - (b) an **energy dependence** following the (E/E_QG)^n scaling of §5.2, i.e. growing as a power of energy rather than tracking source distance;
 - (c) consistency with the Fermi bound: the effect must vanish at linear order (n = 1) and appear only at quadratic order or higher.
 
@@ -341,13 +341,13 @@ A hypothesis earns credibility by risking falsification. Each v2.1 prediction ha
 
 ### Prediction 2: Entanglement saturation (threshold corrected)
 
-**ESTABLISHED.** v2.1 predicted "degradation at > 10⁶ particles." That threshold was already exceeded two decades ago: two caesium ensembles of ≈ 10¹² atoms each were entangled in 2001 [Julsgaard, Kozhekin & Polzik 2001], and in 2021 two 70-picogram aluminium drumheads (≈ 1.6 × 10¹² atoms each, computed in the script) were deterministically entangled [Kotler et al. 2021; Mercier de Lépinay et al. 2021]. These are *collective-mode* (effectively two-mode) entanglement. Genuine multipartite entanglement has been verified across 51 superconducting qubits [Cao et al. 2023].
+**ESTABLISHED.** v2.1 predicted "degradation at > 10⁶ particles." That threshold was already exceeded two decades ago: two caesium ensembles of ≈ 10¹² atoms each were entangled in 2001 [Julsgaard, Kozhekin & Polzik 2001], and in 2021 two 70-picogram aluminium drumheads (≈ 1.6 × 10¹² atoms each, computed in the script) were deterministically entangled [Kotler et al. 2021; Mercier de Lépinay et al. 2021]. These are *collective-mode* (effectively two-mode) entanglement. Genuine multipartite entanglement has been verified across 51 superconducting qubits without post-selection [Cao et al. 2023], and a 120-qubit GHZ state with fidelity 0.56(3) — above the 1/2 witness threshold for genuine multipartite entanglement, with 28 % post-selection — has been reported [Javadi-Abhari et al. 2025].
 
-**OUR HYPOTHESIS — restated.** If D8–9 has finite relational capacity, the capacity must exceed 10¹² atoms in collective modes and 51 parties in genuine multipartite entanglement. The restated, falsifiable claim is: *there exists a finite number N\* such that genuine N-partite entanglement cannot be prepared or verified for N > N\*, with the failure not attributable to known decoherence channels.* No value of N\* is predicted. This is testable as quantum computers scale; it is falsified in practice if entanglement witnesses continue to track the independently measured decoherence budget at every scale reached.
+**OUR HYPOTHESIS — restated.** If D8–9 has finite relational capacity, the capacity must exceed 10¹² atoms in collective modes and ≳ 10² parties in genuine multipartite entanglement. The restated, falsifiable claim is: *there exists a finite number N\* such that genuine N-partite entanglement cannot be prepared or verified for N > N\*, with the failure not attributable to known decoherence channels.* No value of N\* is predicted. This is testable as quantum computers scale; it is falsified in practice if entanglement witnesses continue to track the independently measured decoherence budget at every scale reached.
 
 ### Prediction 3: Observer-density effects (requirements added)
 
-**ESTABLISHED.** This idea has been explored for over two decades by the Global Consciousness Project, which runs a network of hardware random-number generators and looks for deviations around world events. Its published analyses have been criticised for post hoc event selection and window choice [Scargle 2002], and the project's own lead analyst concluded in 2017 that the data do not support a "global consciousness" effect and are better explained by experimenter effects [Bancel 2017].
+**ESTABLISHED (the record); interpretation contested.** This idea has been explored for over two decades by the Global Consciousness Project, which runs a network of hardware random-number generators and looks for deviations around world events. Its most-publicised result (September 11, 2001) has been criticised for post hoc choices of window and statistic in the exploratory analyses [Scargle 2002]; and in 2017 the project's own lead analyst concluded that, although the registered-event record shows a cumulative deviation, no global-consciousness model fits it and the signature is better explained by an experimenter (data-selection) effect [Bancel 2017] — an explanation that is itself non-standard. On conventional physics the record is treated as unexplained or artefactual; either way it is evidence against an easy-to-detect field effect.
 
 **OUR HYPOTHESIS — minimum requirements for a test.** Prediction 3 is not testable until:
 1. an **operational observer criterion** is specified, measurable independently of the randomness deviation being sought (humans? how many? attending or not?);
@@ -359,7 +359,7 @@ Until then it is a research direction, not a prediction, and the GCP record coun
 
 **ESTABLISHED.** Black holes carry entropy *S* = k_B c³ A / (4Għ) [Bekenstein 1973; Hawking 1975] and radiate at temperature *T_H* = ħc³/(8πGMk_B) (≈ 6 × 10⁻⁸ K for a solar mass — both verified in the script). Hawking's original calculation gave thermal radiation and an apparent loss of information [Hawking 1976]. **The modern expectation is that information is preserved**: Page [1993] showed that unitarity requires the radiation entropy to follow the "Page curve," and in 2019 the "island" formula reproduced that curve from semiclassical gravity [Penington 2020; Almheiri, Engelhardt, Marolf & Maxfield 2019]. So "Hawking radiation carries information" is now the mainstream expectation, not a Substratum prediction.
 
-**OUR HYPOTHESIS — what would be distinctive.** The Substratum would have to predict a *departure* from the Page curve — e.g. information becoming available in the radiation **earlier** than the Page time (half the evaporation time), or additional structure encoding D11–12 "boundary parameters" beyond the black hole's mass, charge and spin. No such mechanism is specified. Note also that Hawking radiation from astrophysical black holes is unobservable (≈ 10⁻⁸ K against a 2.7 K sky); any test would be in analogue systems or in theory.
+**OUR HYPOTHESIS — what would be distinctive.** The Substratum would have to predict a *departure* from the Page curve — e.g. information becoming available in the radiation **earlier** than the Page time (roughly half the evaporation time), or additional structure encoding D11–12 "boundary parameters" beyond the black hole's mass, charge and spin. No such mechanism is specified. Note also that Hawking radiation from astrophysical black holes is unobservable (≈ 10⁻⁸ K against a 2.7 K sky); any test would be in analogue systems or in theory.
 
 ### Prediction 5 (v2.1) — moved to Part IX
 
@@ -420,7 +420,7 @@ Transparency about what is *not* established is part of the project. Contributio
 | M2 | Stabilise Vol(Σ₈) | A potential whose minimum fixes the hidden volume (moduli stabilisation) |
 | M3 | Show that 12 is minimal/sufficient | A derivation, or a demonstration that fewer dimensions cannot host the D5–D10 roles |
 | M4 | Assign D5–7, D8–9, D10 to actual mathematical structures | e.g. is D5–7 a representation of Hilbert space? Is D8–9 a Bohmian-type configuration space? |
-| M5 | Reconcile a finite "projection resolution" with Lorentz invariance | A Lorentz-invariant discreteness model consistent with E_QG,1 > 7.6 E_Pl |
+| M5 | Reconcile a finite "projection resolution" with Lorentz invariance | A Lorentz-invariant discreteness model consistent with E_QG,1 > 7.6 E_Pl and E_QG,2 > 1.3 × 10¹¹ GeV |
 | M6 | Non-local, contextual, no-signalling D8–9 model | A model that reproduces |S| ≤ 2√2 and makes at least one distinct prediction |
 
 ### 11.2 Physical open problems
@@ -470,6 +470,7 @@ All references below were checked against the publisher's or arXiv's record duri
 - Witten, E. (1995). "String theory dynamics in various dimensions." *Nuclear Physics B* 443, 85–126. arXiv:hep-th/9503124.
 - Vafa, C. (1996). "Evidence for F-theory." *Nuclear Physics B* 469, 403–415. arXiv:hep-th/9602022. DOI 10.1016/0550-3213(96)00172-1.
 - Bars, I. (2001). "Survey of two-time physics." *Classical and Quantum Gravity* 18, 3113–3130. arXiv:hep-th/0008164. DOI 10.1088/0264-9381/18/16/303.
+- Randall, L. & Sundrum, R. (1999). "An alternative to compactification." *Physical Review Letters* 83, 4690–4693. arXiv:hep-th/9906064.
 
 **General relativity, Casimir effect**
 
@@ -499,6 +500,7 @@ All references below were checked against the publisher's or arXiv's record duri
 - Kotler, S. et al. (2021). "Direct observation of deterministic macroscopic entanglement." *Science* 372, 622–625. arXiv:2004.05515.
 - Mercier de Lépinay, L., Ockeloen-Korppi, C. F., Woolley, M. J. & Sillanpää, M. A. (2021). "Quantum mechanics–free subsystem with mechanical oscillators." *Science* 372, 625–629.
 - Cao, S. et al. (2023). "Generation of genuine entanglement up to 51 superconducting qubits." *Nature* 619, 738–742. DOI 10.1038/s41586-023-06195-1.
+- Javadi-Abhari, A. et al. (2025). "Big cats: entanglement in 120 qubits and beyond." arXiv:2510.09520.
 
 **Cosmic rays and Lorentz invariance**
 
@@ -545,9 +547,9 @@ All references below were checked against the publisher's or arXiv's record duri
 - **Uncertainty** (§4.1): "position in D1–3, momentum in D5–7" withdrawn; replaced by a reading that must reproduce the Robertson relation exactly.
 - **Entanglement** (§4.2): "shared D8–9 coordinates" identified as a hidden-variable model; now required to be non-local, contextual, no-signalling, and bounded by Tsirelson's 2√2, with the loophole-free Bell tests cited.
 - **Tunnelling** (§4.3): "goes around the barrier" withdrawn; must reproduce standard transmission formulae and the measured in-barrier time of Ramos et al. (2020).
-- **Planck scale / speed of light** (§5.2–5.3): *h* → ħ corrected; "sampling rate" and "bandwidth" claims now subject to the Fermi GRB 090510 bound E_QG,1 > 7.6 E_Pl; *c* = ℓ_P/*t_P* labelled as an identity.
+- **Planck scale / speed of light** (§5.2–5.3): *h* → ħ corrected; "sampling rate" and "bandwidth" claims now subject to the Fermi GRB 090510 bounds E_QG,1 > 7.6 E_Pl and E_QG,2 > 1.3 × 10¹¹ GeV (Vasileiou et al. 2013); *c* = ℓ_P/*t_P* labelled as an identity.
 - **Why 12** (§1.2): anchored to Kaluza–Klein, 11D supergravity/M-theory, F-theory (Vafa 1996) and two-time physics (Bars 2001), without claiming equivalence.
-- **Predictions** rewritten: P1 now requires a signature distinct from the Auger 2017 dipole; P2 threshold corrected from 10⁶ to "beyond 10¹² atoms / 51 genuine parties"; P3 now cites the GCP and its critiques and requires pre-registration; P4 now states what would be distinctive relative to the Page curve / island formula; P5 moved to philosophy; P6 reframed against the quantum Zeno effect and decoherence theory.
+- **Predictions** rewritten: P1 now requires a signature distinct from the Auger 2017 dipole; P2 threshold corrected from 10⁶ to "beyond 10¹² atoms in collective modes / ≳ 10² genuine parties"; P3 now cites the GCP and its critiques and requires pre-registration; P4 now states what would be distinctive relative to the Page curve / island formula; P5 moved to philosophy; P6 reframed against the quantum Zeno effect and decoherence theory.
 - **Consciousness** (Part VI): entire Part tagged SPECULATIVE; brain-damage, anaesthesia and decoherence evidence stated.
 - **References** section added with verified citations only. **Open Problems** table added.
 - Credit line changed to "Johnny Hinojosa, developed with assistance from Claude, an AI model by Anthropic."
@@ -564,4 +566,4 @@ Original formulation.
 
 ---
 
-*Johnny Hinojosa, developed with assistance from Claude, an AI model by Anthropic. Licensed CC BY 4.0.*
+*Johnny Hinojosa, developed with assistance from Claude, an AI model by Anthropic. AI assistance does not imply endorsement by Anthropic. Licensed CC BY 4.0.*

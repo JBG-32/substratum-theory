@@ -48,7 +48,7 @@ This repository contains a speculative theoretical-physics framework. It is a st
 - The Robertson uncertainty relation σ_x σ_p ≥ ħ/2, exactly.
 - Bell/CHSH: loophole-free experiments violate |S| ≤ 2; quantum mechanics never exceeds Tsirelson's 2√2; no signalling.
 - Standard tunnelling probabilities and the measured in-barrier time (Ramos et al. 2020).
-- Lorentz invariance to the Fermi GRB 090510 bound, E_QG,1 > 7.6 E_Planck.
+- Lorentz invariance to the Fermi GRB 090510 bounds, E_QG,1 > 7.6 E_Planck and E_QG,2 > 1.3 × 10¹¹ GeV (Vasileiou et al. 2013).
 - Black-hole entropy, Hawking temperature, and the Page curve.
 
 ### Why 12? (ESTABLISHED context, OUR HYPOTHESIS count)
@@ -60,7 +60,7 @@ Supergravity is consistent in at most 11 dimensions; M-theory is 11-dimensional;
 ## Predictions (v3.0, re-examined against existing data)
 
 1. **UHECR anisotropy** — Auger already observed a 6.5 % dipole above 8 EeV (2017). The hypothesis now requires a *distinct* signature: high-multipole power with discrete symmetry in a non-astrophysical frame, scaling as a power of energy, absent at linear order. Not detected.
-2. **Entanglement saturation** — the old "> 10⁶ particles" threshold was exceeded in 2001 (10¹² atoms). Restated as the existence of a finite N* for genuine N-partite entanglement. No N* predicted.
+2. **Entanglement saturation** — the old "> 10⁶ particles" threshold was exceeded in 2001 (10¹² atoms). Genuine multipartite entanglement now reaches 51 qubits without post-selection (2023) and a 120-qubit GHZ state with post-selection (2025). Restated: capacity must exceed 10¹² atoms in collective modes and ≳ 10² genuine parties; a finite N* is asserted but not predicted.
 3. **Observer-density effects** — requires an operational observer criterion and pre-registration; the Global Consciousness Project record counts against an easy-to-detect effect.
 4. **Black-hole information** — information preservation is already the mainstream expectation (Page curve, island formula). A distinctive claim would be a departure from the Page curve. No mechanism yet.
 5. **Mathematical limits** — not falsifiable; moved to philosophy.
@@ -75,7 +75,7 @@ pip install sympy numpy
 python3 tools/equation_checks.py
 ```
 
-The script verifies the free-index balance and SI units of every displayed equation, recomputes every quoted number from CODATA 2018, and documents why the v2.1 "master equation" was removed.
+The script checks the free-index balance and SI units of every displayed equation, recomputes every quoted number from CODATA 2018, confirms as a bookkeeping check that the proposed equation collapses to Einstein's when the hidden-space terms vanish, and documents why the v2.1 "master equation" was removed. It is a sanity check, not a derivation — the derivation is the Kaluza–Klein reduction in THEORY.md §3.3.
 
 ---
 
