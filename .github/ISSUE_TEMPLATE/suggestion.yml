@@ -1,0 +1,31 @@
+name: Suggest an improvement
+description: Propose a better formulation, a sharper prediction, a missing reference, or a fix to an Open Problem.
+title: "[Suggestion] "
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        An AI assistant replies first on behalf of Juan Hinojosa and passes anything that needs his answer directly to him.
+  - type: input
+    id: section
+    attributes:
+      label: Which section, prediction, or Open Problem (M1–M7, P1–P4)?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your suggestion
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Supporting sources (optional)
+  - type: checkboxes
+    id: reply
+    attributes:
+      label: Reply
+      options:
+        - label: I'd like a personal reply from Juan
