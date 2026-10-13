@@ -3,7 +3,7 @@
 **Classification**: Speculative Theoretical Framework (not peer-reviewed physics)
 **Version**: v3.0 — Rigor Update
 **Date**: October 2026
-**Author**: Johnny Hinojosa, developed with assistance from Claude, an AI model by Anthropic. AI assistance does not imply endorsement by Anthropic.
+**Author**: Juan Hinojosa, developed with assistance from Claude, an AI model by Anthropic. AI assistance does not imply endorsement by Anthropic.
 
 ---
 
@@ -555,7 +555,7 @@ All references below were checked against the publisher's or arXiv's record duri
 - **Predictions** rewritten: P1 now requires a signature distinct from the Auger 2017 dipole; P2 threshold corrected from 10⁶ to "beyond 10¹² atoms in collective modes / ≳ 10² genuine parties"; P3 now cites the GCP and its critiques and requires pre-registration; P4 now states what would be distinctive relative to the Page curve / island formula; P5 moved to philosophy; P6 reframed against the quantum Zeno effect and decoherence theory.
 - **Consciousness** (Part VI): entire Part tagged SPECULATIVE; brain-damage, anaesthesia and decoherence evidence stated.
 - **References** section added with verified citations only. **Open Problems** table added.
-- Credit line changed to "Johnny Hinojosa, developed with assistance from Claude, an AI model by Anthropic."
+- Credit line changed to "Juan Hinojosa, developed with assistance from Claude, an AI model by Anthropic."
 - Added `tools/equation_checks.py` (sympy/numpy) verifying index balance, units and numerical values of every displayed equation.
 
 ### v2.1 — Critique-Informed Revision (March 2026)
@@ -569,4 +569,4 @@ Original formulation.
 
 ---
 
-*Johnny Hinojosa, developed with assistance from Claude, an AI model by Anthropic. AI assistance does not imply endorsement by Anthropic. Licensed CC BY 4.0.*
+*Juan Hinojosa, developed with assistance from Claude, an AI model by Anthropic. AI assistance does not imply endorsement by Anthropic. Licensed CC BY 4.0.*

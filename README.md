@@ -11,7 +11,7 @@
 
 ## Overview
 
-This repository contains a speculative theoretical-physics framework. It is a structured hypothesis about the architecture of reality, developed by Johnny Hinojosa with assistance from Claude, an AI model by Anthropic.
+This repository contains a speculative theoretical-physics framework. It is a structured hypothesis about the architecture of reality, developed by Juan Hinojosa with assistance from Claude, an AI model by Anthropic.
 
 **This is not established science.** It is not peer-reviewed. It is a hypothesis designed to be explored, challenged, and — where it is wrong — corrected. Version 3.0 withdrew several earlier claims that turned out to be in conflict with data or not well-formed; see the [changelog](THEORY.md#changelog).
 
@@ -109,7 +109,7 @@ https://jbg-32.github.io/substratum-theory/ (GitHub Pages)
 
 ## Author
 
-**Johnny Hinojosa** — developed with assistance from Claude, an AI model by Anthropic. The AI assistance does not imply endorsement by Anthropic.
+**Juan Hinojosa** — developed with assistance from Claude, an AI model by Anthropic. The AI assistance does not imply endorsement by Anthropic.
 
 ---
 
