@@ -2,7 +2,7 @@
 
 ## Author
 
-- **Johnny Hinojosa** — conceptual direction, the core hypothesis, editorial decisions
+- **Juan Hinojosa** — conceptual direction, the core hypothesis, editorial decisions
 
 Developed with assistance from Claude, an AI model by Anthropic (drafting, literature checks, equation verification). AI assistance does not imply endorsement by Anthropic.
 
