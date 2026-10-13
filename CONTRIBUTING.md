@@ -9,7 +9,8 @@ Thank you for your interest in contributing to this theoretical framework. This 
 ### 0. Fastest ways to help
 
 - **Report a flaw or a wrong citation**: [open an Issue](https://github.com/JBG-32/substratum-theory/issues/new).
-- **Discuss, argue, or propose**: [start a Discussion](https://github.com/JBG-32/substratum-theory/discussions).
+- **Argue or propose**: [suggest an improvement](https://github.com/JBG-32/substratum-theory/issues/new?template=suggestion.yml), or [ask a question](https://github.com/JBG-32/substratum-theory/issues/new?template=question.yml).
+- **Replies**: an AI assistant replies first on Juan Hinojosa's behalf and identifies itself as an AI. It never merges changes or edits the theory; anything needing Juan's answer is labelled `needs-juan` and passed to him.
 - **Pick an open problem**: see Part XI of [THEORY.md](THEORY.md#part-xi-known-limitations-and-open-problems).
 
 ### 1. Mathematical Formalization

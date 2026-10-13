@@ -1,0 +1,35 @@
+name: Challenge a claim
+description: Show where the framework is wrong, untestable, or contradicts known physics.
+title: "[Challenge] "
+labels: ["challenge"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for trying to break it. That is exactly what this framework needs.
+        An AI assistant replies first on behalf of Juan Hinojosa and passes anything that needs his answer directly to him.
+  - type: input
+    id: section
+    attributes:
+      label: Which section or prediction?
+      placeholder: "e.g. §3.4 effective equation, Prediction 1, Part VI"
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: What is wrong?
+      description: Be as specific as you can. Equations and numbers welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or sources
+      description: Papers, data, derivations, or reasoning.
+  - type: checkboxes
+    id: reply
+    attributes:
+      label: Reply
+      options:
+        - label: I'd like a personal reply from Juan

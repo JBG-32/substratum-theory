@@ -82,7 +82,9 @@ The script checks the free-index balance and SI units of every displayed equatio
 ## Contributing and feedback
 
 - **Found a flaw, a wrong citation, or a claim that is not tagged honestly?** [Open an Issue](https://github.com/JBG-32/substratum-theory/issues/new).
-- **Want to discuss, propose a model for an open problem, or argue the philosophy?** [Start a Discussion](https://github.com/JBG-32/substratum-theory/discussions).
+- **Want to propose a model for an open problem, argue the philosophy, or ask something?** [Suggest an improvement](https://github.com/JBG-32/substratum-theory/issues/new?template=suggestion.yml) or [ask a question](https://github.com/JBG-32/substratum-theory/issues/new?template=question.yml).
+
+> **How replies work:** an AI assistant reads new feedback and replies first, on behalf of Juan Hinojosa, and says plainly that it is an AI. Anything that asks for Juan's own reply or decision is labelled `needs-juan` and passed to him.
 - See [CONTRIBUTING.md](CONTRIBUTING.md) and the [Open Problems](THEORY.md#part-xi-known-limitations-and-open-problems) list in THEORY.md.
 
 The most valuable contributions right now, in order: a toy model for the hidden manifold (Σ₈ = T⁸ with one scalar field); a Lorentz-invariant "finite resolution" model; a pre-registered protocol for Prediction 6; a multipole-analysis proposal for Prediction 1.

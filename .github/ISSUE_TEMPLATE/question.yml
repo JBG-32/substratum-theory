@@ -1,0 +1,21 @@
+name: Ask a question
+description: Ask about any part of the framework.
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        An AI assistant replies first on behalf of Juan Hinojosa and passes anything that needs his answer directly to him.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+  - type: checkboxes
+    id: reply
+    attributes:
+      label: Reply
+      options:
+        - label: I'd like a personal reply from Juan
